@@ -1,0 +1,14 @@
+.CarrouselContainer {
+    position: relative;
+    height: 40rem;
+    width: 100%;
+}
+.Carrousel {
+    position: relative;
+    height: 35rem;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+

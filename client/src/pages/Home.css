@@ -1,0 +1,57 @@
+.section {
+    border: 1px solid rgba(238, 238, 238, 0.568);
+    min-height: 35rem;
+    height: fit-content;
+    margin: 0 auto;
+    margin-top: 10rem; ;
+    padding: 10rem;
+}
+.title {
+    text-align: left;
+    font-weight: 400;
+    height: 3rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #ddd;
+    color: rgb(63, 114, 190);
+}
+.Proyectos {
+    width: 80%;
+    margin: 0 auto;
+}
+.InformationContainer {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15rem 15rem;
+    grid-gap: 3rem;
+}
+.Subtitle {
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.Information {
+    text-align: justify;
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 1.5;
+    width: 80%;
+    justify-content: center;
+}
+.characteristic {
+    background-color: rgb(235, 235, 235);
+}
+.characteristicsContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.characteristics{
+    width: 20%;
+}
+
+.ScrollBottomButton {
+    margin-bottom: 3rem;
+    height: 3rem;
+}
