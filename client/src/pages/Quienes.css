@@ -1,0 +1,9 @@
+#nosotros {
+ margin-top: 10%;
+ margin-bottom: 5px;
+ border-radius: 5px;
+ width: 300px;
+}
+.container p, h2 {
+    color: rgba(34, 34, 34, 0.5);;
+}

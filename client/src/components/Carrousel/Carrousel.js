@@ -18,7 +18,9 @@ const Carrousel = () => {
                     projects.map( project => {return <ProjectCard key={project} number={project}/>})
                 }
             </div>
-            <div onClick={onSlide}> BOTON </div>
+            <button  onClick={ onSlide } className='SliderBtn'>Deslizar</button>
+         
+           
         </div>
     )
 }

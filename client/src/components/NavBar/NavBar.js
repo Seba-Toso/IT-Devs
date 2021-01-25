@@ -9,7 +9,7 @@ const NavBar = () => {
     return (
         <nav className='navBar'>
             <div className='logo'>
-                <h1 className='logoTxt'> Jr-DevProject</h1>
+               <img src='http://imgfz.com/i/Lfg5X6w.jpeg'/>
             </div>
             <div className='links'>
                 <NavLink className='link' activeClassName="selected" to="/servicios">Servicios</NavLink>
