@@ -1,20 +1,9 @@
-body {
-    background: radial-gradient(
-      ellipse at left bottom,
-      rgb(225, 226, 235) 0%,
-      rgba(156, 181, 218, 0.9) 59%,
-      rgba(57, 84, 216, 0.9) 100%
-    );
-  }
-
-
-
 .section {
     border: 1px solid rgba(238, 238, 238, 0.568);
     min-height: 35rem;
     height: fit-content;
     margin: 0 auto;
-    margin-top: 10rem; ;
+    margin-bottom: 8rem; 
     padding: 10rem;
 }
 .title {
@@ -50,8 +39,37 @@ body {
     width: 80%;
     justify-content: center;
 }
+
+.intro {
+    display: flex;
+    flex-direction: row;
+}
+.logoContainer {
+    display: inline;
+    width: 40%;
+}
+.sloganContainer{
+    text-align: left;
+    width: 60%;
+    padding-left: 20%;
+}
+.sloganText {
+    font-size: 70px;
+    font-weight: bold;
+}
+.One {
+    animation: Slogan-FadeIn ease 4s;
+}
+.Two {
+    color: rgb(63, 114, 190);
+    animation: Slogan-FadeIn  6s;
+}
+.Three {
+    animation: Slogan-FadeIn  8s;
+}
 .characteristic {
     background-color: rgb(235, 235, 235);
+    margin-bottom: 0;
 }
 .characteristicsContainer {
     width: 100%;
@@ -61,8 +79,18 @@ body {
 .characteristics{
     width: 20%;
 }
-
 .ScrollBottomButton {
     margin-bottom: 3rem;
     height: 3rem;
 }
+
+@keyframes Slogan-FadeIn {
+    0% { 
+        opacity: 0;
+        padding-left: 5rem;
+    }
+    100% {
+        opacity: 1;
+        padding-left: 0;
+    }
+  }

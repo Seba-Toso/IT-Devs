@@ -17,6 +17,16 @@ const Home = () =>{
             <div className='ScrollBottomButton'>
                 <RoundButton selectedIcon={<ReactIcon.IoMailUnreadSharp/>} onScrollTop={scrollBottomHandle}/>
             </div>
+            <div className='section intro'>
+                <div className='logoContainer'>
+                    <img src='http://imgfz.com/i/Lfg5X6w.jpeg' height={'300px'} alt='Logo'/>
+                </div>
+                <div className='sloganContainer'>
+                    <h1 className='sloganText One'>DEVELOPING</h1>
+                    <h1 className='sloganText Two'>WAS NEVER</h1>
+                    <h1 className='sloganText Three'>SO EASY.</h1>
+                </div>
+            </div>
             <div className='section what'>
                 <h1 className='title'>¿QUÉ HACEMOS?</h1>
                 <div className='InformationContainer'>

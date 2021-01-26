@@ -5,6 +5,13 @@ import './Tecnologias.css';
 const Tecnologias = () =>{
     return(
         <div class="Tools">
+            <div className='section'>
+                <div className='sloganContainer'>
+                    <h1 className='sloganText One'>WHAT</h1>
+                    <h1 className='sloganText Two'>DO WE</h1>
+                    <h1 className='sloganText Three'>USE.</h1>
+                </div>
+            </div>
             <center>
             <ul>
                 <li><img src="https://pluspng.com/img-png/logo-javascript-png-javascript-for-ile-y-ld-z-600.png"/></li>
