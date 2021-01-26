@@ -73,34 +73,18 @@ const Home = () =>{
                     </div>
                 </div>
             </div>
-            <Carrousel />
-            <div className='section pricing'>
-                <h1 className='title'>COTIZÁ TU PROYECTO</h1>
-                <div className='characteristicsContainer'>
-                    <div className='characteristics'>
-                        <h2 className='Subtitle'>Titulo Random</h2>
-                        <p className='Information'>Curabitur dapibus nec risus at porta. Maecenas eget justo vel leo cursus aliquet. Aliquam erat volutpat. Sed nec gravida arcu, at elementum velit. Suspendisse malesuada lacus nec mauris dapibus, vitae vehicula nunc efficitur. Aliquam consectetur magna ac felis volutpat, non euismod nunc efficitur. Proin ante nibh, vulputate eu euismod in, imperdiet quis lectus. Quisque ac est in orci tempus mattis vel sit amet dolor. Nulla viverra arcu at porta aliquet. </p>
-                    </div>
-                    <div className='characteristics'>
-                    <h2 className='Subtitle'>Titulo Random</h2>
-                        <p className='Information'>Pellentesque vel turpis sapien. Curabitur dapibus nec risus at porta. Maecenas eget justo vel leo cursus aliquet. Aliquam erat volutpat. Sed nec gravida arcu, at elementum velit. Suspendisse malesuada lacus nec mauris dapibus, vitae vehicula nunc efficitur. Aliquam consectetur magna ac felis volutpat, non euismod nunc efficitur. Proin ante nibh, vulputate eu euismod in, imperdiet quis lectus. Quisque ac est in orci tempus mattis vel sit amet dolor. Nulla viverra arcu at porta aliquet. </p>
-                    </div>
-                    <div className='characteristics'>
-                    <h2 className='Subtitle'>Titulo Random</h2>
-                        <p className='Information'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et condimentum lacus, vel consequat quam. Pellentesque vel turpis sapien. Curabitur dapibus nec risus at porta. Maecenas eget justo vel leo cursus aliquet. Aliquam erat volutpat. Sed nec gravida arcu, at elementum velit. Suspendisse malesuada lacus nec mauris dapibus, vitae vehicula nunc efficitur. Aliquam consectetur magna ac felis volutpat, non euismod nunc efficitur. Proin ante nibh, vulputate eu euismod in, imperdiet quis lectus. Quisque ac est in orci tempus mattis vel sit amet dolor. Nulla viverra arcu at porta aliquet. </p>
-                    </div>
-                    <div className='characteristics'>
-                        <h2 className='Subtitle'>Titulo Random</h2>
-                        <p className='Information'>Lorem ipsum dolor sit amet, vel consequat quam. Pellentesque vel turpis sapien. Curabitur dapibus nec risus at porta. </p>
-                    </div>
-                    <div className='characteristics'>
-                        <h2 className='Subtitle'>Titulo Random</h2>
-                        <p className='Information'>Lorem ipsum dolor sit amet, vel consequat quam. Pellentesque vel turpis sapien. Curabitur dapibus nec risus at porta. </p>
-                    </div>
-                </div>
+            <div className='Slider'>
+                <ul>
+                    <li><img src='http://imgfz.com/i/o5IHu0b.jpeg' alt=''/></li>
+                    <li><img src='http://imgfz.com/i/ojQLO6e.jpeg' alt=''/></li>
+                    <li><img src='http://imgfz.com/i/o5IHu0b.jpeg' alt=''/></li>
+                    <li><img src='http://imgfz.com/i/ojQLO6e.jpeg' alt=''/></li>
+                </ul>
             </div>
-            <Contact/>
+            <Contact />
+            
         </div>
+        
     )
 };
 
