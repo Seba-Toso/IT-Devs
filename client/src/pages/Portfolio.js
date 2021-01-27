@@ -1,8 +1,6 @@
 import React from 'react';
 import './Porfolio.css';
 
-import products from '../context/initialState'
-
 const Portfolio = () =>{
   
   const products= [

@@ -34,7 +34,6 @@ const Footer = () => {
                 </div>
                 <div className='SocialMediaButton Blog'>
                     <ReactIcon.IoNewspaperSharp className='SocialIcon' />
-                  
                     <p className='SocialMediaName'><a href="https://cristian1534.github.io/Blog-IT-Devs.github.io" target='_blank' >Blog</a></p>
                 </div>
             </div>

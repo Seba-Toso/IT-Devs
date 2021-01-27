@@ -1,7 +1,6 @@
 import React from 'react';
 import Contact from '../components/Contact/Contact'
 import RoundButton from '../components/UI/RoundButton/RoundButton'
-import Carrousel from '../components/Carrousel/Carrousel'
 import * as ReactIcon from 'react-icons/io5'
 import './Home.css'
 import Slider from '../components/UI/Slider/Slider';
