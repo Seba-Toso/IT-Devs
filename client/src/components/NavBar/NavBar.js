@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import {NavLink, useRouteMatch } from 'react-router-dom'
+import {NavLink, BrowserRouter as Router } from 'react-router-dom'
 import { IoHome } from "react-icons/io5";
 
 import './NavBar.css';
@@ -44,12 +44,16 @@ const NavBar = () => {
                 }
             </div>
             <div className='links'>
+                <Router>
                 <NavLink className='link' activeClassName="selected" to="/servicios">Servicios</NavLink>
                 <NavLink className='link' activeClassName="selected" to="/tecnologias">Tecnologías</NavLink>
                 <NavLink className='link' activeClassName="selected" to="/portfolio">Portfolio</NavLink>
                 <NavLink className='link' activeClassName="selected" to="/quienes">Quienes</NavLink>
                 <NavLink className='link' activeClassName="selected" to="/about">About</NavLink>
-                <NavLink className='link' activeClassName="selected" exact to="/"
+                <NavLink className='link' activeClassName="selected" exact to="/">
+              
+                
+
                 isActive={(match, location) => {
                     if (!match) {
                         setIsInHome(false)
@@ -58,7 +62,8 @@ const NavBar = () => {
                     setIsInHome(true)
                     return 
                   }}
-                ><IoHome/></NavLink>
+                <IoHome/></NavLink>
+               </Router>
             </div> 
         </nav>
     )
