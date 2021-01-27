@@ -4,12 +4,18 @@ import RoundButton from '../components/UI/RoundButton/RoundButton'
 import * as ReactIcon from 'react-icons/io5'
 import './Home.css'
 import Slider from '../components/UI/Slider/Slider';
-
+// import Cookies from 'universal-cookie';
+ 
 const Home = () =>{
     
     const scrollBottomHandle = () => {
         window.scrollTo(0,document.body.scrollHeight);
     }
+
+    // const cookies = new Cookies();
+ 
+    // cookies.set('myCat', 'Pacman', { path: '/' });
+    // console.log(cookies.get('myCat')); // Pacman
 
     return(
         <div>
