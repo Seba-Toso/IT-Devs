@@ -4,7 +4,7 @@ import './Tecnologias.css';
 
 const Tecnologias = () =>{
     return(
-        <div class="Tools">
+        <div className="Tools">
             <div className='section'>
                 <div className='sloganContainer'>
                     <h1 className='sloganText One'>WHAT</h1>

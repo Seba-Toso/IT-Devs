@@ -37,12 +37,28 @@
 }
 .logo {
     display: inline;
-    width: 15%;
+    width: 20%;
     height: 100%;
+    animation: logoIn 5s forwards  ease-in;
 }
-.logo img {
+.logoCircle {
     width: auto;
-    margin-top: 10px;
-    margin-left: 30%;
+    margin-top: 0.3rem;
+    margin-left: 15%;
+    margin-right:0.5rem;
     border-radius: 10px;
+    animation: logoRotation 10s infinite ease;
+}
+.logoText {
+    display: inline;
+    width: fit-content;
+    font-weight: bolder;
+    font-size: 40px;
+    vertical-align: bottom;
+}
+
+@keyframes logoRotation {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
+
 }
