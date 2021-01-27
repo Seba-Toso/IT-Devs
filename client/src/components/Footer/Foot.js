@@ -30,11 +30,12 @@ const Footer = () => {
                 </div>
                 <div className='SocialMediaButton Mail'>
                     <ReactIcon.IoMailSharp className='SocialIcon'/>
-                    <p className='SocialMediaName'>Mail</p>
+                    <p className='SocialMediaName'><a href="/">Mail</a></p>
                 </div>
                 <div className='SocialMediaButton Blog'>
-                    <ReactIcon.IoNewspaperSharp className='SocialIcon'/>
-                    <p className='SocialMediaName'>Blog</p>
+                    <ReactIcon.IoNewspaperSharp className='SocialIcon' />
+                  
+                    <p className='SocialMediaName'><a href="https://cristian1534.github.io/Blog-IT-Devs.github.io" target='_blank' >Blog</a></p>
                 </div>
             </div>
             <div className='ScrollTopButton'>

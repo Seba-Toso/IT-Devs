@@ -4,7 +4,7 @@ import RoundButton from '../components/UI/RoundButton/RoundButton'
 import Carrousel from '../components/Carrousel/Carrousel'
 import * as ReactIcon from 'react-icons/io5'
 import './Home.css'
-
+import Slider from '../components/UI/Slider/Slider';
 
 const Home = () =>{
     
@@ -48,6 +48,7 @@ const Home = () =>{
                     </div>
                 </div>
             </div>
+            
             <div className='section characteristic'>
                 <h1 className='title'>CARACTERÍSTICAS DE NUESTROS PROYECTOS</h1>
                 <div className='characteristicsContainer'>
@@ -73,16 +74,8 @@ const Home = () =>{
                     </div>
                 </div>
             </div>
-            <div className='Slider'>
-                <ul>
-                    <li><img src='http://imgfz.com/i/o5IHu0b.jpeg' alt=''/></li>
-                    <li><img src='http://imgfz.com/i/ojQLO6e.jpeg' alt=''/></li>
-                    <li><img src='http://imgfz.com/i/o5IHu0b.jpeg' alt=''/></li>
-                    <li><img src='http://imgfz.com/i/ojQLO6e.jpeg' alt=''/></li>
-                </ul>
-            </div>
-            <Contact />
-            
+            <Slider/>
+            <Contact/>
         </div>
         
     )

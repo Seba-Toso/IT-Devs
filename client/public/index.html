@@ -12,6 +12,23 @@
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <style>
+      .btn-whatsapp {
+            display: block;
+             margin-bottom: 5%;
+             width:65px;
+             height:70px;
+             color:#fff;
+             position: fixed;
+             right:20px;
+             bottom:20px;
+             border-radius:50%;
+             line-height:80px;
+             text-align:center;
+             z-index:999;
+      }
+      </style>
+
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -45,6 +62,11 @@
      }
      window.addEventListener('load', addDarkmodeWidget);
     </script>
+    <div class="btn-whatsapp">
+      <a href="https://api.whatsapp.com/send?phone=380955406608" target="_blank">
+      <img src="http://s2.accesoperu.com/logos/btn_whatsapp.png" alt="">
+      </a>
+      </div>
 
   </body>
 </html>
