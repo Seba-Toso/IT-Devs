@@ -27,7 +27,7 @@
              text-align:center;
              z-index:999;
       }
-
+     
       .cookies-box {
         position: fixed;
         bottom: 0;
@@ -130,12 +130,18 @@
             <p>IT-Devs utiliza Cookies para mejorar tu experiencia de Usuario. <a href="https://www.garrigues.com/es_ES/pagina/politica-cookies" target="_blank">Politica de Cookies.</a></p>
           </div>
           <div class="botones">
-            <button>Aceptar</button>
+            <button id="memo">Aceptar</button>
             <button id="close">Cerrar</button>
           </div>
         </div>
       </div>
-     
+     <script
+     src="https://code.jquery.com/jquery-3.2.1.min.js">
+     </script>
+     <script
+     src="https://unpkg.com/sweetalert/dist/sweetalert.min.js">
+     </script>
+
       <script>
         const btn_close = document.querySelector('#close')
         const cont_cookies = document.querySelector('.cookies-box')
@@ -144,6 +150,13 @@
           cont_cookies.style.bottom = '-200px'
         })
 
+        $('#memo').click(function(){
+          swal({
+            title:"Falta guardar la data en Momoria Cache",
+            text:"Hacerlo con JS",
+            icon:"error",
+          });
+        });
       
       </script>
 
