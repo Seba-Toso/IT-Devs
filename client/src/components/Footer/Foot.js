@@ -59,10 +59,6 @@ const Footer = () => {
                 </div>
                 <div className='SocialMediaButton Blog'>
                     <ReactIcon.IoNewspaperSharp className='SocialIcon' />
-<<<<<<< HEAD
-=======
-
->>>>>>> efb56c2f70188725f382715a6176a7e1098f21ee
                     <p className='SocialMediaName'><a href="https://cristian1534.github.io/Blog-IT-Devs.github.io" target='_blank' >Blog</a></p>
                 </div>
 
