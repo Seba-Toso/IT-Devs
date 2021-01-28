@@ -63,16 +63,6 @@ const Footer = () => {
                 </div>
 
             </div>
-
-            <h2 style={{color: "red"}}>Cookies</h2>
-                    <div className='SocialMediaButton GitHub'>
-                        <a href="#" onClick={handleClick}> Aceptar </a>
-                    </div>
-
-                    <div className='SocialMediaButton GitHub'>
-                        <a href="#" onClick={handleClickCancelar}> Cancelar </a>
-                    </div>
-
             <div className='ScrollTopButton'>
                 <RoundButton selectedIcon={<ReactIcon.IoChevronUp />} onScrollTop={scrollTopHandle} />
             </div>

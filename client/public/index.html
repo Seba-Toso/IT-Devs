@@ -27,6 +27,63 @@
              text-align:center;
              z-index:999;
       }
+
+      .cookies-box {
+        position: fixed;
+        bottom: 0;
+        background: rgb(74, 133, 221);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        box-shadow: -2px 0 15px 0px rgba(0, 0, 0, .5);
+        transition: all 600ms ease;
+      }
+
+      .cookies-box .container-cookies {
+        padding:20px 0;
+        max-width: 90%;
+        display: flex;
+        align-items:center;
+      }
+
+      .cookies-box .container-cookies .parrafo p{
+        color: #fff;
+      }
+      .cookies-box .container-cookies .parrafo p a {
+        color: #4846b4;
+      }
+      .cookies-box .container-cookies .botones {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+      }
+      .cookies-box .container-cookies .botones button {
+        background: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 200ms ease-in;
+        -webkit-transition:  all 200ms ease-in;
+        -moz-transition: all 200ms ease-in;
+        -ms-transition:  all 200ms ease-in;
+        -o-transition:  all 200ms ease-in;
+      }
+      .cookies-box .container-cookies .botones button:hover {    
+        background-color: rgb(75, 216, 32);
+
+      }
+      #close:hover {    
+        background-color: rgb(226, 27, 27);
+
+      }
+      .cookies-box .container-cookies .botones 
+        button:last-child{
+          margin-top:5px;
+        
+      }
+
       </style>
 
     <!--
@@ -67,6 +124,28 @@
       <img src="http://s2.accesoperu.com/logos/btn_whatsapp.png" alt="">
       </a>
       </div>
+      <div class="cookies-box">
+        <div class="container-cookies">
+          <div class="parrafo">
+            <p>IT-Devs utiliza Cookies para mejorar tu experiencia de Usuario. <a href="https://www.garrigues.com/es_ES/pagina/politica-cookies" target="_blank">Politica de Cookies.</a></p>
+          </div>
+          <div class="botones">
+            <button>Aceptar</button>
+            <button id="close">Cerrar</button>
+          </div>
+        </div>
+      </div>
+     
+      <script>
+        const btn_close = document.querySelector('#close')
+        const cont_cookies = document.querySelector('.cookies-box')
+
+        btn_close.addEventListener('click', ()=>{
+          cont_cookies.style.bottom = '-200px'
+        })
+
+      
+      </script>
 
   </body>
 </html>
