@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
+var colors = require('colors');
 
 const app = express();
 
@@ -18,6 +19,6 @@ app.listen(port, () => `Server running on port ${port}`);
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost:27017/jr-devs', {useMongoClient: true})
         .then(() => {
-            console.log('La conexión a MongoDB se ha realizado correctamente');
+            console.log(colors.green.bold('Conexion a MongoDB correcta'));
         })
         .catch(err => console.log(err));

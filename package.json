@@ -16,6 +16,7 @@
     "nodemon": "^1.19.4"
   },
   "dependencies": {
+    "colors": "^1.4.0",
     "concurrently": "^3.5.1",
     "cors": "^2.8.5",
     "darkmode-js": "^1.5.7",
