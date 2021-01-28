@@ -43,6 +43,10 @@
     margin-left: 12px;
     vertical-align: middle;
 }
+.SocialMediaName a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.315);
+}
 .text {
     font-size: 14px;
     color: #ddd
