@@ -53,6 +53,7 @@
     text-align: left;
     width: 60%;
     padding-left: 20%;
+    margin: auto;
 }
 .sloganText {
     font-size: 70px;
@@ -68,6 +69,8 @@
 .Three {
     animation: Slogan-FadeIn  8s;
 }
+
+
 .characteristic {
     background-color: rgb(235, 235, 235);
     margin-bottom: 0;
@@ -80,10 +83,11 @@
 .characteristics{
     width: 20%;
 }
+
 .ScrollBottomButton {
-    margin-bottom: 3rem;
     height: 3rem;
 }
+
 
 @keyframes Slogan-FadeIn {
     0% { 

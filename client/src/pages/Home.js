@@ -24,7 +24,7 @@ const Home = () =>{
             </div>
             <div className='section intro'>
                 <div className='logoContainer'>
-                    <img src='http://imgfz.com/i/Lfg5X6w.jpeg' height={'300px'} alt='Logo'/>
+                    <img src='assets/fullLogo.png' height={'400px'} alt='Logo'/>
                 </div>
                 <div className='sloganContainer'>
                     <h1 className='sloganText One'>DEVELOPING</h1>
@@ -79,7 +79,9 @@ const Home = () =>{
                     </div>
                 </div>
             </div>
-            <Slider/>
+            <div className='section'>
+                <Slider/>
+            </div>
             <Contact/>
         </div>
         

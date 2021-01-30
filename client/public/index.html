@@ -14,20 +14,24 @@
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     <style>
       .btn-whatsapp {
-            
-             margin-bottom: 33%;
-             width:65px;
-             height:70px;
-             color:#fff;
-             position: fixed;
-             right:30px;
-             bottom:20px;
-             border-radius:50%;
-             line-height:80px;
-             text-align:center;
-             z-index:999;
+        opacity: 50%;
+        width: 1rem;
+        height: 1rem;
+        color:#fff;
+        position: fixed;
+        right: 5.3rem;
+        bottom: 49.5rem;
+        border-radius:50%;
+        line-height:80px;
+        text-align:center;
+        z-index:999;
+        transition: all 200ms ease-in-out;
       }
-     
+      .btn-whatsapp:hover {
+        opacity: 100%;
+      }
+      
+
       .cookies-box {
         position: fixed;
         bottom: 0;
@@ -71,19 +75,17 @@
         -o-transition:  all 200ms ease-in;
       }
       .cookies-box .container-cookies .botones button:hover {    
-        background-color: rgb(75, 216, 32);
+        background-color: rgb(43, 148, 87);
 
       }
       #close:hover {    
-        background-color: rgb(226, 27, 27);
+        background-color: rgb(148, 43, 43);
 
       }
       .cookies-box .container-cookies .botones 
         button:last-child{
           margin-top:5px;
-        
       }
-
       </style>
 
     <!--
@@ -114,14 +116,28 @@
     -->
     <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
     <script>
-     function addDarkmodeWidget() {
-    new Darkmode().showWidget();
+      function addDarkmodeWidget() {
+      new Darkmode(
+        options = {
+          bottom: '42rem', // default: '32px'
+          right: '2.5rem', // default: '32px'
+          left: 'unset', // default: 'unset'
+          time: '1s', // default: '0.3s'
+          mixColor: '#fff', // default: '#fff'
+          backgroundColor: '#fff',  // default: '#fff'
+          buttonColorDark: '#100f2c',  // default: '#100f2c'
+          buttonColorLight: '#fff', // default: '#fff'
+          saveInCookies: true, // default: true,
+          label: '🌓', // default: ''
+          autoMatchOsTheme: true, // default: true
+        }
+      ).showWidget();
      }
      window.addEventListener('load', addDarkmodeWidget);
     </script>
     <div class="btn-whatsapp">
       <a href="https://api.whatsapp.com/send?phone=380955406608" target="_blank">
-      <img src="http://s2.accesoperu.com/logos/btn_whatsapp.png" alt="">
+      <img src="http://s2.accesoperu.com/logos/btn_whatsapp.png" alt="Wpp-Logo">
       </a>
       </div>
       <div class="cookies-box">

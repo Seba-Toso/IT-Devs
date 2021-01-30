@@ -9,7 +9,7 @@
     opacity: 50%;
     color: white;
     font-size: 30px;
-    transition: all 100ms ease-in-out;
+    transition: all 200ms ease-in-out;
     float: right;
 }
 .ButtonContainer:hover {
