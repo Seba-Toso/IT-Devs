@@ -56,7 +56,7 @@ const Routes = () => {
                     <div className='logo'>
                         {
                             isVisible && <React.Fragment> 
-                                <img src='assets/logoCircle.png' height={'80%'} className='logoCircle'/>
+                                <img src='assets/logoCircle.png' height={'80%'} className='logoCircle'  alt=""/>
                                 <h2 className='logoText'>IT-Devs</h2>
                             </React.Fragment>
                         }

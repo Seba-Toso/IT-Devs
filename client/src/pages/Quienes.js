@@ -28,7 +28,7 @@ const QuienesSomos = () =>{
                         return (
                             <div className='profileContainer' key={developer.id}>
                                 <div className="avatarContainer">
-                                    <img src={developer.avatar} id="avatar"/>
+                                    <img src={developer.avatar} id="avatar" alt=""/>
                                 </div>
                                 <div className='profileInformation'>
                                     <h3 className='profileName'>{developer.name}</h3>
