@@ -1,3 +1,7 @@
+@font-face {
+    font-family: LogoFont;
+    src: url('../../assets/Urban.ttf')
+}
 .navBar {
     position: fixed;
     display: flex;
@@ -43,7 +47,6 @@
     display: inline;
     width: 20%;
     height: 100%;
-    animation: logoIn 5s forwards ease-in;
 }
 .logoCircle {
     width: auto;
@@ -56,13 +59,17 @@
 .logoText {
     display: inline;
     width: fit-content;
-    font-weight: bolder;
+    font-weight: 550;
     font-size: 40px;
     vertical-align: bottom;
+    font-family: LogoFont;
 }
 
 @keyframes logoRotation {
-    0% { transform: rotate(0); }
-    100% { transform: rotate(360deg); }
-
+    0% { 
+        transform: rotate(0);
+    }
+    100% { 
+        transform: rotate(360deg); 
+    }
 }
