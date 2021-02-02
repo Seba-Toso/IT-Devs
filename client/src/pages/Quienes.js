@@ -22,7 +22,26 @@ const QuienesSomos = () =>{
 
     return(
         <div className='section profiles'>
-            <h1 className='profileTitle One'>MEET THE TEAM.</h1>
+            <div className='section'>
+                <div className='sloganContainer'>
+                        <h1 className='sloganText One'>SOMETHING</h1>
+                        <h1 className='sloganText Two'>ABOUT</h1>
+                        <h1 className='sloganText Three'>US.</h1>
+                </div>
+            </div>
+
+            <div className='section'>
+                <p className='aboutText'> Bla bla bla, bibidibabidibu. Supercalifragilisticoespialidoucious. Bla bla bla, bibidibabidibu. Supercalifragilisticoespialidoucious.
+                Bla bla bla, bibidibabidibu. Supercalifragilisticoespialidoucious.Bla bla bla, bibidibabidibu. Supercalifragilisticoespialidoucious.Bla bla bla, bibidibabidibu. Supercalifragilisticoespialidoucious.
+                Bla bla bla, bibidibabidibu. Supercalifragilisticoespialidoucious.Bla bla bla, bibidibabidibu. Supercalifragilisticoespialidoucious.Bla bla bla, bibidibabidibu. Supercalifragilisticoespialidoucious.
+                Bla bla bla, bibidibabidibu. Supercalifragilisticoespialidoucious.Bla bla bla, bibidibabidibu. Supercalifragilisticoespialidoucious.Bla bla bla, bibidibabidibu. Supercalifragilisticoespialidoucious.
+                Bla bla bla, bibidibabidibu. Supercalifragilisticoespialidoucious.Bla bla bla, bibidibabidibu. Supercalifragilisticoespialidoucious.Bla bla bla, bibidibabidibu. Supercalifragilisticoespialidoucious.
+                Bla bla bla, bibidibabidibu. Supercalifragilisticoespialidoucious.Bla bla bla, bibidibabidibu. Supercalifragilisticoespialidoucious.
+                </p>
+            </div>
+
+            <div className='section'>  
+                <h1 className='profileTitle One'>MEET THE TEAM.</h1>
                 {
                     developers.map( developer => {
                         return (
@@ -38,6 +57,7 @@ const QuienesSomos = () =>{
                         )
                     })
                 }
+            </div>
         </div>
     )
 

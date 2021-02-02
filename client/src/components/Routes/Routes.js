@@ -5,7 +5,7 @@ import { IoHome } from "react-icons/io5";
 import './Routes.css';
 
 import Home from '../../pages/Home';
-import About from '../..//pages/About';
+import Estimate from '../..//pages/Estimate';
 import Portfolio from '../../pages/Portfolio';
 import Tecnologias from '../../pages/Tecnologias';
 import Quienes from '../../pages/Quienes';
@@ -57,7 +57,7 @@ const Routes = () => {
                         {
                             isVisible && <React.Fragment> 
                                 <img src='assets/logoCircle.png' height={'80%'} className='logoCircle'/>
-                                <h2 className='logoText'>IT-Devs</h2>
+                                <h2 className='logoText'>IT-DEVS</h2>
                             </React.Fragment>
                         }
                     </div>
@@ -66,8 +66,8 @@ const Routes = () => {
                         <NavLink className='link' activeClassName="selected" to="/servicios">Servicios</NavLink>
                         <NavLink className='link' activeClassName="selected" to="/tecnologias">Tecnologías</NavLink>
                         <NavLink className='link' activeClassName="selected" to="/portfolio">Portfolio</NavLink>
-                        <NavLink className='link' activeClassName="selected" to="/quienes">Quienes</NavLink>
-                        <NavLink className='link' activeClassName="selected" to="/about">About</NavLink>
+                        <NavLink className='link' activeClassName="selected" to="/quienes">Conocenos</NavLink>
+                        <NavLink className='link' activeClassName="selected" to="/presupuesto">Presupuesta</NavLink>
                         <NavLink className='link' activeClassName="selected" exact to="/"
                             isActive={(match) => {
                                 if (!match) {
@@ -86,7 +86,7 @@ const Routes = () => {
             
             <Switch>
                 <Route path="/" exact component={ Home } />
-                <Route path="/about" component={ About } />
+                <Route path="/presupuesto" component={ Estimate } />
                 <Route path="/portfolio" component={ Portfolio } />
                 <Route path="/tecnologias" component={ Tecnologias } />
                 <Route path="/quienes" component={ Quienes } />
