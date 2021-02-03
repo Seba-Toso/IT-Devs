@@ -17,8 +17,8 @@ const port = 5000;
 app.listen(port, () => `Server running on port ${port}`);
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/jr-devs', {useMongoClient: true})
+mongoose.connect('mongodb://localhost:27017/jr-devs')
         .then(() => {
-            console.log(colors.green.bold('Conexion a MongoDB correcta'));
+            console.log(colors.yellow.bold('Conexion a MongoDB correcta'));
         })
-        .catch(err => console.log(err));
+        .catch(err =>  console.log(colors.rojo.bold(err)));
