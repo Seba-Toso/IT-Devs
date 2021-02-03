@@ -70,9 +70,17 @@
     animation: Slogan-FadeIn  8s;
 }
 
+.what {
+    background-color: rgb(235, 235, 235);
+}
+
+.projectSlider {
+    background-color: #222;
+    margin: 0 auto;
+}
+
 
 .characteristic {
-    background-color: rgb(235, 235, 235);
     margin-bottom: 0;
 }
 .characteristicsContainer {

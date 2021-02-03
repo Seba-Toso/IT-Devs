@@ -1,10 +1,8 @@
 #carousel{
-    width: 60%;
-    height: 60%;
-    position: absolute;
+    width: 100%;
+    height: 30rem;
     transform-style: preserve-3d;
     animation: rotation 20s infinite linear;
-    margin-bottom: 10%;
 }
 #carousel:hover{
     animation-play-state: paused;
@@ -12,11 +10,9 @@
 #carousel figure{
     display: block;
     position: absolute;
-    width: 90%;
-    height: 78%;
-    left: 10px;
-    top: 10px;
-    background: black;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
     overflow: hidden;
    
 }
@@ -33,12 +29,12 @@
 #carousel img{
     -webkit-filter: grayscale(1);
     cursor: pointer;
-    transition: all .5s ease;
+    transition: all 400ms ease-in-out;
     width: 90%;
 }
 #carousel img:hover{
     -webkit-filter: grayscale(0);
-    transform: scale(1.2,1.2);
+    transform: scale(1.1,1.1);
 }
 @keyframes rotation{
     from{

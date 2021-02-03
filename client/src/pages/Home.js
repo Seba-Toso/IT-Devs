@@ -22,6 +22,7 @@ const Home = () =>{
             <div className='ScrollBottomButton'>
                 <RoundButton selectedIcon={<ReactIcon.IoMailUnreadSharp/>} onScrollTop={scrollBottomHandle}/>
             </div>
+
             <div className='section intro'>
                 <div className='logoContainer'>
                     <img src='assets/fullLogo.png' height={'400px'} alt='Logo'/>
@@ -32,54 +33,46 @@ const Home = () =>{
                     <h1 className='sloganText Three'>SO EASY.</h1>
                 </div>
             </div>
+
             <div className='section what'>
                 <h1 className='title'>¿QUÉ HACEMOS?</h1>
                 <div className='InformationContainer'>
                     <div className='GridSection'>
-                        <h2 className='Subtitle'>Titulo Random</h2>
-                        <p className='Information'>Curabitur dapibus nec risus at porta. Maecenas eget justo vel leo cursus aliquet. Aliquam erat volutpat. Sed nec gravida arcu, at elementum velit. Suspendisse malesuada lacus nec mauris dapibus, vitae vehicula nunc efficitur. Aliquam consectetur magna ac felis volutpat, non euismod nunc efficitur. Proin ante nibh, vulputate eu euismod in, imperdiet quis lectus. Quisque ac est in orci tempus mattis vel sit amet dolor. Nulla viverra arcu at porta aliquet. </p>
+                        <h2 className='Subtitle'>Landing Pages</h2>
+                        <p className='Information'>
+                            Conectá con tus clientes a través de páginas modernas, directas, simples, llamativas y dale vida a tu proyecto en Internet.
+                            Bajo el diseño de una sola página vas a potenciar tus productos y campañas de marketing enfocadas aumentar la conversión de tu negocio. 
+                        </p>
                     </div>
                     <div className='GridSection'>
-                    <h2 className='Subtitle'>Titulo Random</h2>
-                        <p className='Information'>Pellentesque vel turpis sapien. Curabitur dapibus nec risus at porta. Maecenas eget justo vel leo cursus aliquet. Aliquam erat volutpat. Sed nec gravida arcu, at elementum velit. Suspendisse malesuada lacus nec mauris dapibus, vitae vehicula nunc efficitur. Aliquam consectetur magna ac felis volutpat, non euismod nunc efficitur. Proin ante nibh, vulputate eu euismod in, imperdiet quis lectus. Quisque ac est in orci tempus mattis vel sit amet dolor. Nulla viverra arcu at porta aliquet. </p>
+                    <h2 className='Subtitle'>Herramientas personalizadas</h2>
+                        <p className='Information'>
+                            Aumentá la experiencia usuario con herramientas que faciliten el acceso, la información, pagos o reservas de tu proyecto. 
+                        </p>
                     </div>
                     <div className='GridSection'>
-                    <h2 className='Subtitle'>Titulo Random</h2>
-                        <p className='Information'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et condimentum lacus, vel consequat quam. Pellentesque vel turpis sapien. Curabitur dapibus nec risus at porta. Maecenas eget justo vel leo cursus aliquet. Aliquam erat volutpat. Sed nec gravida arcu, at elementum velit. Suspendisse malesuada lacus nec mauris dapibus, vitae vehicula nunc efficitur. Aliquam consectetur magna ac felis volutpat, non euismod nunc efficitur. Proin ante nibh, vulputate eu euismod in, imperdiet quis lectus. Quisque ac est in orci tempus mattis vel sit amet dolor. Nulla viverra arcu at porta aliquet. </p>
+                    <h2 className='Subtitle'>Sistemas de Gestión</h2>
+                        <p className='Information'>
+                            Creá un sistema de gestión que te permita generar una mejor experiencia ya sea en tu emprendimiento, proyecto, trabajo u otros.
+                            Esto te va a permitir tener una mejor visualización y automatización de tareas.
+                        </p>
                     </div>
                     <div className='GridSection'>
-                        <h2 className='Subtitle'>Titulo Random</h2>
-                        <p className='Information'>Lorem ipsum dolor sit amet, vel consequat quam. Pellentesque vel turpis sapien. Curabitur dapibus nec risus at porta. </p>
+                        <h2 className='Subtitle'>Actualización y Mantenimiento</h2>
+                        <p className='Information'>
+                            Tomamos tu proyecto web para mantenerlo activo, actualizado, funcional y con gran performance.
+                        </p>
                     </div>
                 </div>
             </div>
             
             <div className='section characteristic'>
                 <h1 className='title'>CARACTERÍSTICAS DE NUESTROS PROYECTOS</h1>
-                <div className='characteristicsContainer'>
-                    <div className='characteristics'>
-                        <h2 className='Subtitle'>Titulo Random</h2>
-                        <p className='Information'>Curabitur dapibus nec risus at porta. Maecenas eget justo vel leo cursus aliquet. Aliquam erat volutpat. Sed nec gravida arcu, at elementum velit. Suspendisse malesuada lacus nec mauris dapibus, vitae vehicula nunc efficitur. Aliquam consectetur magna ac felis volutpat, non euismod nunc efficitur. Proin ante nibh, vulputate eu euismod in, imperdiet quis lectus. Quisque ac est in orci tempus mattis vel sit amet dolor. Nulla viverra arcu at porta aliquet. </p>
-                    </div>
-                    <div className='characteristics'>
-                    <h2 className='Subtitle'>Titulo Random</h2>
-                        <p className='Information'>Pellentesque vel turpis sapien. Curabitur dapibus nec risus at porta. Maecenas eget justo vel leo cursus aliquet. Aliquam erat volutpat. Sed nec gravida arcu, at elementum velit. Suspendisse malesuada lacus nec mauris dapibus, vitae vehicula nunc efficitur. Aliquam consectetur magna ac felis volutpat, non euismod nunc efficitur. Proin ante nibh, vulputate eu euismod in, imperdiet quis lectus. Quisque ac est in orci tempus mattis vel sit amet dolor. Nulla viverra arcu at porta aliquet. </p>
-                    </div>
-                    <div className='characteristics'>
-                    <h2 className='Subtitle'>Titulo Random</h2>
-                        <p className='Information'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et condimentum lacus, vel consequat quam. Pellentesque vel turpis sapien. Curabitur dapibus nec risus at porta. Maecenas eget justo vel leo cursus aliquet. Aliquam erat volutpat. Sed nec gravida arcu, at elementum velit. Suspendisse malesuada lacus nec mauris dapibus, vitae vehicula nunc efficitur. Aliquam consectetur magna ac felis volutpat, non euismod nunc efficitur. Proin ante nibh, vulputate eu euismod in, imperdiet quis lectus. Quisque ac est in orci tempus mattis vel sit amet dolor. Nulla viverra arcu at porta aliquet. </p>
-                    </div>
-                    <div className='characteristics'>
-                        <h2 className='Subtitle'>Titulo Random</h2>
-                        <p className='Information'>Lorem ipsum dolor sit amet, vel consequat quam. Pellentesque vel turpis sapien. Curabitur dapibus nec risus at porta. </p>
-                    </div>
-                    <div className='characteristics'>
-                        <h2 className='Subtitle'>Titulo Random</h2>
-                        <p className='Information'>Lorem ipsum dolor sit amet, vel consequat quam. Pellentesque vel turpis sapien. Curabitur dapibus nec risus at porta. </p>
-                    </div>
-                </div>
+                
+                
             </div>
-            <div className='section'>
+
+            <div className='section projectSlider'>
                 <Slider/>
             </div>
             <Contact/>
