@@ -21,8 +21,9 @@
     "cors": "^2.8.5",
     "darkmode-js": "^1.5.7",
     "express": "^4.16.2",
-    "mongoose": "^5.11.13",
+    "firebase": "^8.2.5",
     "react-icons": "^4.1.0",
-    "react-scripts": "^4.0.1"
+    "react-scripts": "^4.0.1",
+    "sweetalert": "^2.1.2"
   }
 }

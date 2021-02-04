@@ -1,26 +1,48 @@
-import React, {useState} from 'react'
-import './Contact.css'
+import React, {useState} from 'react';
+import { db } from '../../context/firebase';
+import swal from 'sweetalert';
+import './Contact.css';
 
-const Contact = props => {
+
+const Contact = () => {
     
-    const [contactData, setContactData] = useState('')
-    const [isValid, setIsValid] = useState(true)
-    //Poner validaciones acá
+   
+    const [name, setName ] = useState('')
+    const [email, setEmail ] = useState('')
+    const [phone, setPhone ] = useState('')
+    const [message, setMessage ] = useState('')
+    const [loader, setLoader] = useState(true)
 
 
-    //Handler
-    const NameInputHandler = (event) => {
-        console.log(event.target.value);
-        setContactData(event.target.value)
-    }
+    
 
-    const inputHandler = (event) => {
-        console.log(event.target.value);
-        setContactData(event.target.value)
-    }
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        setLoader(true)
 
-    const handleSubmit = () => {
-        console.log('Form submited');
+        db.collection('contacts').add({
+            name: name,
+            email: email,
+            phone: phone,
+            message: message
+        })
+        .then(() => {
+            swal({
+                title:"Tu mensaje fue enviado con Exito!",
+                text:"Te contactaremos a la brevedad",
+                icon:"success",
+              });
+            setLoader(false)
+        })
+        .catch((err) => {
+            alert(err.message)
+            setLoader(false)
+        })
+        setName('')
+        setEmail('')
+        setPhone('')
+        setMessage('')
+        
     }
 
     return (
@@ -28,22 +50,21 @@ const Contact = props => {
             <form onSubmit={handleSubmit} className='Form'>
                 <label className='Label'>
                 Full Name
-                    { !isValid && <span className='notValidMessage'> This field is not valid.</span>}
                 </label>
-                <input type='text' placeholder='Name' onChange={NameInputHandler} className={`Input`} />
+                <input type='text' placeholder='Name' onChange={(e)=> setName(e.target.value)} className={`Input`} value={ name }/>
                 <label className='Label'>
                     E-Mail
                 </label>
-                <input type='email' placeholder='Mail' onChange={inputHandler} className='Input' />
+                <input type='email' placeholder='Mail' onChange={(e)=> setEmail(e.target.value)} className='Input' value= { email }/>
                 <label className='Label'>
                     Phone Number
                 </label>
-                <input type='numeric' placeholder='Phone' onChange={inputHandler} className='Input' />
+                <input type='numeric' placeholder='Phone' onChange={(e)=> setPhone(e.target.value)} className='Input' value= { phone }/>
                 <label className='Label'>
                     Let us know your problems
                 </label>
-                <textarea type='text' placeholder='Message' onChange={inputHandler} className='Input Message' />
-                <input type="submit" value="Submit" className='Submit' />
+                <textarea type='text' placeholder='Message' onChange={(e)=> setMessage(e.target.value)} className='Input Message'value= { message }/>
+                <button  className="Submit" type="submit" style={ {background: loader ? "blue" : "rgb(2,2,110"}}>Enviar</button>
             </form>
             <div className='ContactImage'>
             </div>
