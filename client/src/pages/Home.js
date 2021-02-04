@@ -4,6 +4,8 @@ import RoundButton from '../components/UI/RoundButton/RoundButton'
 import * as ReactIcon from 'react-icons/io5'
 import './Home.css'
 import Slider from '../components/UI/Slider/Slider';
+import CharsTabs from '../components/UI/CharsTabs/CharsTabs'
+
 // import Cookies from 'universal-cookie';
  
 const Home = () =>{
@@ -68,6 +70,7 @@ const Home = () =>{
             
             <div className='section characteristic'>
                 <h1 className='title'>CARACTERÍSTICAS DE NUESTROS PROYECTOS</h1>
+                <CharsTabs />
             </div>
 
             <div className='section projectSlider'>
