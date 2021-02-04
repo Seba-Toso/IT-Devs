@@ -24,8 +24,7 @@ const Home = () =>{
             <div className='ScrollBottomButton'>
                 <RoundButton selectedIcon={<ReactIcon.IoMailUnreadSharp/>} onScrollTop={scrollBottomHandle}/>
             </div>
-
-            <div className='section intro'>
+            <div className='intro'>
                 <div className='logoContainer'>
                     <img src='assets/fullLogo.png' height={'400px'} alt='Logo'/>
                 </div>

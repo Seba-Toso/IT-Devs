@@ -14,9 +14,9 @@ const Contact = () => {
     const [loader, setLoader] = useState(true)
 
 
-    
 
     const handleSubmit = (e) => {
+
         e.preventDefault()
         setLoader(true)
 
@@ -27,10 +27,12 @@ const Contact = () => {
             message: message
         })
         .then(() => {
+           
             swal({
                 title:"Tu mensaje fue enviado con Exito!",
                 text:"Te contactaremos a la brevedad",
                 icon:"success",
+             
               });
             setLoader(false)
         })
@@ -51,7 +53,7 @@ const Contact = () => {
                 <label className='Label'>
                 Full Name
                 </label>
-                <input type='text' placeholder='Name' onChange={(e)=> setName(e.target.value)} className={`Input`} value={ name }/>
+                <input type='text' placeholder='Name' onChange={(e)=> setName(e.target.value)} className={`Input`} value={ name } id="user"/>
                 <label className='Label'>
                     E-Mail
                 </label>
@@ -66,8 +68,11 @@ const Contact = () => {
                 <textarea type='text' placeholder='Message' onChange={(e)=> setMessage(e.target.value)} className='Input Message'value= { message }/>
                 <button  className="Submit" type="submit" style={ {background: loader ? "blue" : "rgb(2,2,110"}}>Enviar</button>
             </form>
+            
             <div className='ContactImage'>
+                    <img src='assets/fullLogo.png' height={'400px'} alt='Logo'/>
             </div>
+            
         </div>
     )
 }
