@@ -9,7 +9,7 @@
     align-items: center;
     width: 100%;
     height: 4rem;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(5px);
 }
 .App-header {
@@ -54,7 +54,6 @@
     margin-left: 15%;
     margin-right:0.5rem;
     border-radius: 10px;
-    animation: logoRotation 10s infinite ease;
 }
 .logoText {
     display: inline;
@@ -63,13 +62,6 @@
     font-size: 40px;
     vertical-align: bottom;
     font-family: LogoFont;
+    color: rgb(63, 114, 190);
 }
 
-@keyframes logoRotation {
-    0% { 
-        transform: rotate(0);
-    }
-    100% { 
-        transform: rotate(360deg); 
-    }
-}

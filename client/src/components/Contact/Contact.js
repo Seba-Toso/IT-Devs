@@ -51,21 +51,21 @@ const Contact = () => {
         <div className='ContactContainer' >
             <form onSubmit={handleSubmit} className='Form'>
                 <label className='Label'>
-                Full Name
+                    Nombre
                 </label>
-                <input type='text' placeholder='Name' onChange={(e)=> setName(e.target.value)} className={`Input`} value={ name } id="user"/>
+                <input type='text' placeholder='Mi nombre es...' onChange={(e)=> setName(e.target.value)} className={`Input`} value={ name } id="user"/>
                 <label className='Label'>
                     E-Mail
                 </label>
-                <input type='email' placeholder='Mail' onChange={(e)=> setEmail(e.target.value)} className='Input' value= { email }/>
+                <input type='email' placeholder='Gran_mail@mail.com' onChange={(e)=> setEmail(e.target.value)} className='Input' value= { email }/>
                 <label className='Label'>
-                    Phone Number
+                    Teléfono de contacto
                 </label>
-                <input type='numeric' placeholder='Phone' onChange={(e)=> setPhone(e.target.value)} className='Input' value= { phone }/>
+                <input type='numeric' placeholder='123456789' onChange={(e)=> setPhone(e.target.value)} className='Input' value= { phone }/>
                 <label className='Label'>
-                    Let us know your problems
+                    Contanos tus problemas
                 </label>
-                <textarea type='text' placeholder='Message' onChange={(e)=> setMessage(e.target.value)} className='Input Message'value= { message }/>
+                <textarea type='text' placeholder='Me pasa que...' onChange={(e)=> setMessage(e.target.value)} className='Input Message'value= { message }/>
                 <button  className="Submit" type="submit" style={ {background: loader ? "blue" : "rgb(2,2,110"}}>Enviar</button>
             </form>
             

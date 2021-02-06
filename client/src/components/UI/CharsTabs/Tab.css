@@ -1,21 +1,23 @@
 .tab {
-    position: relative;
-    display: block;
     border: 1px solid #ccc;
     border-radius: 10px;
-    width: 20rem;
+    width: 25rem;
     height: 4rem;
     cursor: pointer;
     transition: all 400ms ease-in-out;
     margin-bottom: 1rem;
+    margin-left: 4rem;
+    background-color: #222;
+    color: white;
 }
 
-.tab:hover {
+.tab:hover, .active {
     border: 1px solid rgb(45, 81, 136);
     background-color: rgb(63, 114, 190);
-    color: white;
     margin-left: 2rem;
 }
+
+
 
 .tabName {
     line-height: 4rem;

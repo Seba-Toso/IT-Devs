@@ -7,7 +7,7 @@ const Tab = props => {
 
 
     return (
-        <div className='tab' onClick={() => alert('open characteristic')}>
+        <div className='tab' onMouseOver={props.hoverHandle}>
             <h4 className='tabName'>
                 {props.tabName || null}
             </h4>

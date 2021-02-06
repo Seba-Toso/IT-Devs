@@ -1,5 +1,6 @@
 import React from 'react';
 import './Tecnologias.css';
+import * as ReactIcon from 'react-icons/io5'
 
 
 const Tecnologias = () =>{
@@ -14,6 +15,7 @@ const Tecnologias = () =>{
             </div>
             <center>
             <ul>
+                <li><ReactIcon.IoLogoHtml5 className='loguito'/></li>
                 <li><img src="https://pluspng.com/img-png/logo-javascript-png-javascript-for-ile-y-ld-z-600.png" alt=""/></li>
                 <li><img src="https://www.technoscore.com/images/services/node-js-icon.png" alt=""/></li>
                 <li><img src="https://sixsigmatechnosoft.com/img/Technology-Logo/reactjs.png" alt=""/></li>

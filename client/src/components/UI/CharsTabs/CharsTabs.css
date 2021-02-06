@@ -1,3 +1,57 @@
 .CharsTab {
     background-image: url("https://images2.alphacoders.com/260/260640.jpg") !important;
+    margin-top: 5rem;
 }
+
+.tabs {
+    display: inline;
+}
+
+.CharDescriptionContainer {
+    position: absolute;
+    margin-left: -300px;
+    margin-top: 150px;
+    border-radius: 5px;
+    background-color: rgba(34, 34, 34, 0.8);
+    width: 36rem;
+    height: 18rem;
+    z-index: 2;
+}
+#charDescription {
+    margin: 0 auto;
+    margin-top: 18%;
+    color: white;
+    width: 80%;
+    height: 500px;
+    font-style: italic;
+    font-size: 18px;
+    text-align: center;
+}
+
+#CharImage {
+    margin-left: 5rem;
+    height: 100%;
+    border-radius: 5px;
+    border: 2px solid rgb(63, 114, 190);
+}
+
+.tabImage {
+    position: absolute;
+    display: inline;
+    height: 500px;
+    margin-top: -300px;
+    margin-left: 2rem;
+    animation: Image-FadeIn ease 1s;
+}
+
+@keyframes Image-FadeIn {
+    0% { 
+        opacity: 0;
+        padding-left: 5rem;
+    }
+    100% {
+        opacity: 1;
+        padding-left: 0;
+    }
+}
+

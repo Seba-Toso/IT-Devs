@@ -1,5 +1,4 @@
 .section {
-    border: 1px solid rgba(238, 238, 238, 0.568);
     min-height: 35rem;
     height: fit-content;
     margin: 0 auto;
@@ -11,14 +10,28 @@
     text-align: left;
     font-weight: 400;
     height: 3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     border-bottom: 1px solid #ddd;
     color: rgb(63, 114, 190);
 }
-.Proyectos {
-    width: 80%;
-    margin: 0 auto;
+.Subtitle {
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 1rem;
 }
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    background-image: url("https://images2.alphacoders.com/260/260640.jpg") !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+    margin-bottom: 5%;
+}
+
+
 .InformationContainer {
     width: 90%;
     margin: 0 auto;
@@ -26,11 +39,6 @@
     grid-template-columns: 50% 50%;
     grid-template-rows: 15rem 15rem;
     grid-gap: 3rem;
-}
-.Subtitle {
-    font-weight: 500;
-    text-align: left;
-    margin-bottom: 1rem;
 }
 .Information {
     text-align: justify;
@@ -41,20 +49,6 @@
     justify-content: center;
 }
 
-.intro {
-    display: flex;
-    flex-direction: row;
-    margin:2%;
-    background-image: url("https://images2.alphacoders.com/260/260640.jpg") !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    background-position: center !important;
-    background-attachment: fixed !important;
-    margin-bottom: 5%;
-    
-    
-   
-}
 
 .logoContainer {
     display: inline;
@@ -83,19 +77,18 @@
 
 .what {
     background-color: rgb(235, 235, 235);
-    
 }
 
+.Proyectos {
+    width: 80%;
+    margin: 0 auto;
+}
 .projectSlider {
     background-color: #222;
     margin: 0 auto;
 }
 
 
-.characteristic {
-    margin-bottom: 0;
-    
-}
 .characteristicsContainer {
     width: 100%;
     display: flex;
@@ -106,7 +99,8 @@
 }
 
 .ScrollBottomButton {
-    height: 3rem;
+    position: absolute;
+    right: 0;
 }
 
 
