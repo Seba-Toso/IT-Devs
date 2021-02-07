@@ -50,3 +50,28 @@
     transform: rotateY(0);
   }
 }
+
+.icon {
+  font-size: 80px;
+}
+.html5 {
+  color: orangered;
+}
+.github {
+  color: rgb(39, 1, 39);
+}
+.mongo {
+  color: rgb(45, 143, 45);
+}
+.react {
+  color: aqua;
+}
+.node {
+  color: green;
+}
+.css {
+  color: dodgerblue;
+}
+.js {
+  color: yellow;
+}

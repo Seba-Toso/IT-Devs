@@ -70,7 +70,7 @@ const Contact = () => {
             </form>
             
             <div className='ContactImage'>
-                    <img src='assets/fullLogo.png' height={'400px'} alt='Logo'/>
+                    <img src='assets/contactForm.png' height={'400px'} alt='Contact Image'/>
             </div>
             
         </div>
