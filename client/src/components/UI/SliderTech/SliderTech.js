@@ -13,7 +13,7 @@ const SliderTech = () => {
                     <ReactIcons.DiJsBadge className='icon js' />
                 </div>
                 <div className="single-img img-two">
-                    <ReactIcons.DiNodejs className='icon node' />      
+                    <ReactIcons.DiNodejsSmall className='icon node' />      
                 </div>
                 <div className="single-img img-three">
                     <ReactIcons.DiMongodb className='icon mongo' />       
