@@ -17,7 +17,7 @@ const QuienesSomos = () =>{
                         <h1 className='sloganText Three'>TEAM</h1>
                     </div>
             </div>
-            <div className="Container">
+            <div className="Container projectSlider section">
                 <div className="Card">         
                     <img src="http://imgfz.com/i/uS40TwE.jpeg" alt="" />
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting </p>

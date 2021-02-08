@@ -1,11 +1,9 @@
 
 .Container {
     width: 100%;
-    max-width: 1200px;
     height: 430px;
     display: flex;
     margin-bottom: 10%;
-    margin-left: 25%;
 }
 .Container .Card {
     width: 330px;
@@ -17,6 +15,8 @@
     text-align: center;
     transition: all 0.25s;
     background: rgb(236, 242, 245);
+    margin-left: 15%;
+    
 }
 
 .Container .Card:hover {
@@ -53,11 +53,16 @@
 .section {
     min-height: 35rem;
     height: fit-content;
-    margin: 0 auto;
-    margin-bottom: 8rem; 
+    margin-bottom: 10%; 
     padding: 10rem;
     width: 100%;
 }
+
+.projectSlider {
+    background: linear-gradient(to left, #73bae4, #fff);
+    margin: 0 auto;
+}
+
 .intro {
     display: flex;
     flex-direction: row;
@@ -68,5 +73,4 @@
     background-attachment: fixed !important;
     margin-bottom: 5%;
 }
-
 
