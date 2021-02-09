@@ -5,18 +5,24 @@ import './Slider.css';
 const Slider = () =>{
     return(
 
-        <div className="slider">
-            <ul>
-                <li><img src="http://imgfz.com/i/o5IHu0b.jpeg" alt="project1" /></li>
-                <li><img src="http://imgfz.com/i/ojQLO6e.jpeg" alt="project2" /></li>
-                <li><img src="http://imgfz.com/i/o5IHu0b.jpeg" alt="project3" /></li>
-                <li><img src="http://imgfz.com/i/ojQLO6e.jpeg" alt="project4" /></li>
-            </ul>
-        </div>
-
+        <section id="slider">
+        <input type="radio" name="slider" id="s1" checked/>
+        <input type="radio" name="slider" id="s2"/>
+        <input type="radio" name="slider" id="s3"/>
+        <input type="radio" name="slider" id="s4"/>
+      
+      
+        <label for="s1" id="slide1">E-Commerce</label>
+        <label for="s2" id="slide2">E-Commerce</label>
+        <label for="s3" id="slide3">E-Commerce</label>
+        <label for="s4" id="slide4">E-Commerce</label>
+        
+        </section>
 
     )
 };
 
 export default Slider;
+
+
 
