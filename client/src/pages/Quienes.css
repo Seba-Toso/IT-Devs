@@ -5,6 +5,7 @@ p {
     color: rgb(43, 39, 39);
     width: 30px;
 }
+
 #linkedin {
     color:rgb(36, 156, 231);
     width: 30px;
@@ -91,3 +92,5 @@ p {
     margin-bottom: 5%;
 }
 
+
+.logoContainer img:hover {filter: saturate(180%);}

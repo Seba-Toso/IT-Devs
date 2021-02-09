@@ -21,12 +21,12 @@ const QuienesSomos = () =>{
             <div className='logoContainer'>
                     <img src='assets/fullLogo.png' height={'400px'} alt='Logo'/>
             
-            <p>IT-Devs es un Proyecto emprendedor diseñado y dirigido por dos</p>
-            <p>Developers en entorno de Stack MERN. El objetivo principal del</p>
-            <p>emprendimiento es generar Soluciones de Desarrollo Web para</p>
-            <p>quienes quieren ingresar sus Negocios en el mundo del Comercio</p>
-            <p>Electrónico y así llegar mejor a potenciales Clientes y generar</p>
-            <p>mayores ingresos, deja que la Tecnología lo haga por Vos.</p>
+            <p>IT-Devs es un Proyecto emprendedor diseñado y dirigido por dos
+            Developers en entorno de Stack MERN. El objetivo principal del</p>
+            <p>emprendimiento es generar Soluciones de Desarrollo Web para
+            quienes quieren ingresar sus Negocios en el mundo del Comercio</p>
+            <p>Digital y así llegar mejor a potenciales Clientes y generar
+            mayores ingresos, deja que la Tecnología lo haga por Vos.</p>
             </div>
             </div>
             <div className="Container projectSlider section">
