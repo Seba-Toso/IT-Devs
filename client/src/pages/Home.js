@@ -29,9 +29,9 @@ const Home = () =>{
                     <img src='assets/fullLogo.png' height={'400px'} alt='Logo'/>
                 </div>
                 <div className='sloganContainer'>
-                    <h1 className='sloganText One'>DEVELOPING</h1>
-                    <h1 className='sloganText Two'>WAS NEVER</h1>
-                    <h1 className='sloganText Three'>SO EASY.</h1>
+                    <h1 className='sloganText One'>DESARROLLAR</h1>
+                    <h1 className='sloganText Two'>NUNCA FUE</h1>
+                    <h1 className='sloganText Three'>TAN FÁCIL.</h1>
                 </div>
             </div>
 

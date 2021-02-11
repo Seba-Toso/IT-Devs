@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Loader from '../src/components/UI/Loader/Loader';
+import Loader from '../src/components/Loader/Loader';
 import './App.css';
 
 import Routes from './components/Routes/Routes'
