@@ -9,9 +9,6 @@ const Portfolio = () =>{
   return(
         <div>
             <div className='section intro'>
-                <div className='logoContainer'>
-                    <img src='assets/fullLogo.png' height={'400px'} alt='Logo'/>
-                </div>
                 <div className='sloganContainer'>
                     <h1 className='sloganText One'>CONOCE</h1>
                     <h1 className='sloganText Two'>NUESTROS</h1>
