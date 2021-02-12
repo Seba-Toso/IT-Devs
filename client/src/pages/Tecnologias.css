@@ -1,40 +1,26 @@
-.Tools {
-    display: flex;
-    flex-direction: row;
-    background-image: url("https://images2.alphacoders.com/260/260640.jpg") !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    background-position: center !important;
-    background-attachment: fixed !important;
-    margin-bottom: 5%;
-}
-.section {
-    min-height: 35rem;
-    height: fit-content;
-    margin: 0 auto;
-    margin-bottom: 8rem; 
-    padding: 10rem;
-    width: 100%;
-}
-
+  
 .techs {
-    position:  absolute;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 800;
-    color: black;
-    background: #f0f0f0;
-}
-.script-bf-box{
-    width: 300px;
-    height: 1rem;
-    background: black;
-    margin: 5px;
-    will-change: transform;
+    height: 35rem;
+    max-height: 35rem;
 }
 
-.script-bf-box:hover {
-    background: hotpink;
+.simple-trans-main > div {
+    cursor: pointer;
+    position: absolute;
+    bottom: 6rem;
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: white;
+    font-weight: 800;
+    font-size: 12em;
+    will-change: transform, opacity;
+    text-shadow: 0px 2px 40px #00000020, 0px 2px 5px #00000030;
 }
