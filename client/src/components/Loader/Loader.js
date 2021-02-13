@@ -11,7 +11,7 @@ const Loader = () => {
   
     return (
         <div>
-            <div class="lds-hourglass loader" id="loader">
+            <div className="lds-hourglass loader" id="loader">
                 <h1>PREPARANDO TODO PARA TU MEJOR EXPERIENCIA...</h1>
             </div>
         </div>

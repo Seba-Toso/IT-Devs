@@ -44,7 +44,6 @@ const Contact = () => {
         setEmail('')
         setPhone('')
         setMessage('')
-        
     }
 
     return (
@@ -70,7 +69,7 @@ const Contact = () => {
             </form>
             
             <div className='ContactImage'>
-                    <img src='assets/contactForm.png' height={'400px'} alt='Contact Image'/>
+                    <img src='assets/contactForm.png' height={'400px'} alt='Contact background'/>
             </div>
             
         </div>

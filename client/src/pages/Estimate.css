@@ -1,0 +1,128 @@
+.estimate {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.buttonsContainer {
+    width: 70%;
+    height: 100%;
+    text-align: right;
+}
+
+.btn {
+    min-width: 6rem;
+    border-radius: 3rem;
+    margin: 10px;
+    background: linear-gradient(to left, rgb(63, 160, 190), rgb(63, 122, 190));
+    opacity: 0.5;
+    transition: all 300ms ease-in-out;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.estimatorDetails {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 5px;
+    text-align: left;
+}
+
+.detailTitle {
+    font-size: 42px;
+    padding: 10px;
+}
+
+.detailText {
+    width: 90%;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.totalContainer {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.totalSection {
+    width: 60%;
+    height: 36rem;
+    background: linear-gradient(to top, rgb(63, 160, 190), rgb(63, 122, 190));
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 auto;
+    color: white;
+}
+
+
+.totalTitle {
+    font-weight: bold;
+    text-align: left;
+}
+
+#totalPrice {
+    font-weight: bolder;
+    font-size: 42px;
+    padding: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.totalDetails {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 18px;
+}
+
+.detailName {
+    text-align: left;
+}
+
+.detailPrice {
+    text-align: right;
+}
+
+.sendButton {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 0 auto;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.sendButton:hover {
+    opacity: 1;
+    color: rgb(63, 122, 190);
+    border: 1px solid rgb(63, 122, 190);
+    font-weight: 500;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(200, 233, 243));
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.estimatorForm {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.estimatorInput {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(34, 34, 34, 0.3);
+    color: white;
+    padding: 8px;
+    margin: 2px;
+    opacity: 0.5;
+} 
+
+.estimatorInput::placeholder {
+    color: white;
+}

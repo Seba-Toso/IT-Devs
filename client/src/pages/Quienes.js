@@ -56,7 +56,7 @@ const QuienesSomos = () =>{
                         <div id="github"><IconName.FaGithub/></div>  
                         <div id="linkedin"><IconName.FaLinkedin/></div>
                         <div id="youtube"><IconName.FaYoutube/></div>
-                        <div id="youtube"><IconName.FaInstagram/></div>
+                        <div id="instagram"><IconName.FaInstagram/></div>
                     </div>
                 </div>
                 
