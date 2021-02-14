@@ -65,7 +65,7 @@ const Contact = () => {
                     Contanos tus problemas
                 </label>
                 <textarea type='text' placeholder='Me pasa que...' onChange={(e)=> setMessage(e.target.value)} className='Input Message'value= { message }/>
-                <button  className="Submit" type="submit" style={ {background: loader ? "blue" : "rgb(2,2,110"}}>Enviar</button>
+                <button  className="Submit" type="submit">Enviar</button>
             </form>
             
             <div className='ContactImage'>
