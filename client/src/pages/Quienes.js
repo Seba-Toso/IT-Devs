@@ -42,9 +42,9 @@ const QuienesSomos = () =>{
                     <p onClick={()=> setSelectedProfile('Cristian')}>Conoceme</p>
                     {/*<p></p>*/}
                     <div className="Links">
-                        <div id="github"><IconName.FaGithub/></div>  
-                        <div id="linkedin"><IconName.FaLinkedin/></div>
-                        <div id="youtube"><IconName.FaYoutube/></div>
+                        <div id="github"><a href="https://github.com/cristian1534" target="_blank"><IconName.FaGithub/></a></div>  
+                        <div id="linkedin"><a href="https://www.linkedin.com/in/cristian-machuca-8883a01b2/" target="_blank"><IconName.FaLinkedin/></a></div>
+                        <div id="youtube"><a href="https://www.youtube.com/channel/UCVODmr43Nj3sr3tSqeVk3iA" target="_blank"><IconName.FaYoutube/></a></div>
                     </div>
                 </div>
 
@@ -63,7 +63,7 @@ const QuienesSomos = () =>{
                 <div className='profileData'>
                     {
                         !selectedProfile ? 
-                        <h5 className='profileTitle'>Some text</h5> 
+                        <h5 className='profileTitle'>Somos nuestro Staff</h5> 
                         :
                         <React.Fragment>
                         <h5 className='profileTitle'>{selectedProfile === 'Cristian' ? 'FullStack developer' : 'Front-End developer'}</h5>
@@ -71,15 +71,19 @@ const QuienesSomos = () =>{
                             <p className='profileDescription'>
                                 {
                                     selectedProfile === 'Cristian' ? 
-                                    'Desarrollador FullStack MERN. Estudiante de Desarrollo de Software. Emprendedor Web.' 
+                                    'Desarrollador FullStack MERN. Estudiante de Desarrollo de Software, en mis tiempos libres me gusta despejarme al aire libre y surfear por la web buscando nuevas habilidades de desarrollo. Emprendedor Web.' 
                                     : 
                                     'Buen día, buenas tardes, buenas noches! Me gusta aprender haciendo y hacer aprendiendo, disfruto de las cosas simples, trato de viajar con poco equipaje y camino mi vida con optimismo y alegría. Ésto es lo que me define y lo llevo a donde quiera que voy, mi trabajo, mi familia, amigos y estudio.'
                                 }
                             </p>
                             <ul className='profileList'>
                                 <li>JavaScript Vanilla</li>
-                                <li>ReactJS & React Native</li>
+                                <li>ReactJS</li>
+                                <li>React Native</li>
                                 <li>NodeJS</li>
+                                <li>Mongo</li>
+                                <li>Express</li>
+                                <li>github</li>
                             </ul>
                         </div>
                     

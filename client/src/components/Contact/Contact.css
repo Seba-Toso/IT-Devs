@@ -31,6 +31,11 @@
     border-radius: 5px;
     padding: 5px;
     font-size: 16px;
+   
+}
+.Input:focus {
+    outline: solid 2px rgb(74, 133, 221);
+    box-shadow: 0 0 15px rgb(142, 173, 219);;
 }
 .Message {
     height: 8rem;
