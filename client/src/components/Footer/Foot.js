@@ -45,22 +45,21 @@ const Footer = () => {
                 </p>
             </div>
             <div className='SocialMediaContainer'>
-                <div className='SocialMediaButton GitHub'>
-                    <ReactIcon.IoLogoGithub className='SocialIcon' />
-                    <p className='SocialMediaName'>Github</p>
-                </div>
-                <div className='SocialMediaButton LinkedIn'>
-                    <ReactIcon.IoLogoLinkedin className='SocialIcon' />
-                    <p className='SocialMediaName'>LinkedIn</p>
-                </div>
-                <div className='SocialMediaButton Mail'>
-                    <ReactIcon.IoMailSharp className='SocialIcon' />
-                    <p className='SocialMediaName'><a href="/">Mail</a></p>
-                </div>
-                <div className='SocialMediaButton Blog'>
-                    <ReactIcon.IoNewspaperSharp className='SocialIcon' />
-                    <p className='SocialMediaName'><a href="https://cristian1534.github.io/Blog-IT-Devs.github.io" target='_blank' >Blog</a></p>
-                </div>
+                
+
+                <a className='SocialMediaName SocialMediaButton GitHub' href="https://cristian1534.github.io/Blog-IT-Devs.github.io" target='_blank'>
+                    <ReactIcon.IoLogoGithub className='SocialIcon' />  GitHub
+                </a>
+                <a className='SocialMediaName SocialMediaButton LinkedIn' href="https://cristian1534.github.io/Blog-IT-Devs.github.io" target='_blank'>
+                    <ReactIcon.IoLogoLinkedin className='SocialIcon' />  LinkedIn
+                </a>
+                <a className='SocialMediaName SocialMediaButton Mail' href="https://cristian1534.github.io/Blog-IT-Devs.github.io" target='_blank'>
+                    <ReactIcon.IoMailSharp className='SocialIcon' />  Mail
+                </a>
+                <a className='SocialMediaName SocialMediaButton Blog' href="https://cristian1534.github.io/Blog-IT-Devs.github.io" target='_blank'>
+                    <ReactIcon.IoNewspaperSharp className='SocialIcon' />  Blog
+                </a>
+                
 
             </div>
             <div className='ScrollTopButton'>

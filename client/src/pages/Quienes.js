@@ -36,15 +36,14 @@ const QuienesSomos = () =>{
             </div>
             <div className="Container projectSlider section">
 
-                <div className='Card'  >
+                <div className='Card'>
                     <img className='avatar' src="http://imgfz.com/i/uS40TwE.jpeg" alt="Avatar Cristian Machuca" />
                     <h2 className='avatarName'>Cristian Machuca</h2>
                     <p onClick={()=> setSelectedProfile('Cristian')}>Conoceme</p>
-                    {/*<p></p>*/}
                     <div className="Links">
-                        <div id="github"><a href="https://github.com/cristian1534" target="_blank"><IconName.FaGithub/></a></div>  
-                        <div id="linkedin"><a href="https://www.linkedin.com/in/cristian-machuca-8883a01b2/" target="_blank"><IconName.FaLinkedin/></a></div>
-                        <div id="youtube"><a href="https://www.youtube.com/channel/UCVODmr43Nj3sr3tSqeVk3iA" target="_blank"><IconName.FaYoutube/></a></div>
+                        <a id="github" href="https://github.com/cristian1534" target="_blank"><IconName.FaGithub/></a>
+                        <a id="linkedin" href="https://www.linkedin.com/in/cristian-machuca-8883a01b2/" target="_blank"><IconName.FaLinkedin/></a>
+                        <a id="youtube" href="https://www.youtube.com/channel/UCVODmr43Nj3sr3tSqeVk3iA" target="_blank"><IconName.FaYoutube/></a>
                     </div>
                 </div>
 
@@ -53,10 +52,10 @@ const QuienesSomos = () =>{
                     <h2 className='avatarName'>Sebastian Toso</h2>
                     <p onClick={()=> setSelectedProfile('Sebastian')}>Conoceme</p>
                     <div className="Links">
-                        <div id="github"><IconName.FaGithub/></div>  
-                        <div id="linkedin"><IconName.FaLinkedin/></div>
-                        <div id="youtube"><IconName.FaYoutube/></div>
-                        <div id="instagram"><IconName.FaInstagram/></div>
+                        <a id="github" href="https://github.com/Seba-Toso" target="_blank"><IconName.FaGithub/></a>  
+                        <a id="linkedin" href="www.linkedin.com/in/sebastiangtoso" target="_blank"><IconName.FaLinkedin/></a>
+                        <a id="youtube" href="#" target="_blank"><IconName.FaYoutube/></a>
+                        <a id="instagram" href="https://www.instagram.com/sebatoso/?hl=es-la" target="_blank"><IconName.FaInstagram/></a>
                     </div>
                 </div>
                 
@@ -83,7 +82,8 @@ const QuienesSomos = () =>{
                                 <li>NodeJS</li>
                                 <li>Mongo</li>
                                 <li>Express</li>
-                                <li>github</li>
+                                <li>Github</li>
+                                <li>GraphQL</li>
                             </ul>
                         </div>
                     

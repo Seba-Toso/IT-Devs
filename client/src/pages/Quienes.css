@@ -103,13 +103,13 @@
     background-color: #222;
 }
 
-.Links div {
+.Links a {
     font-size: 32px;
     filter: grayscale(100%);
     transition: all 300ms ease-in-out;
     cursor: pointer;
 }
-.Links div:hover {
+.Links a:hover {
     filter: grayscale(0%);
 }
 #github {
