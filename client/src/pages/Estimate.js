@@ -1,24 +1,75 @@
-import React, {useState} from 'react';
+import React, {useState, useReducer, useCallback} from 'react';
 import { db } from '../context/firebase';
 import swal from 'sweetalert';
+import PriceButtons from '../components/UI/PriceButtons/PriceButtons'
+import * as ReactIcons from 'react-icons/bi'
 import './Estimate.css'
 
+
+// ---- REDUCER ----
+// actions
+const PRICE_UPDATE = 'PRICE_UPDATE'
+const calculatePriceReducer = (state, action) => {
+    if(action.type === PRICE_UPDATE){
+        let totalPrice = state.totalPrice
+        let backendPrice = state.backendPrice
+        let frontendPrice = state.frontendPrice
+        let userInterfacePrice = state.userInterfacePrice
+        if(action.addTo === 'both'){
+            const updatedBackendPrice = backendPrice + action.price
+            const updatedFrontendPrice = frontendPrice + action.price
+            const updatedPrice = totalPrice + action.price + action.price + userInterfacePrice
+            return {...state, backendPrice: updatedBackendPrice, frontendPrice: updatedFrontendPrice, totalPrice: updatedPrice}
+        }
+        if(action.addTo === 'UI'){
+            const updatedUserInterfacePrice = userInterfacePrice + action.price
+            const updatedPrice = totalPrice + action.price
+            return {...state, userInterfacePrice: updatedUserInterfacePrice, totalPrice: updatedPrice}
+        }
+    }
+    return state;
+}
+
+
+
+// ---- PRINCIPAL COMPONENT -----
 const Estimate = () =>{
 
-    const totalPrice = 4000
-    const backendPrice = 0
-    const frontendPrice = 0
-    const userInterfacePrice = 0
-    
+
+    // ---- REDUCER INITIAL CONFIGURATION ---
+    const [estimatorPriceState, dispatchEstimatorPriceState] = useReducer( calculatePriceReducer, {
+        totalPrice: 4000,
+        backendPrice: 0,
+        frontendPrice: 0,
+        userInterfacePrice: 0
+    })
+
+    const changePriceHandler = useCallback(({identifier, price, addTo}) => {
+        if(identifier === 'off'){
+            dispatchEstimatorPriceState({
+                type: 'PRICE_UPDATE',
+                price: 0-price, 
+                addTo
+            })
+        } 
+        else{
+            dispatchEstimatorPriceState({
+                type: 'PRICE_UPDATE',
+                price, 
+                addTo
+            })
+        }
+    },[dispatchEstimatorPriceState])
+
+
+    // ---- ENVÍO DE FORMULARIO ----
     const [name, setName ] = useState('')
     const [email, setEmail ] = useState('')
     const [phone, setPhone ] = useState('')
     const [message, setMessage ] = useState('')
     const [loader, setLoader] = useState(true)
 
-
     const handleSubmit = (e) => {
-
         e.preventDefault()
         setLoader(true)
 
@@ -33,8 +84,7 @@ const Estimate = () =>{
             swal({
                 title:"Tu mensaje fue enviado con Exito!",
                 text:"Te contactaremos a la brevedad",
-                icon:"success",
-             
+                icon:"success"
               });
             setLoader(false)
         })
@@ -47,6 +97,7 @@ const Estimate = () =>{
         setPhone('')
         setMessage('')
     }
+
 
     return(
         <div>
@@ -68,50 +119,26 @@ const Estimate = () =>{
                             podés solicitar un encuentro al final de esta sección.  
                         </p>
                     </div>
-                    <div className='btn btn-primary'>Diseño de UI / UX</div>
-                    <div className='btn btn-primary'>Login con Redes Sociales</div>
-                    <div className='btn btn-primary'>Integración con Whatsapp</div>
-                    <div className='btn btn-primary'>Registro de usuarios</div>
-                    <div className='btn btn-primary'>Registro con Email</div> 
-                    <div className='btn btn-primary'>Aceptar Pagos</div> 
-                    <div className='btn btn-primary'>Google Maps</div> 
-                    <div className='btn btn-primary'>Mensajería on-Site</div> 
-                    <div className='btn btn-primary'>Lista de Tareas</div> 
-                    <div className='btn btn-primary'>Administración de pagos</div> 
-                    <div className='btn btn-primary'>Carrito de compras</div> 
-                    <div className='btn btn-primary'>Perfiles de usuario</div> 
-                    <div className='btn btn-primary'>Carga de archivos</div>
-                    <div className='btn btn-primary'>Música / Video</div> 
-                    <div className='btn btn-primary'>Galería de Fotos</div>  
-                    <div className='btn btn-primary'>Búsquedas on-Site</div> 
-                    <div className='btn btn-primary'>Filtros</div> 
-                    <div className='btn btn-primary'>Adaptación Mobile</div> 
-                    <div className='btn btn-primary'>Actualización en tiempo real</div> 
-                    <div className='btn btn-primary'>Administración de usuarios</div> 
-                    <div className='btn btn-primary'>Integración de calendarios</div> 
-                    <div className='btn btn-primary'>Sistema de gestión</div> 
-                    <div className='btn btn-primary'>Reservas</div> 
-                    <div className='btn btn-primary'>Reportes diarios / semanal / mensual</div> 
-                    <div className='btn btn-primary'>Revisión y mantenimiento</div> 
+                    <PriceButtons changePriceHandler={changePriceHandler}/>
                 </div>
                 <div className='totalContainer'>
                     <div className='totalSection'>
                         <h6 className='totalTitle'>Total Estimado</h6>
-                        <h3 id='totalPrice'>${totalPrice}</h3>
+                        <h3 id='totalPrice'>${estimatorPriceState.totalPrice}</h3>
                         <div className='totalDetails'>
                             <p className='detailName'>BackEnd</p>
-                            <p className='detailPrice'>${backendPrice}</p>
+                            <p className='detailPrice'>${estimatorPriceState.backendPrice}</p>
                             <p className='detailName'>FrontEnd</p>
-                            <p className='detailPrice'>${frontendPrice}</p>
+                            <p className='detailPrice'>${estimatorPriceState.frontendPrice}</p>
                             <p className='detailName'>Diseño de UI</p>
-                            <p className='detailPrice'>${userInterfacePrice}</p>
+                            <p className='detailPrice'>${estimatorPriceState.userInterfacePrice}</p>
                         </div>
                         <form onSubmit={handleSubmit} className='estimatorForm'>
                             <input type='text' placeholder='Nombre' onChange={(e)=> setName(e.target.value)} className='estimatorInput' value={ name } id="user"/>
                             <input type='email' placeholder='Mail' onChange={(e)=> setEmail(e.target.value)} className='estimatorInput' value= { email }/>
                             <input type='numeric' placeholder='Teléfono' onChange={(e)=> setPhone(e.target.value)} className='estimatorInput' value= { phone }/>
                         </form>
-                        <div className='sendButton' type='submit'>Solicitar Encuentro</div>
+                        <div className='sendButton' type='submit'>{loader? 'Solicitar Encuentro' : <ReactIcons.BiLoaderCircle className='loaderIcon' /> }</div>
                     </div>
                 </div>
             </div>

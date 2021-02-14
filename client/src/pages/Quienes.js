@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-
-
 import * as IconName from "react-icons/fa";
 import './Quienes.css';
 
@@ -41,9 +39,9 @@ const QuienesSomos = () =>{
                     <h2 className='avatarName'>Cristian Machuca</h2>
                     <p onClick={()=> setSelectedProfile('Cristian')}>Conoceme</p>
                     <div className="Links">
-                        <a id="github" href="https://github.com/cristian1534" target="_blank"><IconName.FaGithub/></a>
-                        <a id="linkedin" href="https://www.linkedin.com/in/cristian-machuca-8883a01b2/" target="_blank"><IconName.FaLinkedin/></a>
-                        <a id="youtube" href="https://www.youtube.com/channel/UCVODmr43Nj3sr3tSqeVk3iA" target="_blank"><IconName.FaYoutube/></a>
+                        <a id="github" href="https://github.com/cristian1534" target="_blank" rel="noopener noreferrer"><IconName.FaGithub/></a>
+                        <a id="linkedin" href="https://www.linkedin.com/in/cristian-machuca-8883a01b2/" target="_blank" rel="noopener noreferrer"><IconName.FaLinkedin/></a>
+                        <a id="youtube" href="https://www.youtube.com/channel/UCVODmr43Nj3sr3tSqeVk3iA" target="_blank" rel="noopener noreferrer"><IconName.FaYoutube/></a>
                     </div>
                 </div>
 
@@ -52,10 +50,10 @@ const QuienesSomos = () =>{
                     <h2 className='avatarName'>Sebastian Toso</h2>
                     <p onClick={()=> setSelectedProfile('Sebastian')}>Conoceme</p>
                     <div className="Links">
-                        <a id="github" href="https://github.com/Seba-Toso" target="_blank"><IconName.FaGithub/></a>  
-                        <a id="linkedin" href="www.linkedin.com/in/sebastiangtoso" target="_blank"><IconName.FaLinkedin/></a>
-                        <a id="youtube" href="#" target="_blank"><IconName.FaYoutube/></a>
-                        <a id="instagram" href="https://www.instagram.com/sebatoso/?hl=es-la" target="_blank"><IconName.FaInstagram/></a>
+                        <a id="github" href="https://github.com/Seba-Toso" target="_blank" rel="noopener noreferrer"><IconName.FaGithub/></a>  
+                        <a id="linkedin" href="www.linkedin.com/in/sebastiangtoso" target="_blank" ><IconName.FaLinkedin/></a>
+                        <a id="youtube" href="#" target="_blank" rel="noopener noreferrer"><IconName.FaYoutube/></a>
+                        <a id="instagram" href="https://www.instagram.com/sebatoso/?hl=es-la" target="_blank"rel="noopener noreferrer"><IconName.FaInstagram/></a>
                     </div>
                 </div>
                 

@@ -47,16 +47,16 @@ const Footer = () => {
             <div className='SocialMediaContainer'>
                 
 
-                <a className='SocialMediaName SocialMediaButton GitHub' href="https://cristian1534.github.io/Blog-IT-Devs.github.io" target='_blank'>
+                <a className='SocialMediaName SocialMediaButton GitHub' href="https://cristian1534.github.io/Blog-IT-Devs.github.io" target='_blank' rel="noopener noreferrer">
                     <ReactIcon.IoLogoGithub className='SocialIcon' />  GitHub
                 </a>
-                <a className='SocialMediaName SocialMediaButton LinkedIn' href="https://cristian1534.github.io/Blog-IT-Devs.github.io" target='_blank'>
+                <a className='SocialMediaName SocialMediaButton LinkedIn' href="https://cristian1534.github.io/Blog-IT-Devs.github.io" target='_blank' rel="noopener noreferrer">
                     <ReactIcon.IoLogoLinkedin className='SocialIcon' />  LinkedIn
                 </a>
-                <a className='SocialMediaName SocialMediaButton Mail' href="https://cristian1534.github.io/Blog-IT-Devs.github.io" target='_blank'>
+                <a className='SocialMediaName SocialMediaButton Mail' href="https://cristian1534.github.io/Blog-IT-Devs.github.io" target='_blank' rel="noopener noreferrer">
                     <ReactIcon.IoMailSharp className='SocialIcon' />  Mail
                 </a>
-                <a className='SocialMediaName SocialMediaButton Blog' href="https://cristian1534.github.io/Blog-IT-Devs.github.io" target='_blank'>
+                <a className='SocialMediaName SocialMediaButton Blog' href="https://cristian1534.github.io/Blog-IT-Devs.github.io" target='_blank' rel="noopener noreferrer">
                     <ReactIcon.IoNewspaperSharp className='SocialIcon' />  Blog
                 </a>
                 
