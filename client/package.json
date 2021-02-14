@@ -15,7 +15,9 @@
     "react-icons": "^4.1.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "1.0.17",
+    "react-slick": "^0.28.0",
     "react-spring": "^8.0.27",
+    "slick-carousel": "^1.8.1",
     "universal-cookie": "^4.0.4"
   },
   "scripts": {

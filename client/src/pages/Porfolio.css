@@ -1,6 +1,6 @@
 .portfolio {
   display: grid;
-  grid: auto / repeat(auto-fit, minmax(15em, 1fr));
+  grid: auto / repeat(auto-fit, minmax(25em, 1fr));
   grid-gap: 4em;
   background: #333;
   padding: 2em 7em;
@@ -32,9 +32,9 @@
   margin-bottom: 1em;
 }
 
-.portfolio__image,
-.portfolio-lightbox__image{
+.portfolio__image {
   width: 100%;
+  height: 20rem;
   display: block;
   border-radius: 5px;
 }
@@ -72,7 +72,9 @@
 }
 
 .portfolio-lightbox__image { 
-  margin-bottom: 1.5em; 
+  margin-bottom: 1.5em;
+  height: 45rem;
+  width: 100%;
 }
 
 .close {

@@ -26,7 +26,7 @@ const Portfolio = () =>{
                         <img src={ project.image } alt="" className="portfolio__image"/>
                         <div className="portfolio__desc">
                             <h3 className="portfolio__title">{ project.title }</h3>
-                            <a href={ project.description } className="btn btn-primary" role="button">Más</a>
+                            <a href={ project.description } className="btn btn-primary" role="button">Detalles</a>
                         </div>
                     </div>
                   )
@@ -60,6 +60,43 @@ const Portfolio = () =>{
                 <p className="portfolio__body">Web diseñada en Front con React y Backend en Node - Express.</p>
               </div>
             </div> 
+
+            <div className="portfolio-lightbox" id="portfolio-item-4">
+              <div className="portfolio-lightbox__content">
+                <a href="#portfolio" className="close"><ReactIcons.IoClose /></a> 
+                <img className="portfolio-lightbox__image" src="http://imgfz.com/i/fcSWA5v.png" alt=""/>
+                <h3 className="portfolio__title">Blog de Noticias</h3>
+                <p className="portfolio__body">HTML - CSS - JavaScript Vanilla - Jquery</p>
+              </div>
+            </div> 
+
+            <div className="portfolio-lightbox" id="portfolio-item-5">
+              <div className="portfolio-lightbox__content">
+                <a href="#portfolio" className="close"><ReactIcons.IoClose /></a> 
+                <img className="portfolio-lightbox__image" src="http://imgfz.com/i/pi5ek1h.jpeg" alt=""/>
+                <h3 className="portfolio__title">Pokenet Social</h3>
+                <p className="portfolio__body">HTML - CSS - Bootstrap - ReactJs - Firebase</p>
+              </div>
+            </div> 
+
+            <div className="portfolio-lightbox" id="portfolio-item-6">
+              <div className="portfolio-lightbox__content">
+                <a href="#portfolio" className="close"><ReactIcons.IoClose /></a> 
+                <img className="portfolio-lightbox__image" src="http://imgfz.com/i/YnRc8QI.jpeg" alt=""/>
+                <h3 className="portfolio__title">Lista de Tareas online</h3>
+                <p className="portfolio__body">HTML - CSS - JavaScript Vanilla</p>
+              </div>
+            </div> 
+
+            <div className="portfolio-lightbox" id="portfolio-item-7">
+              <div className="portfolio-lightbox__content">
+                <a href="#portfolio" className="close"><ReactIcons.IoClose /></a> 
+                <img className="portfolio-lightbox__image" src="http://imgfz.com/i/zTurxg5.jpeg" alt=""/>
+                <h3 className="portfolio__title">Rick & Morty Data Finder</h3>
+                <p className="portfolio__body">HTML - CSS - ReactJS - GraphQL - Redux</p>
+              </div>
+            </div> 
+
           </div>
   )
     
