@@ -1,5 +1,4 @@
 .CharsTab {
-    background-image: url("https://images2.alphacoders.com/260/260640.jpg") !important;
     margin-top: 5rem;
 }
 
@@ -30,10 +29,9 @@
 }
 
 #CharImage {
-    margin-left: 5rem;
     height: 100%;
     border-radius: 5px;
-    border: 2px solid rgb(63, 114, 190);
+    opacity: 0.6;
 }
 
 .tabImage {

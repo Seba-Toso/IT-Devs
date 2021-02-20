@@ -74,7 +74,10 @@
     background-color: rgb(46, 138, 84)
 }
 
-
+.heart {
+    color: rgb(221, 74, 74);
+    font-size: 18px;
+}
 
 .ScrollTopButton {
     width: 20%;

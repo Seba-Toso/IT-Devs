@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#000000">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -19,7 +19,7 @@
 
       #google_translate_element {
         position: fixed;     
-        bottom: 93%;
+        bottom: 95.5%;
         margin-left: 20%;
         display: flex;
         text-align:center;
@@ -27,8 +27,6 @@
         transition: all 200ms ease-in-out;
         color:  rgba(34, 34, 34, 0.5);
         border-radius: 5px;
-        
-      
       }
       
       .goog-te-banner-frame {
@@ -53,7 +51,6 @@
         opacity: 100%;
       }
       
-
       .cookies-box {
         position: fixed;
         bottom: 0;
@@ -111,7 +108,7 @@
 
 
      
-      </style>
+    </style>
 
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
@@ -189,10 +186,10 @@
         </div>
       </div>
      <script
-     src="https://code.jquery.com/jquery-3.2.1.min.js">
+      src="https://code.jquery.com/jquery-3.2.1.min.js">
      </script>
      <script
-     src="https://unpkg.com/sweetalert/dist/sweetalert.min.js">
+      src="https://unpkg.com/sweetalert/dist/sweetalert.min.js">
      </script>
 
       <script>
@@ -211,10 +208,10 @@
           });
           cont_cookies.style.bottom = '-200px'
         });
-      
       </script>
-      <span id="google_translate_element"><p>Idioma</p></span>
-      <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-     
+      
+      <span id="google_translate_element">
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      </span>
   </body>
 </html>

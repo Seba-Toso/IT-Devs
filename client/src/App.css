@@ -22,8 +22,260 @@
   font-size: large;
 }
 
+.goog-te-gadget-simple {
+  padding: 5px;
+  border-radius: 5px;
+  content: "Lang";
+}
+.goog-te-gadget-simple .goog-te-menu-value {
+  display: none;
+}
+.goog-te-menu-frame {
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
 
+
+@media only screen and (max-width: 1620px) {
+  .intro {
+    flex-direction: column !important; 
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+  }
+  .sloganContainer {
+    padding-left: 0px !important;
+    width: 100%;
+    text-align: center !important;
+  }
+  .logoContainer {
+    width: 100% !important;
+    margin-bottom: 3rem;
+  }
+
+  
+  .CharDescriptionContainer {
+    margin-top: 30px !important;
+    margin-left: -40px !important;
+    width: 40vw !important;
+  }
+
+
+}
+
+
+
+@media only screen and (max-width: 1420px) {
+
+  .section {
+    padding: 5rem !important;
+  }
+
+  .Information {
+    font-size: 16px;
+  }
+
+  .tab {
+    width: 19rem !important;
+  }
+
+  .slick-slider {
+    width: 80%;
+    margin:  0 auto;
+  }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+    margin-bottom: 1rem !important;
+  }
+
+  .logoContainer img {
+    display: none;
+  }
+  .sloganContainer {
+    width: 100% !important;
+  }
+
+  .InformationContainer{
+    width: 90%;
+    grid-template-columns: 100% !important;
+    grid-template-rows: none !important;
+    grid-gap: 2rem !important;
+    text-align: -webkit-center;
+    text-align-last: center;
+  }
+  .Information {
+    font-size: 16px;
+  }
+
+  .CharsTab {
+    margin-top: 3rem !important;
+  }
+  .tab {
+    width: 15rem !important;
+    margin-left: 0 !important;
+  }
+  .tabName {
+    font-size: 20px;
+  }
+  #CharImage {
+    display: none !important;
+  }
+  
+  .CharDescriptionContainer {
+    margin-top: 60px !important;
+    height: 14rem !important;
+  }
+  #charDescription {
+    margin-top: 22% !important;
+  }
+
+  .slick-list, .slideImageContainer, .slideImage  {
+    height: 25rem !important;
+  }
+  .slick-slider {
+    width: 90% !important;
+  }
+
+
+  .Form {
+    width: 70% !important;
+  }
+
+  .SocialMediaContainer {
+    grid-template-columns: 18vw 18vw !important;
+    row-gap: 0rem !important;
+  }
+  .SocialMediaName {
+    margin-left: 0% !important;
+  }
+  .FooterInfo p {
+    font-size: 12px;
+  }
+
+  .logo {
+    height: 90% !important;
+    flex: 1;
+    text-align: left !important;
+  }
+  .logoCircle {
+    margin-left: 5% !important;
+}
+  
+  .links {
+    flex: 2;
+  }
+
+  .goog-te-gadget-simple {
+    margin-left: 45px;
+  }
+
+  
+}
+
+
+
+@media only screen and (min-width: 280px) {
+  .section {
+    padding: 1rem !important;
+  }  
+  .sloganContainer h1 {
+    font-size: 30px;
+  }
+  .title {
+    font-size: 22px !important;
+  }
+  .Subtitle {
+    font-size: 18px !important;
+    text-align: center !important;
+  }
+
+  .characteristic {
+    min-height: fit-content !important;
+  }
+  .CharsTab {
+    margin-top: 2rem !important;
+    display: block;
+  }
+  .tab {
+    width: 9rem !important;
+    height: 2rem !important;
+    margin-bottom: 5px !important;
+    display: block;
+  }
+  .tabName {
+    font-size: 12px !important;
+    line-height: 2rem !important;
+  }
+  .tabImage {
+    margin: 0 !important;
+    width: 100% !important;
+    height: 5rem !important;
+    position: relative !important; 
+    display: block !important;
+  }
+  .CharDescriptionContainer {
+    margin: 0 !important;
+    width: 88vw !important;
+    height: 5rem !important;
+    padding: 10px;
+  }
+  #charDescription {
+    font-size: 10px !important; 
+    margin-top: 0px !important;
+    height: fit-content !important;
+  }
+    
+  .projectSlider {
+    min-height: 26vh !important;
+    height: fit-content !important;
+  }
+  .slick-slider {
+    width: 100% !important;
+  }
+  .slick-prev, .slick-next {
+    display: none !important;
+  }
+  .slick-list, .slideImageContainer, .slideImage  {
+    height: 19vh !important; 
+  }
+
+
+  .Form {
+    width: 100% !important;
+    margin: 2rem !important;
+  }
+  .Label {
+    font-size: 14px;
+  }
+  .Input {
+    width: 100% !important;
+    font-size: 12px;
+  }
+  .ContactImage  {
+    display: none;
+  }
+
+
+  .FooterInfo p {
+    font-size: 7px;
+  }
+  .heart {
+    font-size: 8px !important;
+  }
+  .SocialMediaButton {
+    padding: 5px !important;
+    width: 2rem !important;
+    border-radius: 60px !important;
+  }
+}

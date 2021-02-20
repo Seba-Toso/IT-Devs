@@ -20,7 +20,7 @@ const Home = () =>{
     // console.log(cookies.get('myCat')); // Pacman
 
     return(
-        <div style={{'marginTop': '0'}}>
+        <div className='HomeContainer'>
             <div className='ScrollBottomButton'>
                 <RoundButton selectedIcon={<ReactIcon.IoMailUnreadSharp/>} onScrollTop={scrollBottomHandle}/>
             </div>

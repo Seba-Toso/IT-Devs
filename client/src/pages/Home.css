@@ -1,4 +1,6 @@
-
+.HomeContainer {
+    margin-top: 0;
+}
 .section {
     min-height: 35rem;
     height: fit-content;
@@ -31,6 +33,7 @@
     background-position: center !important;
     background-attachment: fixed !important;
     margin-bottom: 5%;
+    width: 100%;
 }
 
 
@@ -116,5 +119,3 @@
         padding-left: 0;
     }
   }
-  
-

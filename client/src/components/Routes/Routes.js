@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
-import { IoHome } from "react-icons/io5";
+import { IoHome, IoMenu } from "react-icons/io5";
 
 import './Routes.css';
 
@@ -24,6 +24,8 @@ const Routes = () => {
         setScrollPosition(position);
     };
 
+
+    //Nav Logo Effect
     useEffect(() => {
 
         if(!isInHome){
@@ -32,19 +34,17 @@ const Routes = () => {
         }
         
         window.addEventListener('scroll', handleScroll, { passive: true });
-
         if(scrollPosition >= 700){
             setIsVisible(true)
         }
         else if(scrollPosition < 700){
             setIsVisible(false)
         }
-        
+    
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, [handleScroll, setIsVisible, isInHome]);
-
 
 
 
@@ -63,26 +63,34 @@ const Routes = () => {
                             </React.Fragment>
                         }
                     </div>
-                    <div className='links'>
-                        
-                        <NavLink className='link' activeClassName="selected" to="/servicios">Servicios</NavLink>
-                        <NavLink className='link' activeClassName="selected" to="/tecnologias">Tecnologías</NavLink>
-                        <NavLink className='link' activeClassName="selected" to="/portfolio">Portfolio</NavLink>
-                        <NavLink className='link' activeClassName="selected" to="/quienes">Conocenos</NavLink>
-                        <NavLink className='link' activeClassName="selected" to="/presupuesto">Presupuesta</NavLink>
-                        <NavLink className='link' activeClassName="selected" exact to="/"
-                            isActive={(match) => {
-                                if (!match) {
-                                    setIsInHome(false)
-                                    return;
-                                }
-                                setIsInHome(true)
-                                return 
-                            }}>
-                                <IoHome/>
-                        </NavLink>
-            
-                    </div> 
+
+                    {
+                        window.outerWidth < 1280 ? 
+                        <div className='links'>
+                            <IoMenu style={{fontSize: '30px', color:'rgb(63, 114, 190)'}}/> 
+                        </div>
+                        :
+                        <div className='links'>
+                            
+                            
+                            <NavLink className='link' activeClassName="selected" to="/servicios">Servicios</NavLink>
+                            <NavLink className='link' activeClassName="selected" to="/tecnologias">Tecnologías</NavLink>
+                            <NavLink className='link' activeClassName="selected" to="/portfolio">Portfolio</NavLink>
+                            <NavLink className='link' activeClassName="selected" to="/quienes">Conocenos</NavLink>
+                            <NavLink className='link' activeClassName="selected" to="/presupuesto">Presupuesta</NavLink>
+                            <NavLink className='link' activeClassName="selected" exact to="/"
+                                isActive={(match) => {
+                                    if (!match) {
+                                        setIsInHome(false)
+                                        return;
+                                    }
+                                    setIsInHome(true)
+                                    return 
+                                }}>
+                                    <IoHome/>
+                            </NavLink>
+                        </div>
+                    }
                 </nav>
             </header>
             
