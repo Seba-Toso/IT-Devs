@@ -13,6 +13,6 @@ app.get('/api/test', cors(), (req, res) => {
 
 const port = 5000;
 
-app.listen(port, () => `Server running on port ${port}`);
+app.listen(port, () => console.log(colors.yellow.bold(`Firebase connected - Server on port ${port}`.yellow.bold)));
 
 
