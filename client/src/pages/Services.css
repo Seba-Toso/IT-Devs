@@ -7,3 +7,17 @@
     justify-content: center;
     background: linear-gradient(to left, rgb(63, 160, 190), rgb(63, 122, 190));
 }
+
+
+@media only screen and (max-width: 420px) {
+    .services {
+        grid-template-columns: 100%;
+    }
+    .card {
+        width: 250px;
+        height: 350px;
+    }
+    .cardData {
+        font-size: 13px;
+    }
+}

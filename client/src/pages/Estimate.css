@@ -148,3 +148,54 @@
         transform: rotate(360deg);
       }
 }
+
+
+@media only screen and (max-width: 420px) {
+    
+    .estimate {
+        flex-direction: column;
+    }
+
+    .buttonsContainer {
+        width: 100%;
+    }
+
+    .totalContainer {
+        width: 100%;
+    }
+
+    .totalSection {
+        width: 100%;
+        height: 30rem;
+        margin-top: 1rem;
+    }
+
+    .detailText {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .btn {
+        min-width: 2rem;
+        margin: 1px;
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    #totalPrice {
+        font-size: 35px;
+        padding: 23px;
+    }
+
+    .totalDetails {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .estimatorInput{
+        font-size: 14px;
+        padding: 4px;
+    }
+}

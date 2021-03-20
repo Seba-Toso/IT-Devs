@@ -18,10 +18,10 @@
 }
 .links {
     display: flex;
+    flex: 2;
     width: 85%;
     flex-direction: row;
     justify-content: flex-end;
-    margin-right: 1em;
     border: none;
 }
 .link {
@@ -45,15 +45,17 @@
     font-weight: 500;
 }
 .logo {
+    flex: 1;
     display: inline;
     width: 20%;
     height: 100%;
+    text-align: left;
 }
 .logoCircle {
     width: auto;
     margin-top: 0.3rem;
-    margin-left: 15%;
     margin-right:0.5rem;
+    margin-left: 0.5rem;
     border-radius: 10px;
 }
 .logoText {
@@ -66,3 +68,31 @@
     color: rgb(63, 114, 190);
 }
 
+
+
+@media only screen and (max-width: 420px) {
+
+    .App-header {
+        margin-bottom: 1rem;
+    }
+    #linksMenu {
+        background-color: white;
+        display: flex;
+        flex: 1;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        border: none;
+        top: -20rem;
+        position: absolute;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    .link {
+        margin-right: 0;
+    }
+    .navBar {
+        background-color: white;
+    }
+
+}

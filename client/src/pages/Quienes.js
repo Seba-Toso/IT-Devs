@@ -34,27 +34,32 @@ const QuienesSomos = () =>{
             </div>
             <div className="Container projectSlider section">
 
-                <div className='Card'>
+                <div className='Card profileCard'>
                     <img className='avatar' src="http://imgfz.com/i/uS40TwE.jpeg" alt="Avatar Cristian Machuca" />
-                    <h2 className='avatarName'>Cristian Machuca</h2>
-                    <p onClick={()=> setSelectedProfile('Cristian')}>Conoceme</p>
-                    <div className="Links">
-                        <a id="github" href="https://github.com/cristian1534" target="_blank" rel="noopener noreferrer"><IconName.FaGithub/></a>
-                        <a id="linkedin" href="https://www.linkedin.com/in/cristian-machuca-8883a01b2/" target="_blank" rel="noopener noreferrer"><IconName.FaLinkedin/></a>
-                        <a id="youtube" href="https://www.youtube.com/channel/UCVODmr43Nj3sr3tSqeVk3iA" target="_blank" rel="noopener noreferrer"><IconName.FaYoutube/></a>
+                    <div className='profileContainer'>
+                        <h2 className='avatarName'>Cristian Machuca</h2>
+                        <p onClick={()=> setSelectedProfile('Cristian')} className='knowMe'>Conoceme</p>
+                        <div className="Links">
+                            <a id="github" href="https://github.com/cristian1534" target="_blank" rel="noopener noreferrer"><IconName.FaGithub/></a>
+                            <a id="linkedin" href="https://www.linkedin.com/in/cristian-machuca-8883a01b2/" target="_blank" rel="noopener noreferrer"><IconName.FaLinkedin/></a>
+                            <a id="youtube" href="https://www.youtube.com/channel/UCVODmr43Nj3sr3tSqeVk3iA" target="_blank" rel="noopener noreferrer"><IconName.FaYoutube/></a>
+                        </div>
                     </div>
                 </div>
 
-                <div className="Card">         
+                <div className="Card profileCard">         
                     <img className='avatar' src="https://avatars.githubusercontent.com/u/66390886?s=460&u=cd0fd00c67e5d0a2c83dcbe99574a6f9c50bf3ee&v=4" alt="Avatar Sebastian Toso" />
-                    <h2 className='avatarName'>Sebastian Toso</h2>
-                    <p onClick={()=> setSelectedProfile('Sebastian')}>Conoceme</p>
-                    <div className="Links">
-                        <a id="github" href="https://github.com/Seba-Toso" target="_blank" rel="noopener noreferrer"><IconName.FaGithub/></a>  
-                        <a id="linkedin" href="www.linkedin.com/in/sebastiangtoso" target="_blank" rel="noopener noreferrer"><IconName.FaLinkedin/></a>
-                        <a id="youtube" href="#" target="_blank" rel="noopener noreferrer"><IconName.FaYoutube/></a>
-                        <a id="instagram" href="https://www.instagram.com/sebatoso/?hl=es-la" target="_blank"rel="noopener noreferrer"><IconName.FaInstagram/></a>
+                    <div className='profileContainer'>
+                        <h2 className='avatarName'>Sebastian Toso</h2>
+                        <p onClick={()=> setSelectedProfile('Sebastian')}  className='knowMe'>Conoceme</p>
+                        <div className="Links">
+                            <a id="github" href="https://github.com/Seba-Toso" target="_blank" rel="noopener noreferrer"><IconName.FaGithub/></a>  
+                            <a id="linkedin" href="www.linkedin.com/in/sebastiangtoso" target="_blank" rel="noopener noreferrer"><IconName.FaLinkedin/></a>
+                            <a id="youtube" href="#" target="_blank" rel="noopener noreferrer"><IconName.FaYoutube/></a>
+                            <a id="instagram" href="https://www.instagram.com/sebatoso/?hl=es-la" target="_blank"rel="noopener noreferrer"><IconName.FaInstagram/></a>
+                        </div>
                     </div>
+    
                 </div>
                 
                 <div className='profileData'>

@@ -24,6 +24,9 @@ const Routes = () => {
         setScrollPosition(position);
     };
 
+    const [menuLinks, setMenuLinks] = useState(false)
+    const [menu, setMenu] = useState('-25rem')
+
 
     //Nav Logo Effect
     useEffect(() => {
@@ -47,6 +50,16 @@ const Routes = () => {
     }, [handleScroll, setIsVisible, isInHome]);
 
 
+    const showMenu = () => {
+        if(!menuLinks){
+            setMenu('4rem')
+            setMenuLinks(true)
+            return
+        }
+        setMenu('-25rem')
+        setMenuLinks(false)
+        return 
+    }
 
     return (
 
@@ -66,8 +79,26 @@ const Routes = () => {
 
                     {
                         window.outerWidth < 1280 ? 
-                        <div className='links'>
+                        <div className='links' onClick={showMenu} >
                             <IoMenu style={{fontSize: '30px', color:'rgb(63, 114, 190)'}}/> 
+                            <div id='linksMenu' style={{top: menu}}>
+                                <NavLink className='link' activeClassName="selected" to="/servicios">Servicios</NavLink>
+                                <NavLink className='link' activeClassName="selected" to="/tecnologias">Tecnologías</NavLink>
+                                <NavLink className='link' activeClassName="selected" to="/portfolio">Portfolio</NavLink>
+                                <NavLink className='link' activeClassName="selected" to="/quienes">Conocenos</NavLink>
+                                <NavLink className='link' activeClassName="selected" to="/presupuesto">Presupuesta</NavLink>
+                                <NavLink className='link' activeClassName="selected" exact to="/"
+                                    isActive={(match) => {
+                                        if (!match) {
+                                            setIsInHome(false)
+                                            return;
+                                        }
+                                        setIsInHome(true)
+                                        return 
+                                    }}>
+                                        <IoHome/>
+                                </NavLink>
+                            </div>
                         </div>
                         :
                         <div className='links'>

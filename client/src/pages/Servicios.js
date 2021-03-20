@@ -25,7 +25,7 @@ const Servicios = () =>{
             </div>
             <div className='section services'>
                 {
-                    services.map(service => { return <Card service={service} /> })
+                    services.map(service => { return <Card key={service.title} service={service} /> })
                 }
                
             </div>

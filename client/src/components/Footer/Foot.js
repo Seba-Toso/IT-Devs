@@ -37,7 +37,7 @@ const Footer = () => {
     }
 
     useEffect(()=>{
-        if(window.outerWidth <= 768){
+        if(window.outerWidth <= 420){
             setIsSmallScreen(true)
         }
     },[setIsSmallScreen])

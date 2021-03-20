@@ -23,3 +23,23 @@
     will-change: transform, opacity;
     text-shadow: 0px 2px 40px #00000020, 0px 2px 5px #00000030;
 }
+
+
+
+
+@media only screen and (max-width: 420px) {
+    .logoContainer p {
+        font-size: 16px !important;
+        width: 70% !important;
+        line-height: 25px !important;
+        margin-top: 0 !important;
+    }
+
+    .simple-trans-main > div {
+        font-size: 5em;
+        height: 35rem;
+    }
+    .simple-trans-main svg {
+        margin-right: 1rem;
+    }
+}

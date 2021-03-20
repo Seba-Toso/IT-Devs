@@ -22,11 +22,8 @@
   font-size: large;
 }
 
-.goog-te-gadget-simple {
-  padding: 5px;
-  border-radius: 5px;
-  content: "Lang";
-}
+
+
 .goog-te-gadget-simple .goog-te-menu-value {
   display: none;
 }
@@ -43,7 +40,44 @@
 }
 
 
-@media only screen and (max-width: 1620px) {
+
+
+
+
+
+@media only screen and (max-width: 420px) {
+
+
+  .logo {
+    height: 90% !important;
+    margin-top: 1rem;
+    flex: 5 !important;
+  }
+  .logoCircle {
+    display: none;
+  }
+  .logoText {
+    margin-left: 1rem;
+    font-size: 30px !important;
+  }
+  .logoContainer {
+    width: 100% !important;
+    margin-bottom: 3rem;
+  }
+  .logoContainer img {
+    display: none;
+  }
+  .links {
+    flex: 2;
+  }
+
+
+  
+  .section {
+    padding: 1rem !important;
+  }  
+
+  
   .intro {
     flex-direction: column !important; 
     padding-top: 5rem !important;
@@ -51,60 +85,22 @@
   }
   .sloganContainer {
     padding-left: 0px !important;
-    width: 100%;
+    width: 100% !important;
     text-align: center !important;
   }
-  .logoContainer {
-    width: 100% !important;
-    margin-bottom: 3rem;
+  .sloganContainer h1 {
+    font-size: 30px !important;
   }
-
-  
-  .CharDescriptionContainer {
-    margin-top: 30px !important;
-    margin-left: -40px !important;
-    width: 40vw !important;
-  }
-
-
-}
-
-
-
-@media only screen and (max-width: 1420px) {
-
-  .section {
-    padding: 5rem !important;
-  }
-
-  .Information {
-    font-size: 16px;
-  }
-
-  .tab {
-    width: 19rem !important;
-  }
-
-  .slick-slider {
-    width: 80%;
-    margin:  0 auto;
-  }
-}
-
-
-
-@media only screen and (max-width: 768px) {
   .title {
-    font-size: 2rem;
+    font-size: 22px !important;
     margin-bottom: 1rem !important;
   }
+  .Subtitle {
+    font-size: 18px !important;
+    text-align: center !important;
+  }
 
-  .logoContainer img {
-    display: none;
-  }
-  .sloganContainer {
-    width: 100% !important;
-  }
+
 
   .InformationContainer{
     width: 90%;
@@ -118,87 +114,7 @@
     font-size: 16px;
   }
 
-  .CharsTab {
-    margin-top: 3rem !important;
-  }
-  .tab {
-    width: 15rem !important;
-    margin-left: 0 !important;
-  }
-  .tabName {
-    font-size: 20px;
-  }
-  #CharImage {
-    display: none !important;
-  }
-  
-  .CharDescriptionContainer {
-    margin-top: 60px !important;
-    height: 14rem !important;
-  }
-  #charDescription {
-    margin-top: 22% !important;
-  }
 
-  .slick-list, .slideImageContainer, .slideImage  {
-    height: 25rem !important;
-  }
-  .slick-slider {
-    width: 90% !important;
-  }
-
-
-  .Form {
-    width: 70% !important;
-  }
-
-  .SocialMediaContainer {
-    grid-template-columns: 18vw 18vw !important;
-    row-gap: 0rem !important;
-  }
-  .SocialMediaName {
-    margin-left: 0% !important;
-  }
-  .FooterInfo p {
-    font-size: 12px;
-  }
-
-  .logo {
-    height: 90% !important;
-    flex: 1;
-    text-align: left !important;
-  }
-  .logoCircle {
-    margin-left: 5% !important;
-}
-  
-  .links {
-    flex: 2;
-  }
-
-  .goog-te-gadget-simple {
-    margin-left: 45px;
-  }
-
-  
-}
-
-
-
-@media only screen and (min-width: 280px) {
-  .section {
-    padding: 1rem !important;
-  }  
-  .sloganContainer h1 {
-    font-size: 30px;
-  }
-  .title {
-    font-size: 22px !important;
-  }
-  .Subtitle {
-    font-size: 18px !important;
-    text-align: center !important;
-  }
 
   .characteristic {
     min-height: fit-content !important;
@@ -211,6 +127,7 @@
     width: 9rem !important;
     height: 2rem !important;
     margin-bottom: 5px !important;
+    margin-left: 0 !important;
     display: block;
   }
   .tabName {
@@ -225,6 +142,8 @@
     display: block !important;
   }
   .CharDescriptionContainer {
+    margin-top: 60px !important;
+    margin-left: -40px !important;
     margin: 0 !important;
     width: 88vw !important;
     height: 5rem !important;
@@ -235,13 +154,21 @@
     margin-top: 0px !important;
     height: fit-content !important;
   }
-    
+  #CharImage {
+    display: none !important;
+  }
+
+
+
+
+
   .projectSlider {
     min-height: 26vh !important;
     height: fit-content !important;
   }
   .slick-slider {
     width: 100% !important;
+    margin:  0 auto;
   }
   .slick-prev, .slick-next {
     display: none !important;
@@ -251,12 +178,14 @@
   }
 
 
+
   .Form {
     width: 100% !important;
     margin: 2rem !important;
   }
   .Label {
     font-size: 14px;
+    width: 100% !important;
   }
   .Input {
     width: 100% !important;
@@ -267,15 +196,56 @@
   }
 
 
+  
+
+
   .FooterInfo p {
-    font-size: 7px;
+    font-size: 8px;
   }
   .heart {
     font-size: 8px !important;
+  }
+  .SocialMediaContainer {
+    grid-template-columns: 9vw 9vw !important;
+    row-gap: 0rem !important;
+  }
+  .SocialMediaName {
+    margin-left: 0% !important;
   }
   .SocialMediaButton {
     padding: 5px !important;
     width: 2rem !important;
     border-radius: 60px !important;
   }
+  .ButtonContainer {
+    right: 1rem !important;
+    bottom: 3.5rem !important;
+    width: 2rem !important;
+    height: 2rem !important;
+    font-size: 26px !important;
+  }
+  .iconContainer {
+    padding: 0rem !important;
+  }
+
+
+  
+  .goog-te-gadget-simple {
+    margin-left: 60px;
+  }
+
+  .btn-whatsapp {
+    right: 2.3rem !important;
+  }
+  .btn-whatsapp a img {
+    width: 40px !important;
+  }
+
+  .darkmode-toggle, .darkmode-layer--button {
+    width: 36px !important;
+    height: 36px !important;
+    right: 1rem !important;
+    bottom: 65% !important;
+  }
+
 }
