@@ -87,23 +87,8 @@
     text-align: right;
 }
 
-.sendButton {
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 8px;
-    margin: 0 auto;
-    opacity: 0.5;
-    cursor: pointer;
-    transition: all 300ms ease-in-out;
-}
-
-.sendButton:hover {
-    opacity: 1;
-    color: rgb(63, 122, 190);
-    border: 1px solid rgb(63, 122, 190);
-    font-weight: 500;
-    background: linear-gradient(to right, rgb(255, 255, 255), rgb(200, 233, 243));
-    margin-bottom: 30px;
+.Submit {
+    margin-top: 30px;
 }
 
 .estimatorForm {
@@ -150,7 +135,19 @@
 }
 
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 1440px) { 
+    .estimate {
+        padding: 4rem;
+    }
+    .totalSection {
+        width: 95%;
+        height: 38rem;
+    }
+  }
+
+  
+
+@media only screen and (max-width: 768px) {
     
     .estimate {
         flex-direction: column;
@@ -177,9 +174,9 @@
     }
     
     .btn {
-        min-width: 2rem;
-        margin: 1px;
-        font-size: 10px;
+        min-width: 2rem !important;
+        margin: 2px !important;
+        font-size: 10px !important;
         padding: 5px;
     }
 

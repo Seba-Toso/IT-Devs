@@ -30,6 +30,7 @@ const Routes = () => {
 
     //Nav Logo Effect
     useEffect(() => {
+        console.log(window.outerWidth)
 
         if(!isInHome){
             setIsVisible(true)
@@ -52,7 +53,7 @@ const Routes = () => {
 
     const showMenu = () => {
         if(!menuLinks){
-            setMenu('4rem')
+            setMenu('3rem')
             setMenuLinks(true)
             return
         }
@@ -78,7 +79,7 @@ const Routes = () => {
                     </div>
 
                     {
-                        window.outerWidth < 1280 ? 
+                        window.outerWidth < 1110 ? 
                         <div className='links' onClick={showMenu} >
                             <IoMenu style={{fontSize: '30px', color:'rgb(63, 114, 190)'}}/> 
                             <div id='linksMenu' style={{top: menu}}>
