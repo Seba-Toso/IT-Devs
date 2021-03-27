@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react'
+import React, { useState, useCallback, useMemo, memo } from 'react'
 import { useTransition, animated } from 'react-spring'
 import * as ReactIcons from 'react-icons/si'
 
@@ -16,14 +16,32 @@ const Tecnologias = () =>{
     })
 
     const pages = [
-        ({ style }) => <animated.div style={{ ...style, background: 'lightcoral' }}><ReactIcons.SiHtml5 style={{marginRight: '2rem', fontSize: '26rem'}}/> HTML</animated.div>,
-        ({ style }) => <animated.div style={{ ...style, background: 'lightblue' }}><ReactIcons.SiCss3 style={{marginRight: '2rem', fontSize: '26rem'}}/> CSS</animated.div>,
-        ({ style }) => <animated.div style={{ ...style, background: 'yellow' }}><ReactIcons.SiJavascript style={{marginRight: '2rem', fontSize: '26rem'}}/> JS</animated.div>,
-        ({ style }) => <animated.div style={{ ...style, background: 'lightskyblue' }}><ReactIcons.SiReact style={{marginRight: '2rem', fontSize: '26rem'}}/> REACT</animated.div>,
-        ({ style }) => <animated.div style={{ ...style, background: 'limegreen' }}><ReactIcons.SiNodeDotJs style={{marginRight: '2rem', fontSize: '26rem'}}/> NODEJS</animated.div>,
-        ({ style }) => <animated.div style={{ ...style, background: 'lightgreen' }}><ReactIcons.SiMongodb style={{marginRight: '2rem', fontSize: '26rem'}}/> MONGO</animated.div>
+        ({ style }) => <animated.div style={{ ...style, padding: '10px', background: 'lightcoral' }}><ReactIcons.SiHtml5 style={{marginRight: '2rem', fontSize: '26rem'}}/> HTML</animated.div>,
+        ({ style }) => <animated.div style={{ ...style, padding: '10px', background: 'lightblue' }}><ReactIcons.SiCss3 style={{marginRight: '2rem', fontSize: '26rem'}}/> CSS</animated.div>,
+        ({ style }) => <animated.div style={{ ...style, padding: '10px', background: 'yellow' }}><ReactIcons.SiJavascript style={{marginRight: '2rem', fontSize: '26rem'}}/> JS</animated.div>,
+        ({ style }) => <animated.div style={{ ...style, padding: '10px', background: 'lightskyblue' }}><ReactIcons.SiReact style={{marginRight: '2rem', fontSize: '26rem'}}/> REACT</animated.div>,
+        ({ style }) => <animated.div style={{ ...style, padding: '10px', background: 'limegreen' }}><ReactIcons.SiNodeDotJs style={{marginRight: '2rem', fontSize: '26rem'}}/> NODEJS</animated.div>,
+        ({ style }) => <animated.div style={{ ...style, padding: '10px', background: 'lightgreen' }}><ReactIcons.SiMongodb style={{marginRight: '2rem', fontSize: '26rem'}}/> MONGO</animated.div>
         ]
 
+    const techList = useMemo(() => { 
+        if( !transitions.length ) return null 
+
+        return (
+             <div className='techs'>
+                <div className="simple-trans-main" onClick={onClick}>
+                    {transitions.map(({ item, props, key }) => {
+                    const Page = pages[item]
+                    return( 
+                        <div>
+                            <Page key={key} style={props} />
+                        </div>
+                    )
+                    })}
+                </div>
+            </div>
+        )
+     }, [ transitions ])
     return (
 
         <div>
@@ -45,19 +63,12 @@ const Tecnologias = () =>{
                     </p>
                 </div>
             </div>
-            <div className='techs'>
-                <div className="simple-trans-main" onClick={onClick}>
-                    {transitions.map(({ item, props, key }) => {
-                    const Page = pages[item]
-                    return <Page key={key} style={props} />
-                    })}
-                </div>
-            </div>
+           { techList }
         </div>
         
     )
 };
 
-export default Tecnologias;
+export default memo( Tecnologias );
 
 

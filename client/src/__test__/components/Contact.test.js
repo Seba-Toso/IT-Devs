@@ -3,9 +3,9 @@ import { mount } from 'enzyme';
 import Contact from '../../components/Contact/Contact';
 
 describe('<Contact />', ()=>{
-    test('Testeando el Componente Contact', ()=> {
+    test('Contact: Must have options activated to Firebase', ()=> {
         const contact = mount(<Contact/>)
         expect(contact.find(".ContactContainer").text()).toEqual(
-            "Full NameE-MailPhone NumberLet us know your problems")
+            "NombreE-MailTeléfono de contactoContanos tus problemasEnviar")
     })
 })

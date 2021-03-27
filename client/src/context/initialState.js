@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-
+import React, { useState } from 'react';    
     
     const initialState = [
       {
@@ -43,14 +42,16 @@ import React, { useState } from 'react';
         image: 'http://imgfz.com/i/zTurxg5.jpeg',
         title: 'Rick & Morty Data Finder',
         description: '#portfolio-item-7',
-      }  
+      }
+     
     ];
   
-    export const Context = React.createContext()
+    export const Context = React.createContext();
     
     const Store = ({ children }) => {
-      const [state, setState ] = useState(initialState)
-
+      const [state, setState ] = useState(initialState);
+      
+      
       return (
         <Context.Provider value= { [state, setState]}>
           { children }

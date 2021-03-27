@@ -90,6 +90,8 @@ const Estimate = () => {
     e.preventDefault();
     setLoader(true);
 
+    
+
     db.collection('Estimate')
       .add({
         name: name,

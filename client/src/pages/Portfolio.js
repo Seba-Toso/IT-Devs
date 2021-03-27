@@ -1,11 +1,40 @@
-import React, { useContext } from 'react';
+import React, { useContext, useMemo, memo } from 'react';
 import { Context } from '../context/initialState';
-import * as ReactIcons from 'react-icons/io5'
-
+import * as ReactIcons from 'react-icons/io5';
 import './Porfolio.css';
 
-const Portfolio = () =>{
-  const [state, setState ] = useContext(Context);
+const Portfolio = () => {
+  const [ state ] = useContext( Context );
+
+  const jobsList = useMemo(() => {
+
+      if( !state.length ) return null
+      
+      return(
+              <div className="portfolio">
+                  {
+                    state.map( project => { 
+                      return (
+                        <div className='portfolio__item' key={ project.id }> 
+                            <img 
+                                src={ project.image } 
+                                alt="" 
+                                className="portfolio__image"/>
+                            <div className="portfolio__desc">
+                            <h3 className="portfolio__title"> { project.title } </h3>
+                            <a 
+                                  href={ project.description } 
+                                  className="btn btn-primary" 
+                                  role="button"> Detalles </a>
+                            </div>
+                        </div>
+                      )
+                    })
+                  }
+                </div>
+              )
+  },[ state ])
+
 
 
   return(
@@ -18,22 +47,8 @@ const Portfolio = () =>{
           </div>
       </div>
       
-      <div className="portfolio">
-        {
-          state.map( project => { 
-            return (
-              <div className='portfolio__item' key={project.id}> 
-                  <img src={ project.image } alt="" className="portfolio__image"/>
-                  <div className="portfolio__desc">
-                      <h3 className="portfolio__title">{ project.title }</h3>
-                      <a href={ project.description } className="btn btn-primary" role="button">Detalles</a>
-                  </div>
-              </div>
-            )
-          })
-        }
-      </div>
-
+    
+      <div>{ jobsList }</div>
 
       
       <div className="portfolio-lightbox" id="portfolio-item-1">
@@ -104,4 +119,4 @@ const Portfolio = () =>{
     
 };
 
-export default Portfolio;
+export default memo( Portfolio );
