@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import * as IconName from "react-icons/fa";
-import './Quienes.css';
+import './Css/Quienes.css';
 
 
 const QuienesSomos = () =>{

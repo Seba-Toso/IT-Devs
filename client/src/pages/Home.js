@@ -2,7 +2,7 @@ import React from 'react';
 import Contact from '../components/Contact/Contact'
 import RoundButton from '../components/UI/RoundButton/RoundButton'
 import * as ReactIcon from 'react-icons/io5'
-import './Home.css'
+import './Css/Home.css'
 import Slider from '../components/UI/Slider/Slider';
 import CharsTabs from '../components/UI/CharsTabs/CharsTabs'
 

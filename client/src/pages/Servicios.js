@@ -2,7 +2,7 @@ import React from 'react';
 import * as ReactIcons from 'react-icons/md'
 import Card from '../components/UI/Card/Card'
 
-import './Services.css'
+import './Css/Services.css'
 
 const Servicios = () =>{
 

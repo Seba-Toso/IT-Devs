@@ -2,7 +2,7 @@ import React, { useState, useCallback, useMemo, memo } from 'react'
 import { useTransition, animated } from 'react-spring'
 import * as ReactIcons from 'react-icons/si'
 
-import './Tecnologias.css'
+import './Css/Tecnologias.css'
 
 
 const Tecnologias = () =>{

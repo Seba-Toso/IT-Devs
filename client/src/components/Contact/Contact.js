@@ -52,24 +52,55 @@ const Contact = () => {
                 <label className='Label'>
                     Nombre
                 </label>
-                <input type='text' placeholder='Mi nombre es...' onChange={(e)=> setName(e.target.value)} className={`Input`} value={ name } id="user"/>
+                <input 
+                        type='text' 
+                        placeholder='Mi nombre es...' 
+                        onChange={(e)=> setName(e.target.value)} 
+                        className={`Input`} value={ name } 
+                        id="user"
+                        />
                 <label className='Label'>
                     E-Mail
                 </label>
-                <input type='email' placeholder='Gran_mail@mail.com' onChange={(e)=> setEmail(e.target.value)} className='Input' value= { email }/>
+                <input 
+                        type='email' 
+                        placeholder='Gran_mail@mail.com' 
+                        onChange={(e)=> setEmail(e.target.value)} 
+                        className='Input' 
+                        value= { email }
+                        />
                 <label className='Label'>
                     Teléfono de contacto
                 </label>
-                <input type='numeric' placeholder='123456789' onChange={(e)=> setPhone(e.target.value)} className='Input' value= { phone }/>
+                <input 
+                        type='numeric' 
+                        placeholder='123456789' 
+                        onChange={(e)=> setPhone(e.target.value)} 
+                        className='Input' 
+                        value= { phone }
+                        />
                 <label className='Label'>
                     Contanos tus problemas
                 </label>
-                <textarea type='text' placeholder='Me pasa que...' onChange={(e)=> setMessage(e.target.value)} className='Input Message'value= { message }/>
-                <button  className="Submit" type="submit">Enviar</button>
+                <textarea 
+                        type='text' 
+                        placeholder='Me pasa que...' 
+                        onChange={(e)=> setMessage(e.target.value)} 
+                        className='Input Message'
+                        value= { message }
+                        />
+                <button  
+                    className="Submit" 
+                    type="submit"
+                >Enviar</button>
             </form>
             
             <div className='ContactImage'>
-                    <img src='assets/contactForm.png' height={'400px'} alt='Contact background'/>
+                    <img 
+                        src='assets/contactForm.png' 
+                        height={'400px'} 
+                        alt='Contact background'
+                    />
             </div>
             
         </div>

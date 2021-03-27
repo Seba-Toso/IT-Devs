@@ -1,10 +1,11 @@
 import React, { useContext, useMemo, memo } from 'react';
 import { Context } from '../context/initialState';
 import * as ReactIcons from 'react-icons/io5';
-import './Porfolio.css';
+import './Css/Porfolio.css';
 
 const Portfolio = () => {
   const [ state ] = useContext( Context );
+ 
 
   const jobsList = useMemo(() => {
 
@@ -49,6 +50,10 @@ const Portfolio = () => {
       
     
       <div>{ jobsList }</div>
+
+      {
+
+      }
 
       
       <div className="portfolio-lightbox" id="portfolio-item-1">

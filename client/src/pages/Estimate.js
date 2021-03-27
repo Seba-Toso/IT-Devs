@@ -3,7 +3,7 @@ import { db } from '../context/firebase';
 import swal from 'sweetalert';
 import PriceButtons from '../components/UI/PriceButtons/PriceButtons';
 
-import './Estimate.css';
+import './Css/Estimate.css';
 
 // ---- REDUCER ----
 // actions
