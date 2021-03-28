@@ -1,36 +1,12 @@
-import React, {useEffect, useState} from 'react'
-import './Foot.css'
+import React, {useEffect, useState} from 'react';
+import RoundButton from '../UI/RoundButton/RoundButton';
+import * as ReactIcon from 'react-icons/io5';
+import './Foot.css';
 
-import RoundButton from '../UI/RoundButton/RoundButton'
-import * as ReactIcon from 'react-icons/io5'
-import Cookies from 'universal-cookie';
 
 const Footer = () => {
 
-    const [isSmallScreen, setIsSmallScreen] = useState(false)
-    const cookies = new Cookies();
-
-    const mystyle = {
-        color: "white",
-        backgroundColor: "DodgerBlue",
-        padding: "10px",
-        fontFamily: "Arial"
-        // position: "absolute",
-        // width: "100%",
-        // bottom: "1px"
-    };
-
-    function handleClick(e) {
-        e.preventDefault();
-        cookies.set('example', 'Primera Cookie', { path: '/' });
-        console.log(cookies.get('example')); // Pacman
-        console.log('The link was clicked.');
-    }
-
-    function handleClickCancelar(e) {
-        e.preventDefault();
-        console.log('The link was canceled.');
-    }
+    const [isSmallScreen, setIsSmallScreen] = useState(false); 
 
     const scrollTopHandle = () => {
         window.scrollTo(0, 0);

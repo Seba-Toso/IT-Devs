@@ -55,7 +55,7 @@ const QuienesSomos = () =>{
                         <div className="Links">
                             <a id="github" href="https://github.com/Seba-Toso" target="_blank" rel="noopener noreferrer"><IconName.FaGithub/></a>  
                             <a id="linkedin" href="www.linkedin.com/in/sebastiangtoso" target="_blank" rel="noopener noreferrer"><IconName.FaLinkedin/></a>
-                            <a id="youtube" href="#" target="_blank" rel="noopener noreferrer"><IconName.FaYoutube/></a>
+                            <a id="youtube" href="www.youtube.com" target="_blank" rel="noopener noreferrer"><IconName.FaYoutube/></a>
                             <a id="instagram" href="https://www.instagram.com/sebatoso/?hl=es-la" target="_blank"rel="noopener noreferrer"><IconName.FaInstagram/></a>
                         </div>
                     </div>

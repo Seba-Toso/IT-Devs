@@ -25,25 +25,25 @@ const Tecnologias = () =>{
         ]
 
     const techList = useMemo(() => { 
-        if( !transitions.length ) return null 
+        if( !transitions.length ) return null
 
         return (
-             <div className='techs'>
-                <div className="simple-trans-main" onClick={onClick}>
-                    {transitions.map(({ item, props, key }) => {
-                    const Page = pages[item]
-                    return( 
-                        <div>
-                            <Page key={key} style={props} />
-                        </div>
-                    )
-                    })}
+                <div className='techs'>
+                    <div className="simple-trans-main" onClick={onClick}>
+                        {transitions.map(({ item, props, key }) => {
+                        const Page = pages[item]
+                        return( 
+                            <div>
+                                <Page key={key} style={props} />
+                            </div>
+                        )
+                        })}
+                    </div>
                 </div>
-            </div>
         )
      }, [ transitions ])
     return (
-
+        
         <div>
             <div className='intro section'>
                 <div className='sloganContainer'>

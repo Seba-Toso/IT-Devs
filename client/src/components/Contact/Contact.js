@@ -11,14 +11,14 @@ const Contact = () => {
     const [email, setEmail ] = useState('')
     const [phone, setPhone ] = useState('')
     const [message, setMessage ] = useState('')
-    const [loader, setLoader] = useState(true)
+    
 
 
 
     const handleSubmit = (e) => {
 
         e.preventDefault()
-        setLoader(true)
+       
 
         db.collection('contacts').add({
             name: name,
@@ -33,12 +33,12 @@ const Contact = () => {
                 text:"Te contactaremos a la brevedad",
                 icon:"success",
              
-              });
-            setLoader(false)
+              })
+           
         })
         .catch((err) => {
             alert(err.message)
-            setLoader(false)
+            
         })
         setName('')
         setEmail('')

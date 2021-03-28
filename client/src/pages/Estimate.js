@@ -82,6 +82,7 @@ const Estimate = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
+    // eslint-disable-next-line
   const [price, setPrice] = useState(0);
   // eslint-disable-next-line
   const [loader, setLoader] = useState(true);
