@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import Loader from '../src/components/Loader/Loader';
-import './App.css';
 import Store from './context/initialState';
 import Routes from './components/Routes/Routes'
 import Footer from './components/Footer/Foot'
 
+import './App.css';
 
 
 

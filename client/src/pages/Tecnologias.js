@@ -33,9 +33,7 @@ const Tecnologias = () =>{
                         {transitions.map(({ item, props, key }) => {
                         const Page = pages[item]
                         return( 
-                            <div>
-                                <Page key={key} style={props} />
-                            </div>
+                            <Page key={key} style={props} />
                         )
                         })}
                     </div>

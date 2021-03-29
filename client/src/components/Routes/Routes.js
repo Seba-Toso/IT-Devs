@@ -30,7 +30,6 @@ const Routes = () => {
 
     //Nav Logo Effect
     useEffect(() => {
-        console.log(window.outerWidth)
 
         if(!isInHome){
             setIsVisible(true)
