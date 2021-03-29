@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useMemo, memo } from 'react';
 import * as ReactIcons from 'react-icons/md'
 import Card from '../components/UI/Card/Card'
-
 import './Css/Services.css'
 
 const Servicios = () =>{
@@ -13,6 +12,21 @@ const Servicios = () =>{
         {image: <ReactIcons.MdPieChart className='imageIcon'/> , title: 'Sistemas de Gestión', data: 'Tené el control de tu emprendimiento con una vistosa y moderna web de gestión.'},
         {image: <ReactIcons.MdSettings className='imageIcon'/> , title: 'Mantenimiento', data: 'Confiá tu web a nuestras manos para revisarlo, actualizarlo y mantenerlo activo.'},
     ]
+     
+    const servicesList = useMemo(() => {
+        if( !services.length ) return null
+
+        return (
+
+            <div className='section services'>
+                {
+                    services.map(service => { return <Card key={service.title} service={service} /> })
+                }
+               
+            </div>
+        )
+
+    }, [ services ])
 
     return(
         <div>
@@ -23,14 +37,9 @@ const Servicios = () =>{
                     <h1 className='sloganText Three'>OFRECERTE.</h1>
                 </div>
             </div>
-            <div className='section services'>
-                {
-                    services.map(service => { return <Card key={service.title} service={service} /> })
-                }
-               
-            </div>
+            { servicesList }
         </div>
     )
 };
 
-export default Servicios;
+export default memo(Servicios);

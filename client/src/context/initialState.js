@@ -52,7 +52,36 @@ import React, { useState } from 'react';
         title: 'Rick & Morty Data Finder',
         description: '#portfolio-item-7',
         body: 'HTML - CSS - ReactJS - GraphQL - Redux'
-      }
+      },
+      {
+        id: '8',
+        image: ' http://imgfz.com/i/XV6jOyf.png',
+        title: 'E-commerce',
+        description: '#portfolio-item-8',
+        body: 'React, JsonServer, Firebase.'
+      },
+      {
+        id: '9',
+        image: 'http://imgfz.com/i/PGAYEIt.png',
+        title: 'Finance app',
+        description: '#portfolio-item-9',
+        body: 'React, Node, Express, MongoDB.'
+      },
+      {
+        id: '10',
+        image: ' http://imgfz.com/i/Hmf5QWy.png',
+        title: 'API Rick & Morgan',
+        description: '#portfolio-item-10',
+        body: 'React, Hooks.'
+      },
+      {
+        id: '11',
+        image: 'http://imgfz.com/i/tOAzEjM.png',
+        title: 'Full Posts Calling',
+        description: '#portfolio-item-11',
+        body: 'React, Axios, PlaceHolder API.'
+      },
+
      
     ];
   
