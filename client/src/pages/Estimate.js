@@ -1,4 +1,4 @@
-import React, { useState, useReducer, useCallback } from 'react';
+import React, { useState, useReducer, useCallback, useRef } from 'react';
 import { db } from '../context/firebase';
 import swal from 'sweetalert';
 import PriceButtons from '../components/UI/PriceButtons/PriceButtons';
@@ -86,6 +86,9 @@ const Estimate = () => {
   const [price, setPrice] = useState(0);
   // eslint-disable-next-line
   const [loader, setLoader] = useState(true);
+  const nameInput = useRef('');
+  const emailInput = useRef('');
+  const phoneInput = useRef('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -118,8 +121,9 @@ const Estimate = () => {
     setPrice('');
   };
 
-  return (
-    <div>
+  function estimateCost() {
+    return (
+      <div>
       <div className="section intro">
         <div className="sloganContainer">
           <h1 className="sloganText One">CALCULA</h1>
@@ -163,7 +167,7 @@ const Estimate = () => {
               <input
                 type="text"
                 placeholder="Nombre"
-                onChange={(e) => setName(e.target.value)}
+                onChange={() => setName( nameInput.current.value )}
                 className="estimatorInput"
                 value={name}
                 id="user"
@@ -171,14 +175,14 @@ const Estimate = () => {
               <input
                 type="email"
                 placeholder="Mail"
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={() => setEmail( emailInput.current.value )}
                 className="estimatorInput"
                 value={email}
               />
               <input
                 type="numeric"
                 placeholder="Teléfono"
-                onChange={(e) => setPhone(e.target.value)}
+                onChange={() => setPhone( phoneInput.current.value)}
                 className="estimatorInput"
                 value={phone}
               />
@@ -190,6 +194,11 @@ const Estimate = () => {
         </div>
       </div>
     </div>
+    )
+  }
+
+  return (
+    <div>{ estimateCost() }</div>
   );
 };
 
