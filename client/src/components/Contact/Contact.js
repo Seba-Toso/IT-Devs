@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 import { db } from '../../context/firebase';
 import swal from 'sweetalert';
 import './Contact.css';
@@ -7,11 +7,15 @@ import './Contact.css';
 const Contact = () => {
     
    
-    const [name, setName ] = useState('')
-    const [email, setEmail ] = useState('')
-    const [phone, setPhone ] = useState('')
-    const [message, setMessage ] = useState('')
+    const [name, setName ] = useState('');
+    const [email, setEmail ] = useState('');
+    const [phone, setPhone ] = useState('');
+    const [message, setMessage ] = useState('');
     
+    const nameInput = useRef('');
+    const emailInput = useRef('');
+    const phoneInput = useRef('');
+    const messageInput = useRef('');
 
 
 
@@ -46,8 +50,9 @@ const Contact = () => {
         setMessage('')
     }
 
-    return (
-        <div className='ContactContainer' >
+    function form (){
+        return (
+            <div className='ContactContainer' >
             <form onSubmit={handleSubmit} className='Form'>
                 <label className='Label'>
                     Nombre
@@ -55,7 +60,7 @@ const Contact = () => {
                 <input 
                         type='text' 
                         placeholder='Mi nombre es...' 
-                        onChange={(e)=> setName(e.target.value)} 
+                        onChange={() => setName( nameInput.current.value )} 
                         className={`Input`} value={ name } 
                         id="user"
                         />
@@ -65,7 +70,7 @@ const Contact = () => {
                 <input 
                         type='email' 
                         placeholder='Gran_mail@mail.com' 
-                        onChange={(e)=> setEmail(e.target.value)} 
+                        onChange={() => setEmail( emailInput.current.value )} 
                         className='Input' 
                         value= { email }
                         />
@@ -75,7 +80,7 @@ const Contact = () => {
                 <input 
                         type='numeric' 
                         placeholder='123456789' 
-                        onChange={(e)=> setPhone(e.target.value)} 
+                        onChange={() => setPhone( phoneInput.current.value )} 
                         className='Input' 
                         value= { phone }
                         />
@@ -85,7 +90,7 @@ const Contact = () => {
                 <textarea 
                         type='text' 
                         placeholder='Me pasa que...' 
-                        onChange={(e)=> setMessage(e.target.value)} 
+                        onChange={()=> setMessage( messageInput.current.value)} 
                         className='Input Message'
                         value= { message }
                         />
@@ -104,6 +109,14 @@ const Contact = () => {
             </div>
             
         </div>
+
+        )
+    }
+
+    
+
+    return (
+        <div>{ form() }</div>
     )
 }
 
