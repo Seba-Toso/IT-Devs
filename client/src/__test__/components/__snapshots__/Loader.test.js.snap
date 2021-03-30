@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Loader /> Snapshot Double check on Loader UI 1`] = `
+<div>
+  <div
+    className="lds-hourglass loader"
+    id="loader"
+  >
+    <h1>
+      PREPARANDO TODO PARA TU MEJOR EXPERIENCIA...
+    </h1>
+  </div>
+</div>
+`;
