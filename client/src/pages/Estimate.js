@@ -1,4 +1,4 @@
-import React, { useState, useReducer, useCallback, useRef } from 'react';
+import React, { useState, useReducer, useCallback } from 'react';
 import { db } from '../context/firebase';
 import swal from 'sweetalert';
 import PriceButtons from '../components/UI/PriceButtons/PriceButtons';
@@ -86,9 +86,7 @@ const Estimate = () => {
   const [price, setPrice] = useState(0);
   // eslint-disable-next-line
   const [loader, setLoader] = useState(true);
-  const nameInput = useRef('');
-  const emailInput = useRef('');
-  const phoneInput = useRef('');
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -167,24 +165,27 @@ const Estimate = () => {
               <input
                 type="text"
                 placeholder="Nombre"
-                onChange={() => setName( nameInput.current.value )}
+                onChange={(e) => setName( e.target.value )}
                 className="estimatorInput"
                 value={name}
                 id="user"
+                required
               />
               <input
                 type="email"
                 placeholder="Mail"
-                onChange={() => setEmail( emailInput.current.value )}
+                onChange={(e) => setEmail( e.target.value )}
                 className="estimatorInput"
                 value={email}
+                required
               />
               <input
                 type="numeric"
                 placeholder="Teléfono"
-                onChange={() => setPhone( phoneInput.current.value)}
+                onChange={(e) => setPhone( e.target.value )}
                 className="estimatorInput"
                 value={phone}
+                required    
               />
                <button className="Submit" type="submit" id="estimateBtn">
                 Enviar

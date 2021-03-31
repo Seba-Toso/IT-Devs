@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React, { useState } from 'react';
 import { db } from '../../context/firebase';
 import swal from 'sweetalert';
 import './Contact.css';
@@ -12,19 +12,13 @@ const Contact = () => {
     const [phone, setPhone ] = useState('');
     const [message, setMessage ] = useState('');
     
-    const nameInput = useRef('');
-    const emailInput = useRef('');
-    const phoneInput = useRef('');
-    const messageInput = useRef('');
-
-
 
     const handleSubmit = (e) => {
 
         e.preventDefault()
        
 
-        db.collection('contacts').add({
+        db.collection('Contacts').add({
             name: name,
             email: email,
             phone: phone,
@@ -53,16 +47,20 @@ const Contact = () => {
     function form (){
         return (
             <div className='ContactContainer' >
-            <form onSubmit={handleSubmit} className='Form'>
+            <form onSubmit={ handleSubmit } 
+                        className='Form'
+                         >
                 <label className='Label'>
                     Nombre
                 </label>
                 <input 
                         type='text' 
                         placeholder='Mi nombre es...' 
-                        onChange={() => setName( nameInput.current.value )} 
-                        className={`Input`} value={ name } 
+                        onChange={(e) => setName( e.target.value )} 
+                        className= 'Input' 
+                        value={ name } 
                         id="user"
+                        required
                         />
                 <label className='Label'>
                     E-Mail
@@ -70,9 +68,10 @@ const Contact = () => {
                 <input 
                         type='email' 
                         placeholder='Gran_mail@mail.com' 
-                        onChange={() => setEmail( emailInput.current.value )} 
+                        onChange={(e) => setEmail( e.target.value )} 
                         className='Input' 
                         value= { email }
+                        required
                         />
                 <label className='Label'>
                     Teléfono de contacto
@@ -80,9 +79,10 @@ const Contact = () => {
                 <input 
                         type='numeric' 
                         placeholder='123456789' 
-                        onChange={() => setPhone( phoneInput.current.value )} 
+                        onChange={(e) => setPhone( e.target.value )} 
                         className='Input' 
                         value= { phone }
+                        required
                         />
                 <label className='Label'>
                     Contanos tus problemas
@@ -90,9 +90,10 @@ const Contact = () => {
                 <textarea 
                         type='text' 
                         placeholder='Me pasa que...' 
-                        onChange={()=> setMessage( messageInput.current.value)} 
+                        onChange={(e)=> setMessage( e.target.value)} 
                         className='Input Message'
                         value= { message }
+                        required
                         />
                 <button  
                     className="Submit" 
