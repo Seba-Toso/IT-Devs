@@ -177,6 +177,10 @@
       <img src="http://s2.accesoperu.com/logos/btn_whatsapp.png" alt="Wpp-Logo">
       </a>
       </div>
+
+
+      
+   
       <div class="cookies-box">
         <div class="container-cookies">
           <div class="parrafo">
@@ -190,6 +194,9 @@
           </div>
         </div>
       </div>
+
+
+
      <script
       src="https://code.jquery.com/jquery-3.2.1.min.js">
      </script>
@@ -200,12 +207,17 @@
       <script>
         const btn_close = document.querySelector('#close')
         const cont_cookies = document.querySelector('.cookies-box')
+        const containerCookies = document.querySelector('.container-cookies')
 
         btn_close.addEventListener('click', ()=>{
           cont_cookies.style.bottom = '-200px'
         })
 
         $('#memo').click(function(){
+
+          containerCookies.classList.remove('active')
+          localStorage.setItem('IT-Devs current user', 'true')
+
           swal({
             title:"Gracias por confiar en IT-Devs",
             text:"Esperamos tu pronto contacto",
@@ -213,6 +225,13 @@
           });
           cont_cookies.style.bottom = '-200px'
         });
+
+        setTimeout(() => {
+          if(localStorage.getItem('IT-Devs current user') == 'true'){
+            containerCookies.style.display = 'none';
+          }
+        }, 1000)
+          
       </script>
       
       <span id="google_translate_element">
