@@ -1,8 +1,16 @@
+require('dotenv').config()
 const express = require('express');
 const cors = require('cors');
-var colors = require('colors');
-
+const  colors = require('colors');
 const app = express();
+const  morgan = require('morgan')
+
+
+// middleware...
+app.use(morgan())
+
+
+// api backend...
 
 app.get('/api/test', cors(), (req, res) => {
   const test = [
