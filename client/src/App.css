@@ -23,7 +23,6 @@
 }
 
 
-
 .goog-te-gadget-simple .goog-te-menu-value {
   display: none;
 }
@@ -50,6 +49,7 @@
 
 
 
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
@@ -57,9 +57,6 @@
 
 
 /* Media Queries */
-
-
-
 
 @media only screen and (max-width: 1440px) { 
   .CharDescriptionContainer {
