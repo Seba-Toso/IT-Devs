@@ -1,5 +1,6 @@
 import React, { useContext, useMemo, memo, useState } from 'react';
 import { Context } from '../context/initialState';
+import * as ReactIcons from 'react-icons/cg'
 import './Css/Porfolio.css';
 
 
@@ -34,7 +35,7 @@ const Portfolio = () => {
                                     <button 
                                         onClick={()=>handleClick(project.id)}
                                         type="button" 
-                                        className="btn btn-info btn-sm" 
+                                        className="btn btn-info btn-sm detailsBtn" 
                                         >Detalles
                                     </button>                        
                                 </div>
@@ -76,6 +77,11 @@ const Portfolio = () => {
               </div>
 
               <div className="portfolio">
+                <div className='scrollIcon'>
+                  <span/>
+                  <ReactIcons.CgScrollV className='scrollIndicator'/>
+                  <span/>
+                </div>
                 { jobsList }
                 <div className='ProjectDisplay'>
                 { displayedProject }

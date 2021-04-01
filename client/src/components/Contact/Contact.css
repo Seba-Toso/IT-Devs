@@ -1,15 +1,23 @@
+.contact {
+    margin-top: 2rem !important;
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+    background-color: rgba(238, 238, 238, 0.63);
+}
+.contactTitle {
+    width: 80%;
+    padding-top: 5rem;
+    margin: 0 auto;
+}
 .ContactContainer {
     width: 100%;
-    background-color: rgba(238, 238, 238, 0.63);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 5rem;
 }
 
 .Form {
     width: 40%;
-    margin-top: 2rem;
     margin-bottom: 2rem;
     margin-left: 4rem;
     display: flex;
@@ -22,6 +30,7 @@
     text-align: left;
     font-weight: bold;
     color: #222;
+    font-size: 17px;
 }
 .Input {
     margin-bottom: 1rem;
@@ -30,7 +39,7 @@
     border-radius: 5px;
     border: solid 2px rgb(241, 237, 233);
     padding: 5px;
-    font-size: 14px;
+    font-size: 15px;
     color: #222;
     font-family: Helvetica, sans-serif;
     transition: all 300ms ease-in-out;

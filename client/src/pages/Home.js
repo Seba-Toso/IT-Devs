@@ -27,27 +27,32 @@ function test() {
                 <div className='GridSection'>
                     <h2 className='Subtitle'>Landing Pages</h2>
                     <p className='Information'>
-                        Conectá con tus clientes a través de páginas modernas, directas, simples, llamativas y dale vida a tu proyecto en Internet.
-                        Bajo el diseño de una sola página vas a potenciar tus productos y campañas de marketing enfocadas aumentar la conversión de tu negocio. 
+                        Una <i style={{fontWeight:'bold'}}>landing page</i> es una página dentro de un sitio web cuyo objetivo es captar el interés de los usuarios para convertirlos en posibles clentes de tu proyecto.{<br/>}
+                        Conectá con tus clientes a través de páginas modernas, directas, simples y llamativas, dándole vida a tu proyecto en Internet y potenciando tus productos y campañas de marketing enfocadas aumentar la conversión de tu negocio.
                     </p>
                 </div>
                 <div className='GridSection'>
                 <h2 className='Subtitle'>Herramientas personalizadas</h2>
                     <p className='Information'>
-                        Aumentá la experiencia usuario con herramientas que faciliten el acceso, la información, pagos o reservas de tu proyecto. 
+                        Creá utilidades que permitan generar una gran experiencia de usuario a quienes visiten tu web. {<br/>}
+                        Al aumentar la experiencia de usuario con herramientas que faciliten el acceso, la información, pagos o reservas de tu proyecto 
+                        generás mayor conformidad y satisfacción en tu cliente durante la interacción con tu web.
                     </p>
                 </div>
                 <div className='GridSection'>
                 <h2 className='Subtitle'>Sistemas de Gestión</h2>
                     <p className='Information'>
-                        Creá un sistema de gestión que te permita generar una mejor experiencia ya sea en tu emprendimiento, proyecto, trabajo u otros.
-                        Esto te va a permitir tener una mejor visualización y automatización de tareas.
+                        Un sistema de gestión es una herramienta que permite controlar, planificar, organizar y automatizar las tareas administrativas de tu proyecto.
+                        Generá un sistema de gestión que otorgue una mejor experiencia en tu emprendimiento, proyecto o trabajo, lo que va a permitir tener una mejor 
+                        visualización y automatización de tareas dando como resultado una productividad más eficiente.
                     </p>
                 </div>
                 <div className='GridSection'>
                     <h2 className='Subtitle'>Actualización y Mantenimiento</h2>
                     <p className='Information'>
-                        Tomamos tu proyecto web para mantenerlo activo, actualizado, funcional y con gran performance.
+                        Nos comprometemos a realizar mantenimiento de nuestras webs, actualizando servicios y funcionalidades utilizadas para crearla. {<br/>}
+                        Tomamos tu proyecto web ya realizado para mantenerlo activo, actualizado, funcional y con gran performance, o también reacerlo utilizando la
+                        base ya existente.
                     </p>
                 </div>
             </div>

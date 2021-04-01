@@ -165,7 +165,11 @@
     width: 100%;
     list-style: circle;
 }
-  
+.defaultText {
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+}
 
 
 @media only screen and (max-width: 1440px) { 
@@ -183,7 +187,7 @@
     .profileCard {
         height: 100%;
         margin-bottom: 10px;
-        width: 45%;
+        width: 55%;
         display: flex;
     }
 
@@ -243,6 +247,9 @@
         margin-right: 10px !important;
         font-size: 16px;
     }
+    .handIcon {
+        transform: rotate(90deg);
+    }
 
 
 }
@@ -270,5 +277,15 @@
     .profileDescription, .profileList li {
         font-size: 12px;
     }
+}
 
+@media only screen and (max-width: 460px) {
+    .defaultText {
+        color: white;
+        font-size: 12px;
+        font-weight: lighter;
+    }
+    .profileCard {
+        width: 90%;
+    }
 }
