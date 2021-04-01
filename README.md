@@ -1,12 +1,1 @@
-jr-dev
-Jr-dev Proyect
-
-Hola!
-
-Este repo es para empezar a trabajar en nuestra propia web, la que podremos probar despues en un hosting. Por ahora, necesitamos empezar a diseñarla y darle funcionalidad.
-
-Aca van a encontrar React y Node listos para usar con Express. Luego vamos a agregar alguna DB.
-
-Gracias por sumarse a esta idea de Jr-dev!
-
-Cristian Machuca.
+$env:GOOGLE_APPLICATION_CREDENTIALS="C:\Users\Cristian Machuca\Desktop\Proyectos\Proyecto Web\IT-Devs\it-devs-web-site-firebase-adminsdk-5rt5e-dc15ac8075.json"
