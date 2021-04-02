@@ -78,7 +78,8 @@ const QuienesSomos = () =>{
                                     Creemos que la confianza es vital a la hora de poner un proyecto en manos de otros, por eso
                                     te invitamos a que nos conozcas y que veas nuestros estudios, crecimiento, trabajos e ideas.<br/>
                                     <br/>
-                                    {<IconName.FaHandPointLeft className='handIcon' style={{fontSize: '22px', marginRight: '10px'}} />}Seleccioná un perfil para ver sus detalles.
+                                    {<IconName.FaHandPointLeft className='handIcon' style={{fontSize: '22px', marginRight: '10px'}} />}
+                                    Seleccioná un perfil para ver sus detalles.
                                 </p>
                             </div>
                         </React.Fragment>
@@ -86,14 +87,28 @@ const QuienesSomos = () =>{
                         <React.Fragment>
                             <h5 className='profileTitle'>{selectedProfile === 'Cristian' ? 'FullStack developer' : 'Front-End developer'}</h5>
                             <div className='profileInfo'>
-                                <p className='profileDescription'>
-                                    {
-                                        selectedProfile === 'Cristian' ? 
-                                        'Desarrollador FullStack MERN. Estudiante de Desarrollo de Software, en mis tiempos libres me gusta despejarme al aire libre y surfear por la web buscando nuevas habilidades de desarrollo. Emprendedor Web.' 
-                                        : 
-                                        'Buen día, buenas tardes, buenas noches! Me gusta aprender haciendo y hacer aprendiendo, disfruto de las cosas simples, trato de viajar con poco equipaje y camino mi vida con optimismo y alegría. Ésto es lo que me define y lo llevo a donde quiera que voy, mi trabajo, mi familia, amigos y estudio.'
-                                    }
-                                </p>
+                                {
+                                    selectedProfile === 'Cristian' ? 
+                                    <p className='profileDescription'>'Bio de Cristian' </p>
+                                    : 
+                                    <p className='profileDescription'>En 2018 puse mi interés en el gran mundo del IT, viendo todas sus posibilidades
+                                    y buscando algo que me cautivara. A principios de 2019 descubrí el
+                                    mundo del desarrollo web, sus herramientas y lenguajes y automáticamente quedé enamorado,
+                                    especialmente del lado del Front End.
+                                    <br/>
+                                    Allí es donde comienza mi aventura, desde entonces he estado estudiando, realizando diversos cursos y
+                                    por supuesto, practicando mucho, tratando de obtener habilidades con gran estilo visual y de alto rendimiento.
+                                    <br/>
+                                    Como todas las personas del mundo, el 2020 fue un año de desafíos que me encuentra
+                                    sin trabajo. Si bien fue difícil de llevar adelante también fue una oportunidad para enfocarse
+                                    y apostar al 100% a seguir aprendiendo y practicando. En este año me uní a una academia pudiendo
+                                    crecer en habilidades como React, Redux, GraphQl y Testing.
+                                    <br/>
+                                    Ahora en 2021 sigo trabajando en mis habilidades mientras busco mi primer
+                                    trabajo como desarrollador en el que pueda consolidar todos los conocimientos aprendidos en los
+                                    años pasados y pueda poner los ojos en el futuro.
+                                    </p>
+                                }
                                 <ul className='profileList'>
                                     <li>JavaScript Vanilla</li>
                                     <li>ReactJS</li>

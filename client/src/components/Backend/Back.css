@@ -18,12 +18,6 @@ td {
 #google_translate_element {
   display: none;
 }
-.logoCircle {
-  display: none;
-}
-.logoText {
-  margin: 1rem;
-}
 .stateButton {
   cursor: pointer;
   transition: 200ms all ease-in-out;
