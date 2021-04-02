@@ -30,28 +30,28 @@ import React, { useState } from 'react';
         image: 'http://imgfz.com/i/fcSWA5v.png',
         title: 'Blog de noticias',
         description: '#portfolio-item-4',
-        body: 'HTML - CSS - JavaScript Vanilla - Jquery'
+        body: 'Realizado bajo consigna de curso y utilizando HTML, CSS, JavaScript Vanilla, Jquery'
       },
       {
         id: '5',
         image: 'http://imgfz.com/i/pi5ek1h.jpeg',
         title: 'Pokenet Social',
         description: '#portfolio-item-5',
-        body: 'HTML - CSS - Bootstrap - ReactJs - Firebase'
+        body: 'Red Social Pokemon. Para su construcción se utilizó HTML, CSS, Bootstrap, ReactJs, Redux y Firebase'
       },
       {
         id: '6',
         image: 'http://imgfz.com/i/YnRc8QI.jpeg',
         title: 'Lista de Tareas Online',
         description: '#portfolio-item-6',
-        body: 'HTML - CSS - JavaScript Vanilla'
+        body: 'Realizado como ejercitación y solución a problemas domiciliarios, utilizando HTML, CSS y JavaScript Vanilla'
       },
       {
         id: '7',
         image: 'http://imgfz.com/i/zTurxg5.jpeg',
         title: 'Rick & Morty Data Finder',
         description: '#portfolio-item-7',
-        body: 'HTML - CSS - ReactJS - GraphQL - Redux'
+        body: 'Challenge realizado para Puzzle Accademy. Para su construcción se utilizó HTML, CSS, Bootstrap, ReactJs, Redux, GraphQl y la API de Rick and Morty'
       },
       {
         id: '8',

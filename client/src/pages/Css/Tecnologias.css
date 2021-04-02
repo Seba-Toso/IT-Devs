@@ -26,8 +26,18 @@
 
 
 
+@media only screen and (max-width: 768px) {
+    .simple-trans-main > div {
+        font-size: 10em;
+        flex-direction: column;
+    }
+    .simple-trans-main div svg{
+        margin-right: 0 !important;
+        font-size: 20rem !important;
+    }
+}
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 460px) {
     .logoContainer p {
         font-size: 16px !important;
         width: 70% !important;
@@ -38,8 +48,8 @@
     .simple-trans-main > div {
         font-size: 5em;
         height: 35rem;
-    }
-    .simple-trans-main svg {
-        margin-right: 1rem;
+    }   
+    .simple-trans-main div svg{
+        font-size: 12rem !important;
     }
 }
