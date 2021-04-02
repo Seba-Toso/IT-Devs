@@ -71,7 +71,7 @@ const Routes = () => {
                         {
                             isVisible && <React.Fragment> 
 
-                                <img src='assets/logoCircle.png' height={'80%'} className='logoCircle'  alt="logo"/>
+                                <img src='assets/logoCircle.png' height={'80%'} className='logoCircle' alt="logo"/>
                                 <h2 className='logoText'>IT-Devs</h2>
 
                             </React.Fragment>
@@ -133,7 +133,7 @@ const Routes = () => {
                 <Route path="/tecnologias" component={ Tecnologias } />
                 <Route path="/quienes" component={ Quienes } />
                 <Route path="/servicios" component={ Servicios } />
-                <Route path="/api/backend" component={ ClientsList } />
+                <Route path="/backoffice" component={ ClientsList } />
                 <Route path="" component={ NotFound } />           
             </Switch>
         </Router>
