@@ -12,6 +12,7 @@ import Quienes from '../../pages/Quienes';
 import Servicios from '../../pages/Servicios'
 import NotFound from '../../pages/NotFound';
 import ClientsList from '../Backend/ClientsList';
+import Admin from '../../pages/Admin';
 
 
 const Routes = () => {
@@ -133,6 +134,7 @@ const Routes = () => {
                 <Route path="/tecnologias" component={ Tecnologias } />
                 <Route path="/quienes" component={ Quienes } />
                 <Route path="/servicios" component={ Servicios } />
+                <Route path="/api/admin" component={ Admin } />
                 <Route path="/api/backend" component={ ClientsList } />
                 <Route path="" component={ NotFound } />           
             </Switch>
