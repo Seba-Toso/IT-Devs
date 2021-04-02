@@ -53,7 +53,8 @@
 }
 .text {
     font-size: 14px;
-    color: #ddd
+    color: #ddd;
+    margin-bottom: 0;
 }
 .SocialIcon {
     font-size: 20px;
