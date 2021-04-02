@@ -55,10 +55,10 @@ const QuienesSomos = () =>{
                         <h2 className='avatarName'>Sebastian Toso</h2>
                         <p onClick={()=> setSelectedProfile('Sebastian')}  className='knowMe'>Conoceme</p>
                         <div className="Links">
-                            <a id="github" href="https://github.com/Seba-Toso" target="_blank" rel="noopener noreferrer"><IconName.FaGithub/></a>  
-                            <a id="linkedin" href="www.linkedin.com/in/sebastiangtoso" target="_blank" rel="noopener noreferrer"><IconName.FaLinkedin/></a>
+                            <a id="github" href="https://github.com/Seba-Toso" target="blank" rel="noopener noreferrer"><IconName.FaGithub/></a>  
+                            <a id="linkedin" href="https://linkedin.com/in/sebastiangtoso" target="Blank" rel="noopener noreferrer"><IconName.FaLinkedin/></a>
                             <a id="youtube" href="www.youtube.com" target="_blank" rel="noopener noreferrer"><IconName.FaYoutube/></a>
-                            <a id="instagram" href="https://www.instagram.com/sebatoso/?hl=es-la" target="_blank"rel="noopener noreferrer"><IconName.FaInstagram/></a>
+                            <a id="instagram" href="https://www.instagram.com/sebatoso/?hl=es-la" target="blank"rel="noopener noreferrer"><IconName.FaInstagram/></a>
                         </div>
                     </div>
     
