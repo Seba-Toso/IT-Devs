@@ -134,12 +134,8 @@ const Routes = () => {
                 <Route path="/tecnologias" component={ Tecnologias } />
                 <Route path="/quienes" component={ Quienes } />
                 <Route path="/servicios" component={ Servicios } />
-<<<<<<< HEAD
-                <Route path="/api/admin" component={ Admin } />
-                <Route path="/api/backend" component={ ClientsList } />
-=======
+                <Route path="/admin" component={ Admin } />
                 <Route path="/backoffice" component={ ClientsList } />
->>>>>>> 7ecefc4c92a2b8a04e7ab52bbb9871b0cfe93cc7
                 <Route path="" component={ NotFound } />           
             </Switch>
         </Router>
