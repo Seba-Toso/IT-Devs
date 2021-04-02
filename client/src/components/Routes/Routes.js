@@ -11,7 +11,8 @@ import Tecnologias from '../../pages/Tecnologias';
 import Quienes from '../../pages/Quienes';
 import Servicios from '../../pages/Servicios'
 import NotFound from '../../pages/NotFound';
-import Back from '../../pages/Back';
+import ClientsList from '../Backend/ClientsList';
+
 
 const Routes = () => {
 
@@ -132,7 +133,7 @@ const Routes = () => {
                 <Route path="/tecnologias" component={ Tecnologias } />
                 <Route path="/quienes" component={ Quienes } />
                 <Route path="/servicios" component={ Servicios } />
-                <Route path="/api/test" component={ Back } />
+                <Route path="/api/backend" component={ ClientsList } />
                 <Route path="" component={ NotFound } />           
             </Switch>
         </Router>

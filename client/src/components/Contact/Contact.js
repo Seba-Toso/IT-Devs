@@ -24,11 +24,12 @@ const Contact = () => {
             phone: phone,
             message: message
         })
-        .then(() => {
+        .then((docRef) => {
+            const clientId = docRef.id;
            
             swal({
                 title:"Tu mensaje fue enviado con Exito!",
-                text:"Te contactaremos a la brevedad",
+                text:`Te contactaremos bajo tu solicitud N- ${clientId}`,
                 icon:"success",
              
               })
@@ -42,6 +43,8 @@ const Contact = () => {
         setEmail('')
         setPhone('')
         setMessage('')
+
+       
     }
 
     function form (){
