@@ -27,3 +27,11 @@
   list-style-type: none;
   border: none;
 }
+
+@media only screen and (max-width: 425px) {
+  .slick-dots li {
+    width: 12px;
+    margin: 0;
+    padding: 0;
+  }
+}

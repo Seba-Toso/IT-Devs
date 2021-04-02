@@ -49,16 +49,18 @@ const Contact = () => {
 
     function form (){
         return (
+            <div className='section contact'>
+            <h1 className='title contactTitle'>CONTACTATE CON NOSOTROS</h1>
             <div className='ContactContainer' >
             <form onSubmit={ handleSubmit } 
                         className='Form'
                          >
                 <label className='Label'>
-                    Nombre
+                    Nombre completo
                 </label>
                 <input 
                         type='text' 
-                        placeholder='Mi nombre es...' 
+                        placeholder='Nombre completo' 
                         onChange={(e) => setName( e.target.value )} 
                         className= 'Input' 
                         value={ name } 
@@ -66,11 +68,11 @@ const Contact = () => {
                         required
                         />
                 <label className='Label'>
-                    E-Mail
+                    E-Mail de contacto
                 </label>
                 <input 
                         type='email' 
-                        placeholder='Gran_mail@mail.com' 
+                        placeholder='it.devs@it-devs-mail.com' 
                         onChange={(e) => setEmail( e.target.value )} 
                         className='Input' 
                         value= { email }
@@ -81,18 +83,18 @@ const Contact = () => {
                 </label>
                 <input 
                         type='numeric' 
-                        placeholder='123456789' 
+                        placeholder='7777-7777' 
                         onChange={(e) => setPhone( e.target.value )} 
                         className='Input' 
                         value= { phone }
                         required
                         />
                 <label className='Label'>
-                    Contanos tus problemas
+                    Escribinos en qué podemos ayudar
                 </label>
                 <textarea 
                         type='text' 
-                        placeholder='Me pasa que...' 
+                        placeholder='Mensaje...' 
                         onChange={(e)=> setMessage( e.target.value)} 
                         className='Input Message'
                         value= { message }
@@ -113,7 +115,7 @@ const Contact = () => {
             </div>
             
         </div>
-
+        </div>
         )
     }
 

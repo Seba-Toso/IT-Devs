@@ -18,13 +18,15 @@ const Footer = () => {
         }
     },[setIsSmallScreen])
 
+
     return (
         <div className='FooterContainer'>
             <div className='FooterInfo'>
                 <p className='text'>
-                    This is a footer made with love and <ReactIcon.IoHeart className='heart' /> <br />
-                    Designed by Junior web developers for training propouse.
-                    This web is currently under construction, please take for good to wait.
+                    Este sitio fue diseñado y desarrollado por IT-DEVS con mucho <ReactIcon.IoHeart className='heart' /> <br />
+                    &copy; 2021. Todos los derechos reservados.
+                    <br/>
+                    Gracias por visitarnos.
                 </p>
             </div>
             <div className='SocialMediaContainer'>

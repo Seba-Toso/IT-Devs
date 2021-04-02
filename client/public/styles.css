@@ -24,7 +24,7 @@ body {
     height: 1rem;
     color:#fff;
     position: fixed;
-    right: 5.3rem;
+    right: 5rem;
     bottom: 80%;
     border-radius:50%;
     line-height:80px;
@@ -34,6 +34,9 @@ body {
   }
   .btn-whatsapp:hover {
     opacity: 100%;
+  }
+  .btn-whatsapp a img{
+    width: 4rem;
   }
   
   .cookies-box {

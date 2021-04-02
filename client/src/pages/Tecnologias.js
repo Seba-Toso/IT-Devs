@@ -53,11 +53,17 @@ const Tecnologias = () =>{
             <div className='section presentation'>
                 <div className='logoContainer'>
                     <p>
-                        En IT-Devs usamos tecnologías de punta para realizar
-                        todos nuestros trabajos, dentro de un ecosistema que convive perfectamente
-                        con todas las necesidades que nuestros clientes puedan tener.
-                        Robusto, fácil de mantener, vistoso, moderno, son algunas de las características que
-                        identifican nuestros proyectos.
+                        En IT-Devs utilizamos las últimas tecnologías para realizar
+                        todos nuestros trabajos, en un ecosistema que convive perfectamente
+                        con todas las necesidades que nuestros clientes puedan tener. {<br/>}
+                        Además de las herramientas básicas para la creación de webs (HTML, CSS y JavaScript),
+                        utilizamos librerías y frameworks como React, Bootstrap, Material UI, entre otros, lo que resulta en un sistema
+                        robusto, fácil de mantener, vistoso y moderno.{<br/>}
+                        {<br/>}
+                        Utilizar las herramientas de última generación y las más populares es fundamental para el mantenimiento ya que 
+                        parten de empresas (como Facebook) o comunidades que constantemente se encargan de mejorar la performance y la utilidad de las mismas, esto a su vez
+                        da la facilidad a nuestros clientes de tener una web que requerirá de poco mantenimiento a corto, mediano y largo plazo,
+                        reduciendo futuros costos.  
                     </p>
                 </div>
             </div>

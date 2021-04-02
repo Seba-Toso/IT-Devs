@@ -55,10 +55,10 @@ const QuienesSomos = () =>{
                         <h2 className='avatarName'>Sebastian Toso</h2>
                         <p onClick={()=> setSelectedProfile('Sebastian')}  className='knowMe'>Conoceme</p>
                         <div className="Links">
-                            <a id="github" href="https://github.com/Seba-Toso" target="_blank" rel="noopener noreferrer"><IconName.FaGithub/></a>  
-                            <a id="linkedin" href="www.linkedin.com/in/sebastiangtoso" target="_blank" rel="noopener noreferrer"><IconName.FaLinkedin/></a>
+                            <a id="github" href="https://github.com/Seba-Toso" target="blank" rel="noopener noreferrer"><IconName.FaGithub/></a>  
+                            <a id="linkedin" href="https://linkedin.com/in/sebastiangtoso" target="Blank" rel="noopener noreferrer"><IconName.FaLinkedin/></a>
                             <a id="youtube" href="www.youtube.com" target="_blank" rel="noopener noreferrer"><IconName.FaYoutube/></a>
-                            <a id="instagram" href="https://www.instagram.com/sebatoso/?hl=es-la" target="_blank"rel="noopener noreferrer"><IconName.FaInstagram/></a>
+                            <a id="instagram" href="https://www.instagram.com/sebatoso/?hl=es-la" target="blank"rel="noopener noreferrer"><IconName.FaInstagram/></a>
                         </div>
                     </div>
     
@@ -67,31 +67,44 @@ const QuienesSomos = () =>{
                 <div className='profileData'>
                     {
                         !selectedProfile ? 
-                        <h5 className='profileTitle'>Somos nuestro Staff</h5> 
+                        <React.Fragment>
+                            <h5 className='profileTitle'>Somos nuestro Staff</h5> 
+                            <div className='profileInfo'>
+                                <p className='defaultText'>
+                                    Somos un equipo de desarrolladores que buscan emprender el camino de la creación de sitios web,
+                                    ayudando a los demás a cumplir objetivos. Nos motiva poder brindar soluciones, herramientas, una mano
+                                    para que puedas llevar tu proyecto al siguiente nivel.<br/>
+                                    <br/>
+                                    Creemos que la confianza es vital a la hora de poner un proyecto en manos de otros, por eso
+                                    te invitamos a que nos conozcas y que veas nuestros estudios, crecimiento, trabajos e ideas.<br/>
+                                    <br/>
+                                    {<IconName.FaHandPointLeft className='handIcon' style={{fontSize: '22px', marginRight: '10px'}} />}Seleccioná un perfil para ver sus detalles.
+                                </p>
+                            </div>
+                        </React.Fragment>
                         :
                         <React.Fragment>
-                        <h5 className='profileTitle'>{selectedProfile === 'Cristian' ? 'FullStack developer' : 'Front-End developer'}</h5>
-                        <div className='profileInfo'>
-                            <p className='profileDescription'>
-                                {
-                                    selectedProfile === 'Cristian' ? 
-                                    'Desarrollador FullStack MERN. Estudiante de Desarrollo de Software, en mis tiempos libres me gusta despejarme al aire libre y surfear por la web buscando nuevas habilidades de desarrollo. Emprendedor Web.' 
-                                    : 
-                                    'Buen día, buenas tardes, buenas noches! Me gusta aprender haciendo y hacer aprendiendo, disfruto de las cosas simples, trato de viajar con poco equipaje y camino mi vida con optimismo y alegría. Ésto es lo que me define y lo llevo a donde quiera que voy, mi trabajo, mi familia, amigos y estudio.'
-                                }
-                            </p>
-                            <ul className='profileList'>
-                                <li>JavaScript Vanilla</li>
-                                <li>ReactJS</li>
-                                <li>React Native</li>
-                                <li>NodeJS</li>
-                                <li>Mongo</li>
-                                <li>Express</li>
-                                <li>Github</li>
-                                <li>GraphQL</li>
-                            </ul>
-                        </div>
-                    
+                            <h5 className='profileTitle'>{selectedProfile === 'Cristian' ? 'FullStack developer' : 'Front-End developer'}</h5>
+                            <div className='profileInfo'>
+                                <p className='profileDescription'>
+                                    {
+                                        selectedProfile === 'Cristian' ? 
+                                        'Desarrollador FullStack MERN. Estudiante de Desarrollo de Software, en mis tiempos libres me gusta despejarme al aire libre y surfear por la web buscando nuevas habilidades de desarrollo. Emprendedor Web.' 
+                                        : 
+                                        'Buen día, buenas tardes, buenas noches! Me gusta aprender haciendo y hacer aprendiendo, disfruto de las cosas simples, trato de viajar con poco equipaje y camino mi vida con optimismo y alegría. Ésto es lo que me define y lo llevo a donde quiera que voy, mi trabajo, mi familia, amigos y estudio.'
+                                    }
+                                </p>
+                                <ul className='profileList'>
+                                    <li>JavaScript Vanilla</li>
+                                    <li>ReactJS</li>
+                                    <li>React Native</li>
+                                    <li>NodeJS</li>
+                                    <li>Mongo</li>
+                                    <li>Express</li>
+                                    <li>Github</li>
+                                    <li>GraphQL</li>
+                                </ul>
+                            </div>
                         </React.Fragment>
                     }
                 </div>
