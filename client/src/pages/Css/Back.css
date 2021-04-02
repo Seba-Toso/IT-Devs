@@ -1,12 +1,10 @@
-ul {
-  padding:0;
-  list-style:none;
-  width: 30%;
-  margin:auto;
+th, td {
+  width: 20%;
+  border-left: 0.5px dotted rgba(204, 204, 204, 0.2);
 }
-
-li{
-  font-size:1.2rem;
-  line-height: 2rem;
-  border-bottom: 1px dotted #777;
+th {
+  text-transform: uppercase;
+}
+td {
+  background-color: #333;
 }
