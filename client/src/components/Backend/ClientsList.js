@@ -1,7 +1,10 @@
 import React, { useState, useEffect, useMemo, memo } from 'react';
 import { db } from '../../context/firebase';
-import {IoCheckmarkDone} from 'react-icons/io5'
-import './Back.css'
+import {IoCheckmarkDone} from 'react-icons/io5';
+import { useFirebaseApp } from 'reactfire';
+import { useHistory } from "react-router";
+import 'firebase/auth';
+import './Back.css';
 
 
 const ClientsList = () => {
@@ -16,6 +19,14 @@ const ClientsList = () => {
         return () => clientsMessages()
 
     }, []);
+
+    const firebase = useFirebaseApp();
+    const history = useHistory();
+
+    const handleLogout = () => {
+        firebase.auth().signOut()
+        history.push('/admin')       
+    }
     
 
  
@@ -24,7 +35,13 @@ const ClientsList = () => {
 
             return(
                 <div className="container">
-                <h1 style={{color:'white'}}>MENSAJES DE CLIENTES DESDE BASE DE DATOS</h1>
+                <h1 style={{color:'white'}}>MENSAJES DE CLIENTES DESDE BASE DE DATOS</h1>  
+                <button 
+                    type="submit" 
+                    class="btn btn-secondary mt-5"
+                    onClick={ handleLogout }
+                    >
+                    Logout</button>
                 {
                     data.map( doc => {
                         return (

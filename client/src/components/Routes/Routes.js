@@ -13,6 +13,7 @@ import Servicios from '../../pages/Servicios'
 import NotFound from '../../pages/NotFound';
 import ClientsList from '../Backend/ClientsList';
 import Admin from '../../pages/Admin';
+import ProtectedRoute from '../Backend/ProtectedRoute';
 
 
 const Routes = () => {
@@ -135,7 +136,7 @@ const Routes = () => {
                 <Route path="/quienes" component={ Quienes } />
                 <Route path="/servicios" component={ Servicios } />
                 <Route path="/admin" component={ Admin } />
-                <Route path="/backoffice" component={ ClientsList } />
+                <ProtectedRoute path="/backoffice" component={ ClientsList } />
                 <Route path="" component={ NotFound } />           
             </Switch>
         </Router>

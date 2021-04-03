@@ -11,7 +11,9 @@ const  firebaseApp = firebase.initializeApp({
  
 })
 
+const isAuthenticated = false;
+
 const db = firebase.firestore();
 
-export { db, firebaseApp }
+export { db, firebaseApp, isAuthenticated }
 
