@@ -82,8 +82,6 @@ const Estimate = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
-    // eslint-disable-next-line
-  const [price, setPrice] = useState(0);
   // eslint-disable-next-line
   const [loader, setLoader] = useState(true);
   
@@ -94,12 +92,12 @@ const Estimate = () => {
 
     
 
-    db.collection('Estimate')
+    db.collection('Contacts')
       .add({
         name: name,
         email: email,
         phone: phone,
-        price: ttlDb,
+        message: `Ha realizado presupuesto por: $ ${ttlDb}`,
       })
       .then(() => {
         swal({
@@ -116,7 +114,7 @@ const Estimate = () => {
     setName('');
     setEmail('');
     setPhone('');
-    setPrice('');
+
   };
 
   function estimateCost() {
