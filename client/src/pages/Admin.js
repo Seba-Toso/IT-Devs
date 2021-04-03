@@ -41,36 +41,29 @@ const Admin = () => {
 
     return (
             <div>
-                <div className='section intro'>
-                    <div className='sloganContainer'>
-                        <h1 className='sloganText One'>IT-DEVS</h1>
-                        <h1 className='sloganText Two'>SECTION</h1>
-                        <h1 className='sloganText Three'>ADMIN</h1>
-                    </div>
-                </div>
                 <div className="Container projectSlider section">
-                    <div class="container">
-                        <div class="login-form">
-                        <div class="main-div">
-                            <div class="panel mb-5">
+                    <div className="container">
+                        <div className="login-form">
+                        <div className="main-div">
+                            <div className="panel mb-5">
                                 <img src="../../assets/fullLogo.png" alt="admin" height={'150px'}/>
                             </div>
-                            <p>Please enter your e-mail and password</p>
+                            <small>Please enter your e-mail and password</small>
                                 <form id="Login" onSubmit={ handleSubmit }>
-                                    <div class="form-group">
+                                    <div className="form-group">
                                         <input 
                                         type="email" 
-                                        class="form-control" 
+                                        className="form-control" 
                                         id="inputEmail" 
                                         placeholder="Email Address"
                                         onChange={ (e) => setEmail( e.target.value )}
                                         required
                                         />
                                     </div>
-                                    <div class="form-group">
+                                    <div className="form-group">
                                         <input 
                                         type="password" 
-                                        class="form-control" 
+                                        className="form-control" 
                                         id="inputPassword" 
                                         placeholder="Password"
                                         onChange={ (e) => setPassword( e.target.value )}
@@ -79,12 +72,12 @@ const Admin = () => {
                                     </div>                               
                                     <button 
                                     type="submit" 
-                                    class="btn btn-primary mt-5"
+                                    className="btn btn-primary mt-5"
                                     >
                                     Login</button>
                                 </form>
                         </div>
-                                <p class="botto-text"> IT-Devs Web Sites Design.</p>
+                                <small className="botto-text"> IT-Devs Web Sites Design.</small>
                         </div>
                     </div>
                 </div>    

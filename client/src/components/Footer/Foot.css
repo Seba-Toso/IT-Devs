@@ -128,7 +128,9 @@
         margin-left: 0% !important;
     }
     .SocialMediaButton {
-        padding: 8px !important;
+        padding: 5px !important;
+        width: 2rem !important;
+        border-radius: 60px !important;
     }
     .ButtonContainer {
         right: 1rem !important;
