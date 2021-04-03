@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo, memo } from 'react';
 import { db } from '../../context/firebase';
-import {IoCheckmarkDone} from 'react-icons/io5';
+import { IoCloseCircle } from 'react-icons/io5';
 import { useFirebaseApp } from 'reactfire';
 import { useHistory } from "react-router";
 import 'firebase/auth';
@@ -27,14 +27,23 @@ const ClientsList = () => {
         firebase.auth().signOut()
         history.push('/admin')       
     }
+
+    const handleDelete = ( id ) => {
+        db.collection('Contacts').doc(id).delete()
+            .then(() => {
+                console.log("Document successfully deleted!");
+            }).catch((error) => {
+                console.error("Error removing document: ", error);
+            });
+    }
     
 
 
 
     const messageList = useMemo(() => {
         if(!data.length) return <h1 style={{color:'white'}}> ...Buscando contactos...</h1>
-
-            return(
+        
+        return(
                 <div className="container">
                 <h1 style={{color:'white'}}>MENSAJES DE CLIENTES DESDE BASE DE DATOS</h1>  
                 <button 
@@ -51,20 +60,24 @@ const ClientsList = () => {
                             <table className="table table-dark mt-5 mb-10" >
                                     <thead>
                                         <tr>
+                                        <th scope="col">ID</th>
                                         <th scope="col">Nombre</th>
                                         <th scope="col">E-mail</th>
                                         <th scope="col">Telefono</th>
                                         <th scope="col">Mensaje</th>
-                                        <th scope="col">Estado</th>
+                                        <th scope="col">Eliminar</th>
                                         </tr>
                                     </thead>
                                     <tbody id='table'>
                                     <tr>
+                                        <td>{ doc.id}</td>
                                         <td>{ doc.name }</td>
                                         <td>{ doc.email }</td>
                                         <td>{ doc.phone }</td>
                                         <td>{ doc.message }</td>
-                                        <td  className='stateButton' onClick={() => alert('cambio de estado')}><IoCheckmarkDone fontSize='24px' color='green' /></td>
+                                        <td  className='stateButton' 
+                                             onClick={() => handleDelete(doc.id) }>
+                                             <IoCloseCircle fontSize='24px' color='red' /></td>
                                     </tr>   
                                     </tbody>
                             </table>

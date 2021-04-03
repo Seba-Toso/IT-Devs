@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { auth, useFirebaseApp } from 'reactfire';
-import { Redirect, useHistory } from "react-router";
-import { firebaseApp, isAuthenticated }  from '../context/firebase';
+import React, { useState} from 'react';
+import {  useFirebaseApp } from 'reactfire';
+import { useHistory } from "react-router";
 import swal from 'sweetalert';
 import 'firebase/auth';
 import './Css/Admin.css';
