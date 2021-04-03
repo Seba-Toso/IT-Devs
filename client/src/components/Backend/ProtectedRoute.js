@@ -19,12 +19,16 @@ class ProtectedRoute extends React.Component {
    
     render() {
         const Component = this.props.component; 
+        
         return isAuthenticated ? (
+            
             <Component />
+        
         ) : (
+
             this.notAdmin(),
             <Redirect to={{ pathname: '/admin' }} />
-        
+
         );
     }
 }

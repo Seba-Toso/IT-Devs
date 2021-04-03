@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { useFirebaseApp } from 'reactfire';
-import { useHistory } from "react-router";
-import { isAuthenticated }  from '../context/firebase';
+import { auth, useFirebaseApp } from 'reactfire';
+import { Redirect, useHistory } from "react-router";
+import { firebaseApp, isAuthenticated }  from '../context/firebase';
 import swal from 'sweetalert';
 import 'firebase/auth';
 import './Css/Admin.css';
@@ -10,24 +10,22 @@ import './Css/Admin.css';
  
 const Admin = () => {
   const [ email, setEmail ] = useState('');
-  const [ password, setPassword ] = useState('');
-  
-  
-  
+  const [ password, setPassword ] = useState(''); 
+
  
   const firebase = useFirebaseApp();
   const history = useHistory();
   
   
-  
   const  handleSubmit = (e) =>{
+    
     e.preventDefault()
     firebase.auth().signInWithEmailAndPassword( email,password )
         .then(()=>{
             
-            history.push('/backoffice')
-
-        }).catch((error)=>{
+            history.push('/backoffice');
+        
+        }).catch(()=>{
             swal({
                 title: "Error en Usuario o la Contraseña",
                 icon: "warning",

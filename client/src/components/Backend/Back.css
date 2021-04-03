@@ -19,6 +19,10 @@ td {
 .stateButton:hover {
   background-color: #444;
 }
+.logout {
+  background:  linear-gradient(to left, rgb(190, 63, 84), rgb(190, 63, 63));;
+  border-radius: 5px;
+}
 
 @media only screen and (max-width: 760px) {
   .container {

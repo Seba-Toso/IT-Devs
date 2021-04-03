@@ -39,7 +39,7 @@ const ClientsList = () => {
                 <h1 style={{color:'white'}}>MENSAJES DE CLIENTES DESDE BASE DE DATOS</h1>  
                 <button 
                     type="submit" 
-                    class="btn btn-secondary mt-5"
+                    class="btn btn-secondary logout mt-5"
                     onClick={ handleLogout }
                     >
                     Logout</button>

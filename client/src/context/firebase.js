@@ -11,7 +11,8 @@ const  firebaseApp = firebase.initializeApp({
  
 })
 
-const isAuthenticated = true;
+let isAuthenticated = false
+firebase.auth().onAuthStateChanged( user => user? isAuthenticated=true : false)
 
 const db = firebase.firestore();
 
