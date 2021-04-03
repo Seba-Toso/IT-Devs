@@ -29,7 +29,8 @@ const ClientsList = () => {
     }
     
 
- 
+
+
     const messageList = useMemo(() => {
         if(!data.length) return <h1 style={{color:'white'}}> ...Buscando contactos...</h1>
 

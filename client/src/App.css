@@ -102,7 +102,7 @@
     position: relative !important;
     top: -28rem !important;
     right: 0 !important;
-}
+  }
 
 }
 
@@ -244,37 +244,6 @@
   }
   
 
-  .FooterInfo p {
-    font-size: 8px;
-  }
-  .heart {
-    font-size: 8px !important;
-  }
-  .SocialMediaContainer {
-    width: 35%;
-    grid-template-columns: 15vw 15vw !important;
-    row-gap: 0rem !important;
-    column-gap: 1rem;
-  }
-  .SocialMediaName {
-    margin-left: 0% !important;
-  }
-  .SocialMediaButton {
-    padding: 8px !important;
-    width: 7rem !important;
-  }
-  .ButtonContainer {
-    right: 1rem !important;
-    bottom: 3.5rem !important;
-    width: 2rem !important;
-    height: 2rem !important;
-    font-size: 26px !important;
-  }
-  .iconContainer {
-    padding: 0rem !important;
-  }
-
-
   .goog-te-gadget-simple {
     z-index: 1;
   }
@@ -291,7 +260,6 @@
 }
 
 
-
 @media only screen and (max-width: 425px) {
   .section {
     padding: 1rem !important;
@@ -299,36 +267,6 @@
   .tab {
     display: block;
   }
-
-  .FooterInfo p {
-    font-size: 8px;
-  }
-  .heart {
-    font-size: 8px !important;
-  }
-  .SocialMediaContainer {
-    grid-template-columns: 9vw 9vw !important;
-    row-gap: 0rem !important;
-  }
-  .SocialMediaName {
-    margin-left: 0% !important;
-  }
-  .SocialMediaButton {
-    padding: 5px !important;
-    width: 2rem !important;
-    border-radius: 60px !important;
-  }
-  .ButtonContainer {
-    right: 1rem !important;
-    bottom: 3.5rem !important;
-    width: 2rem !important;
-    height: 2rem !important;
-    font-size: 26px !important;
-  }
-  .iconContainer {
-    padding: 0rem !important;
-  }
-
 
   .goog-te-gadget-simple {
     margin-left: 60px;

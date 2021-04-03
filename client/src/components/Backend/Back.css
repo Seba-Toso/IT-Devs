@@ -12,12 +12,6 @@ th {
 td {
   background-color: #333;
 }
-.btn-whatsapp {
-  display: none;
-}
-#google_translate_element {
-  display: none;
-}
 .stateButton {
   cursor: pointer;
   transition: 200ms all ease-in-out;

@@ -17,7 +17,7 @@ import ProtectedRoute from '../Backend/ProtectedRoute';
 
 
 const Routes = () => {
-
+    
     //Nav Logo hanlding
     const [isInHome, setIsInHome] = useState(true)
     const [isVisible, setIsVisible] = useState(false)
