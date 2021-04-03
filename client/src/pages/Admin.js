@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useFirebaseApp } from 'reactfire';
 import { useHistory } from "react-router";
-import { isAuthenticated } from '../context/firebase';
+import { isAuthenticated }  from '../context/firebase';
 import swal from 'sweetalert';
 import 'firebase/auth';
 import './Css/Admin.css';
@@ -11,7 +11,8 @@ import './Css/Admin.css';
 const Admin = () => {
   const [ email, setEmail ] = useState('');
   const [ password, setPassword ] = useState('');
- 
+  
+  
   
  
   const firebase = useFirebaseApp();
@@ -23,7 +24,7 @@ const Admin = () => {
     e.preventDefault()
     firebase.auth().signInWithEmailAndPassword( email,password )
         .then(()=>{
-
+            
             history.push('/backoffice')
 
         }).catch((error)=>{
@@ -34,6 +35,7 @@ const Admin = () => {
                 dangerMode: true,
               })
         })
+       
   }
   
 

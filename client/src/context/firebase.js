@@ -11,7 +11,7 @@ const  firebaseApp = firebase.initializeApp({
  
 })
 
-const isAuthenticated = false;
+const isAuthenticated = true;
 
 const db = firebase.firestore();
 
