@@ -3,7 +3,7 @@ import React from 'react'
 const PriceButtons = props => {
 
     const clickHandle = (data) => {
-        console.log('action in movement');
+
         let button = document.getElementById(data.identifier).getAttribute('class').split(' ')[0]
 
         if(button === 'off'){

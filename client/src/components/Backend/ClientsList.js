@@ -20,6 +20,8 @@ const ClientsList = () => {
 
     }, []);
 
+    console.log(data);
+
     const firebase = useFirebaseApp();
     const history = useHistory();
 
@@ -53,41 +55,39 @@ const ClientsList = () => {
         return(
                 <div className="container">
                 <h2 style={{color:'white'}}>MENSAJES DE CLIENTES DESDE BASE DE DATOS</h2>  
-                <button 
-                    type="submit" 
-                    className="btn btn-secondary logout mt-5"
-                    onClick={ handleLogout }
-                    >
-                    Logout</button>
+                <button type="submit" className="btn btn-secondary logout mt-5" onClick={ handleLogout }>
+                    Logout
+                </button>
                 {
                     data.map( doc => {
                         return (
-
-                            <div className="mb-3" key={doc.id} >
-                                <div className="table table-dark mt-5 mb-5" >
-                                    <div className='thead'>
-                                        <div className='tr'>
-                                            <div className='th' scope="col">ID</div>
-                                            <div className='th' scope="col">Nombre</div>
-                                            <div className='th' scope="col">E-mail</div>
-                                            <div className='th' scope="col">Telefono</div>
-                                            <div className='th' scope="col">Mensaje</div>
-                                            <div className='th' scope="col">Eliminar</div>
-                                        </div>
+                            <div className="table" key={doc.id} >
+                                <span className='tableItem'>
+                                    <div className='tableTitle'>BORRAR</div>
+                                    <div className='tableDescription tableAction' onClick={() => handleDelete(doc.id) }>
+                                        <IoTrashBinSharp />
                                     </div>
-                                    <div className='tbody' id='table'>
-                                        <div className='tr trInfo'>
-                                            <div className='td'>{ doc.id}</div>
-                                            <div className='td'>{ doc.name }</div>
-                                            <div className='td'>{ doc.email }</div>
-                                            <div className='td'>{ doc.phone }</div>
-                                            <div className='td'>{ doc.message }</div>
-                                            <div className='td stateButton'
-                                                onClick={() => handleDelete(doc.id) }>
-                                                <IoTrashBinSharp /></div>
-                                        </div>   
-                                    </div>
-                                </div>
+                                </span>
+                                <span className='tableItem'>
+                                    <div className='tableTitle'>ID</div>
+                                    <div className='tableDescription'>{doc.id}</div>
+                                </span>
+                                <span className='tableItem'>
+                                    <div className='tableTitle'>NOMBRE</div>
+                                    <div className='tableDescription'>{doc.name}</div>
+                                </span>
+                                <span className='tableItem'>
+                                    <div className='tableTitle'>E-MAIL</div>
+                                    <div className='tableDescription'>{doc.email}</div>
+                                </span>
+                                <span className='tableItem'>
+                                    <div className='tableTitle'>TELÉFONO</div>
+                                    <div className='tableDescription'>{doc.phone}</div>
+                                </span>
+                                <span className='tableItem'>
+                                    <div className='tableTitle'>MENSAJE</div>
+                                    <div className='tableDescription'>{doc.message}</div>
+                                </span>
                             </div>
                         )
                     })
@@ -110,13 +110,11 @@ const ClientsList = () => {
                 </div>
             </div>
             <div className="Container projectSlider section">
-            { messageList }
+                { messageList }
             </div>
         </div>
     );
 }
 
 export default memo(ClientsList);
-
-
 

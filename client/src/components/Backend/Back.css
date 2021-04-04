@@ -1,89 +1,62 @@
-.container {
-  max-width: 100%;
-}
-.tr {
+.table {
   width: 100%;
+  margin-top: 2rem;
+  display: inline-flex;
+  flex-direction: column;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.tableItem {
   display: flex;
-  align-content: space-between;
-  justify-content: center;
-  height: max-content;
+}
+.tableTitle, .tableDescription {
+  border-bottom: 0.5px dotted #666;
+  padding: 5px;
+  font-size: 15px;
+}
+.tableTitle {
   background-color: #222;
+  color: #eee;
+  display: inline;
+  width: 30%;
+  font-weight: lighter;
+  cursor: default;
 }
-.trInfo {
-  background-color: #444 !important;
+.tableDescription {
+  background-color: #444;
+  color: #eee;
+  display: inline;
+  width: 70%;
+  height: max-content;
 }
-.th {
-  flex: 1;
+.tableDescription svg {
+  vertical-align: middle;
 }
-.td {
-  flex: 1;
-  align-self: center;
-}
-.td svg {
-  font-size: 24px;
-}
-.stateButton {
-  cursor: pointer;
+.tableAction{
   transition: 200ms all ease-in-out;
-  color: crimson;
+  cursor: pointer;
 }
-.stateButton:hover {
-  color: white;
+.tableAction:hover {
+  color: crimson;
+  background-color: #555;
 }
 .logout {
-  background:  linear-gradient(to left, rgb(190, 63, 84), rgb(190, 63, 63));;
   border-radius: 5px;
+  opacity: 0.7;
+  cursor: pointer;
 }
-@media only screen and (max-width: 1024px) {
-  .td {
-    max-height: 10rem;
-    overflow: scroll;
-  }
+.logout:hover {
+  opacity: 0.9 !important;
 }
 
 @media only screen and (max-width: 768px) {
-  .container {
-    max-width: none;
-  }
-  .th {
-    font-size: 15px !important;
-  }
-  .td {
-    font-size: 10px !important;
-    margin: 5px;
-  }
-  .td svg {
-    font-size: 18px !important;
+  .tableTitle, .tableDescription {
+    font-size: 14px;
   }
 }
-@media only screen and (max-width: 460px) {
-  h1 {
-    font-size: 22px;
-  }
-  .container {
-    padding: 0%;
-  }
-  .thead, .tbody {
-    width: 35%;
-  }
-  .tbody {
-    width: 65%;
-  }
-  .tr {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #222;
-  }
-  .td svg {
-    font-size: 15px i !important;
-  }
-  .table {
-    margin-top: 2rem !important;
-    padding: 2px;
-    border-top: 1px solid #dee2e6;
-    display: flex;
+
+@media only screen and (max-width: 600px) {
+  .tableTitle, .tableDescription {
+    font-size: 12px;
   }
 }
