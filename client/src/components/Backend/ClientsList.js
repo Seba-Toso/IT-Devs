@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo, memo } from 'react';
 import { db } from '../../context/firebase';
-import { IoCloseCircle } from 'react-icons/io5';
+import { IoTrashBinSharp } from 'react-icons/io5';
 import { useFirebaseApp } from 'reactfire';
 import { useHistory } from "react-router";
 import 'firebase/auth';
@@ -41,14 +41,21 @@ const ClientsList = () => {
 
 
     const messageList = useMemo(() => {
-        if(!data.length) return <h1 style={{color:'white'}}> ...Buscando contactos...</h1>
+        if(!data.length) return (
+            <div className="container">
+            <h2 style={{color:'white', alignSelf: 'center'}}>NO HAY MENSAJES PARA MOSTRAR</h2>
+                <button type="submit" className="btn btn-secondary logout mt-5" onClick={ handleLogout }>
+                    Logout
+                </button>
+            </div>
+        )
         
         return(
                 <div className="container">
-                <h1 style={{color:'white'}}>MENSAJES DE CLIENTES DESDE BASE DE DATOS</h1>  
+                <h2 style={{color:'white'}}>MENSAJES DE CLIENTES DESDE BASE DE DATOS</h2>  
                 <button 
                     type="submit" 
-                    class="btn btn-secondary logout mt-5"
+                    className="btn btn-secondary logout mt-5"
                     onClick={ handleLogout }
                     >
                     Logout</button>
@@ -57,30 +64,30 @@ const ClientsList = () => {
                         return (
 
                             <div className="mb-3" key={doc.id} >
-                            <table className="table table-dark mt-5 mb-10" >
-                                    <thead>
-                                        <tr>
-                                        <th scope="col">ID</th>
-                                        <th scope="col">Nombre</th>
-                                        <th scope="col">E-mail</th>
-                                        <th scope="col">Telefono</th>
-                                        <th scope="col">Mensaje</th>
-                                        <th scope="col">Eliminar</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id='table'>
-                                    <tr>
-                                        <td>{ doc.id}</td>
-                                        <td>{ doc.name }</td>
-                                        <td>{ doc.email }</td>
-                                        <td>{ doc.phone }</td>
-                                        <td>{ doc.message }</td>
-                                        <td  className='stateButton' 
-                                             onClick={() => handleDelete(doc.id) }>
-                                             <IoCloseCircle fontSize='24px' color='red' /></td>
-                                    </tr>   
-                                    </tbody>
-                            </table>
+                                <div className="table table-dark mt-5 mb-5" >
+                                    <div className='thead'>
+                                        <div className='tr'>
+                                            <div className='th' scope="col">ID</div>
+                                            <div className='th' scope="col">Nombre</div>
+                                            <div className='th' scope="col">E-mail</div>
+                                            <div className='th' scope="col">Telefono</div>
+                                            <div className='th' scope="col">Mensaje</div>
+                                            <div className='th' scope="col">Eliminar</div>
+                                        </div>
+                                    </div>
+                                    <div className='tbody' id='table'>
+                                        <div className='tr trInfo'>
+                                            <div className='td'>{ doc.id}</div>
+                                            <div className='td'>{ doc.name }</div>
+                                            <div className='td'>{ doc.email }</div>
+                                            <div className='td'>{ doc.phone }</div>
+                                            <div className='td'>{ doc.message }</div>
+                                            <div className='td stateButton'
+                                                onClick={() => handleDelete(doc.id) }>
+                                                <IoTrashBinSharp /></div>
+                                        </div>   
+                                    </div>
+                                </div>
                             </div>
                         )
                     })

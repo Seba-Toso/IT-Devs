@@ -1,35 +1,59 @@
-.table {
-  vertical-align: middle;
+.container {
+  max-width: 100%;
 }
-th, td {
-  width: 20%;
-  border-left: 0.5px dotted rgba(204, 204, 204, 0.2);
+.tr {
+  width: 100%;
+  display: flex;
+  align-content: space-between;
+  justify-content: center;
+  height: max-content;
+  background-color: #222;
 }
-th {
-  text-transform: uppercase;
-  font-weight: lighter;
+.trInfo {
+  background-color: #444 !important;
 }
-td {
-  background-color: #333;
+.th {
+  flex: 1;
+}
+.td {
+  flex: 1;
+  align-self: center;
+}
+.td svg {
+  font-size: 24px;
 }
 .stateButton {
   cursor: pointer;
   transition: 200ms all ease-in-out;
+  color: crimson;
 }
 .stateButton:hover {
-  background-color: #444;
+  color: white;
 }
 .logout {
   background:  linear-gradient(to left, rgb(190, 63, 84), rgb(190, 63, 63));;
   border-radius: 5px;
 }
+@media only screen and (max-width: 1024px) {
+  .td {
+    max-height: 10rem;
+    overflow: scroll;
+  }
+}
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
   .container {
     max-width: none;
   }
-  th, td {
-    font-size: 15px;
+  .th {
+    font-size: 15px !important;
+  }
+  .td {
+    font-size: 10px !important;
+    margin: 5px;
+  }
+  .td svg {
+    font-size: 18px !important;
   }
 }
 @media only screen and (max-width: 460px) {
@@ -39,15 +63,27 @@ td {
   .container {
     padding: 0%;
   }
-  th, td {
-    font-size: 8px;
+  .thead, .tbody {
+    width: 35%;
   }
-  .stateButton {
-    font-size: 15px;
+  .tbody {
+    width: 65%;
+  }
+  .tr {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #222;
+  }
+  .td svg {
+    font-size: 15px i !important;
   }
   .table {
     margin-top: 2rem !important;
     padding: 2px;
     border-top: 1px solid #dee2e6;
+    display: flex;
   }
 }
