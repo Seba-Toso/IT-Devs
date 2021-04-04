@@ -89,7 +89,17 @@ const QuienesSomos = () =>{
                             <div className='profileInfo'>
                                 {
                                     selectedProfile === 'Cristian' ? 
-                                    <p className='profileDescription'>'Bio de Cristian' </p>
+                                    <p className='profileDescription'>Empece en IT por un interés personal e impulsado como autodidacta en Python donde
+                                    mi primer proyecto fue con Flask, surge luego la posibilidad de hacer desarrollo web y seguido empiezo mis estudios
+                                    para prefesionalizme en esta carrera tan hermosa de IT-Developer en Java y C#.<br/>
+                                    En el camino descubrí FullStack JS M.E.R.N y fue algo que me impactó al ver las cosas que podemos hacer y aplicar en los 
+                                    demás solucionando problemas que surgen con el avance de la tecnología, como la necesitad de una App o un Web Site.<br/>
+                                    El haber pasado por varios lenguajes de programación me ayudó a ver este mundo IT con otra perspectiva, motivado a 
+                                    seguir creciendo y mejorando profesionalmente. Es cuando surge IT-Devs como parte del crecimiento profesional.<br/>
+                                    En mis tiempos libres, me gusta ir al parque... sentarme abajo de algún árbol y tomar aire fresco, como deporte y buen
+                                    argentino me encanta el fútbol.<br/>
+                                    Estoy abierto a nuevas posibilidades laborales que me ayuden a seguir creciendo y mejorando profesionalmente en IT. 
+                                    </p>
                                     : 
                                     <p className='profileDescription'>En 2018 puse mi interés en el gran mundo del IT, viendo todas sus posibilidades
                                     y buscando algo que me cautivara. A principios de 2019 descubrí el
