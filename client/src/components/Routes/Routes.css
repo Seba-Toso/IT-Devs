@@ -2,6 +2,12 @@
 .smallNav {
     display: none !important;
 }
+.smallNav svg {
+    margin-right: 1rem;
+}
+.largeNav {
+    margin-right: 1.5rem;
+}
 .navBar {
     position: fixed;
     display: flex;
