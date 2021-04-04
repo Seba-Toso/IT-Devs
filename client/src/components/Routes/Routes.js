@@ -19,7 +19,7 @@ import ProtectedRoute from '../Backend/ProtectedRoute';
 const Routes = () => {
     
     //Nav Logo hanlding
-    const [isInHome, setIsInHome] = useState(true)
+
     const [isVisible, setIsVisible] = useState(false)
     const [scrollPosition, setScrollPosition] = useState(0);
     const handleScroll = () => {
@@ -34,10 +34,7 @@ const Routes = () => {
     //Nav Logo Effect
     useEffect(() => {
 
-        if(!isInHome){
-            setIsVisible(true)
-            return
-        }
+        
         
         window.addEventListener('scroll', handleScroll, { passive: true });
         if(scrollPosition >= 700){
@@ -50,7 +47,7 @@ const Routes = () => {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, [handleScroll, setIsVisible, isInHome]);
+    }, [ handleScroll, setIsVisible ]);
 
 
     const showMenu = () => {
@@ -64,82 +61,69 @@ const Routes = () => {
         return 
     }
 
-    return (
-
-        <Router>
-            <header className="App-header">  
-                <nav className='navBar'>
-                    <div className='logo'>
-                        {
-                            isVisible && <React.Fragment> 
-
-                                <img src='assets/logoCircle.png' height={'80%'} className='logoCircle' alt="logo"/>
-                                <h2 className='logoText'>IT-Devs</h2>
-
-                            </React.Fragment>
-                        }
-                    </div>
-
-                    
-                    <div className='links smallNav' onClick={showMenu} >
-                        <IoMenu style={{fontSize: '30px', color:'rgb(63, 114, 190)'}}/> 
-                        <div id='linksMenu' style={{top: menu}}>
-                            <NavLink className='link' activeClassName="selected" to="/servicios">Servicios</NavLink>
-                            <NavLink className='link' activeClassName="selected" to="/tecnologias">Tecnologías</NavLink>
-                            <NavLink className='link' activeClassName="selected" to="/portfolio">Portfolio</NavLink>
-                            <NavLink className='link' activeClassName="selected" to="/quienes">Conocenos</NavLink>
-                            <NavLink className='link' activeClassName="selected" to="/presupuesto">Presupuesta</NavLink>
-                            <NavLink className='link' activeClassName="selected" exact to="/"
-                                isActive={(match) => {
-                                    if (!match) {
-                                        setIsInHome(false)
-                                        return;
-                                    }
-                                    setIsInHome(true)
-                                    return 
-                                }}>
-                                    <IoHome/>
-                            </NavLink>
-                        </div>
-                    </div>
-                    
-                    <div className='links largeNav'>
-                        <NavLink className='link' activeClassName="selected" to="/servicios">Servicios</NavLink>
-                        <NavLink className='link' activeClassName="selected" to="/tecnologias">Tecnologías</NavLink>
-                        <NavLink className='link' activeClassName="selected" to="/portfolio">Portfolio</NavLink>
-                        <NavLink className='link' activeClassName="selected" to="/quienes">Conocenos</NavLink>
-                        <NavLink className='link' activeClassName="selected" to="/presupuesto">Presupuesta</NavLink>
-                        <NavLink className='link' activeClassName="selected" exact to="/"
-                            isActive={(match) => {
-                                if (!match) {
-                                    setIsInHome(false)
-                                    return;
-                                }
-                                setIsInHome(true)
-                                return 
-                            }}>
-                                <IoHome/>
-                        </NavLink>
-                    </div>
-                    
-                </nav>
-            </header>
+    function renderNavBar() {
+        return(
+            <div>
+                <Router>
+                    <header className="App-header">  
+                        <nav className='navBar'>
+                            <div className='logo'>
+                                {
+                                    isVisible && <React.Fragment> 
             
-            <Switch>
-                <Route path="/" exact component={ Home } />
-                <Route path="/presupuesto" component={ Estimate } />
-                <Route path="/portfolio" component={ Portfolio } />
-                <Route path="/tecnologias" component={ Tecnologias } />
-                <Route path="/quienes" component={ Quienes } />
-                <Route path="/servicios" component={ Servicios } />
-                <Route path="/admin" component={ Admin } />
-                <ProtectedRoute path="/backoffice" component={ ClientsList } />
-                <Route path="" component={ NotFound } />           
-            </Switch>
-        </Router>
-
+                                        <img src='assets/logoCircle.png' height={'80%'} className='logoCircle' alt="logo"/>
+                                        <h2 className='logoText'>IT-Devs</h2>
+            
+                                    </React.Fragment>
+                                }
+                            </div>
+            
+                            
+                            <div className='links smallNav' onClick={showMenu} >
+                                <IoMenu style={{fontSize: '30px', color:'rgb(63, 114, 190)'}}/> 
+                                <div id='linksMenu' style={{top: menu}}>
+                                    <NavLink className='link' activeClassName="selected" to="/servicios">Servicios</NavLink>
+                                    <NavLink className='link' activeClassName="selected" to="/tecnologias">Tecnologías</NavLink>
+                                    <NavLink className='link' activeClassName="selected" to="/portfolio">Portfolio</NavLink>
+                                    <NavLink className='link' activeClassName="selected" to="/quienes">Conocenos</NavLink>
+                                    <NavLink className='link' activeClassName="selected" to="/presupuesto">Presupuesta</NavLink>
+                                    <NavLink className='link' activeClassName="selected" exact to="/"><IoHome/></NavLink>
+                                </div>
+                            </div>
+                            
+                            <div className='links largeNav'>
+                                <NavLink className='link' activeClassName="selected" to="/servicios">Servicios</NavLink>
+                                <NavLink className='link' activeClassName="selected" to="/tecnologias">Tecnologías</NavLink>
+                                <NavLink className='link' activeClassName="selected" to="/portfolio">Portfolio</NavLink>
+                                <NavLink className='link' activeClassName="selected" to="/quienes">Conocenos</NavLink>
+                                <NavLink className='link' activeClassName="selected" to="/presupuesto">Presupuesta</NavLink>
+                                <NavLink className='link' activeClassName="selected" exact to="/"><IoHome/></NavLink>
+                            </div>
+                            
+                        </nav>
+                    </header>
+                    
+                    <Switch>
+                        <Route path="/" exact component={ Home } />
+                        <Route path="/presupuesto" component={ Estimate } />
+                        <Route path="/portfolio" component={ Portfolio } />
+                        <Route path="/tecnologias" component={ Tecnologias } />
+                        <Route path="/quienes" component={ Quienes } />
+                        <Route path="/servicios" component={ Servicios } />
+                        <Route path="/admin" component={ Admin } />
+                        <ProtectedRoute path="/backoffice" component={ ClientsList } />
+                        <Route path="" component={ NotFound } />           
+                    </Switch>
+                </Router>
+            </div>
+        );
         
+    }
+
+    return (
+        <div>{  renderNavBar() }</div>
     )
 }
 
-export default Routes
+export default Routes;
+

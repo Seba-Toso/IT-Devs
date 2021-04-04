@@ -148,7 +148,8 @@ const Estimate = () => {
         name: name,
         email: email,
         phone: phone,
-        message: `Ha realizado presupuesto por: $ ${ttlDb}, con los siguientes requerimientos: ${itemsRequested.join(', ')}.`,
+        message: `Ha realizado presupuesto por: $ ${ttlDb}, 
+                  con los siguientes requerimientos: ${itemsRequested.join(', ')}.`,
       })
       .then((docRef) => {
         const clientId = docRef.id;
