@@ -170,6 +170,9 @@
     font-size: 15px;
     font-weight: lighter;
 }
+.handIcon {
+    animation: hand 3s ease-in-out infinite;
+}
 
 
 @media only screen and (max-width: 1440px) { 
@@ -249,6 +252,7 @@
     }
     .handIcon {
         transform: rotate(90deg);
+        animation: handUp 3s ease-in-out infinite;
     }
 
 
@@ -315,4 +319,17 @@
     .avatarName {
         font-weight: 500;
     }
+}
+
+@keyframes hand {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(25deg); }
+    50% { transform: rotate(-25deg);}
+    100% { transform: rotate(0deg); }
+}
+@keyframes handUp {
+    0% { transform: rotate(90deg); }
+    25% { transform: rotate(115deg); }
+    50% { transform: rotate(65deg);}
+    100% { transform: rotate(90deg); }
 }

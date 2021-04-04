@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import RoundButton from '../UI/RoundButton/RoundButton';
 import * as ReactIcon from 'react-icons/io5';
 import './Foot.css';

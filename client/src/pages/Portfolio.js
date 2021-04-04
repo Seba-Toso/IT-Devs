@@ -70,7 +70,7 @@ const Portfolio = () => {
           <div>
               <div className='section intro'>
                   <div className='sloganContainer'>
-                      <h1 className='sloganText One'>CONOCE</h1>
+                      <h1 className='sloganText One'>CONOCÉ</h1>
                       <h1 className='sloganText Two'>NUESTROS</h1>
                       <h1 className='sloganText Three'>PROYECTOS.</h1>
                   </div>

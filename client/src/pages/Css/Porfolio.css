@@ -29,16 +29,17 @@
   width: 100%;
   border-radius: 5px;
   background-color: rgb(17, 27, 36);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   text-align: -webkit-right;
   display: flex;
   align-items: center;
-  padding: 1rem;
+  padding: 0.5rem;
   overflow: hidden;
 }
 .ProjectImage {
   width: 100%;
-  height: 90%;
+  height: 100%;
+  border-radius: 5px;
 }
 .DescriptionDisplay {
   height: 20%;

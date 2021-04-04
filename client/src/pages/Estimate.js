@@ -7,37 +7,76 @@ import './Css/Estimate.css';
 
 // ---- REDUCER ----
 // actions
-const PRICE_UPDATE = 'PRICE_UPDATE';
+const ADD_PRODUCT = 'ADD_PRODUCT';
+const REST_PRODUCT = 'REST_PRODUCT'
 const calculatePriceReducer = (state, action) => {
-  if (action.type === PRICE_UPDATE) {
+  if (action.type === ADD_PRODUCT) {
     let totalPrice = state.totalPrice;
     let backendPrice = state.backendPrice;
     let frontendPrice = state.frontendPrice;
     let userInterfacePrice = state.userInterfacePrice;
+    let elementSelected = state.elementSelected;
     if (action.addTo === 'both') {
       const updatedBackendPrice = backendPrice + action.price;
       const updatedFrontendPrice = frontendPrice + action.price;
-      const updatedPrice =
-        totalPrice + action.price + action.price + userInterfacePrice;
+      const updatedPrice = totalPrice + action.price + action.price + userInterfacePrice;
+      const updatedItemList = elementSelected.concat(action.item)
       return {
         ...state,
         backendPrice: updatedBackendPrice,
         frontendPrice: updatedFrontendPrice,
         totalPrice: updatedPrice,
+        elementSelected: updatedItemList
       };
     }
     if (action.addTo === 'UI') {
       const updatedUserInterfacePrice = userInterfacePrice + action.price;
       const updatedPrice = totalPrice + action.price;
+      const updatedItemList = elementSelected.concat(action.item)
       return {
         ...state,
         userInterfacePrice: updatedUserInterfacePrice,
         totalPrice: updatedPrice,
+        elementSelected: updatedItemList
       };
     }
-    
-    
   }
+
+  if (action.type === REST_PRODUCT) {
+    let totalPrice = state.totalPrice;
+    let backendPrice = state.backendPrice;
+    let frontendPrice = state.frontendPrice;
+    let userInterfacePrice = state.userInterfacePrice;
+    let elementSelected = state.elementSelected;
+
+    if (action.addTo === 'both') {
+      const updatedBackendPrice = backendPrice + action.price;
+      const updatedFrontendPrice = frontendPrice + action.price;
+      const updatedPrice = totalPrice + action.price + action.price + userInterfacePrice;
+      const updatedItemList = elementSelected.filter(item => item !== action.item)
+      
+      return {
+        ...state,
+        backendPrice: updatedBackendPrice,
+        frontendPrice: updatedFrontendPrice,
+        totalPrice: updatedPrice,
+        elementSelected: updatedItemList
+      };
+    }
+    if (action.addTo === 'UI') {
+      const updatedUserInterfacePrice = userInterfacePrice + action.price;
+      const updatedPrice = totalPrice + action.price;
+      const updatedItemList = elementSelected.filter(item => item !== action.item)
+
+      return {
+        ...state,
+        userInterfacePrice: updatedUserInterfacePrice,
+        totalPrice: updatedPrice,
+        elementSelected: updatedItemList
+      };
+    }
+  }
+
   return state;
 };
 
@@ -51,25 +90,28 @@ const Estimate = () => {
       backendPrice: 0,
       frontendPrice: 0,
       userInterfacePrice: 0,
+      elementSelected: []
     }
     
   );
   const ttlDb = estimatorPriceState.totalPrice;
-
+  const itemsRequested = estimatorPriceState.elementSelected;
   
   const changePriceHandler = useCallback(
-    ({ identifier, price, addTo }) => {
+    ({ identifier, price, addTo, item }) => {
       if (identifier === 'off') {
         dispatchEstimatorPriceState({
-          type: 'PRICE_UPDATE',
+          type: 'REST_PRODUCT',
           price: 0 - price,
           addTo,
+          item
         });
       } else {
         dispatchEstimatorPriceState({
-          type: 'PRICE_UPDATE',
+          type: 'ADD_PRODUCT',
           price,
           addTo,
+          item
         });
       }
     },
@@ -89,20 +131,30 @@ const Estimate = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoader(true);
-
-    
-
+    if(itemsRequested.length === 0){
+        swal({
+          title: 'No puedes enviar una estimación vacía',
+          text: `Selecciona prestaciones para generar una estimación`,
+          icon: 'error',
+          buttons: true,
+          dangerMode: true,
+        });
+        setLoader(false);
+        return
+    } 
+  
     db.collection('Contacts')
       .add({
         name: name,
         email: email,
         phone: phone,
-        message: `Ha realizado presupuesto por: $ ${ttlDb}`,
+        message: `Ha realizado presupuesto por: $ ${ttlDb}, con los siguientes requerimientos: ${itemsRequested.join(', ')}.`,
       })
-      .then(() => {
+      .then((docRef) => {
+        const clientId = docRef.id;
         swal({
           title: 'Tu mensaje fue enviado con Exito!',
-          text: 'Te contactaremos a la brevedad',
+          text: `Te contactaremos a la brevedad bajo el siguiente ID-${clientId}`,
           icon: 'success',
         });
         setLoader(false);
@@ -122,7 +174,7 @@ const Estimate = () => {
       <div>
       <div className="section intro">
         <div className="sloganContainer">
-          <h1 className="sloganText One">CALCULA</h1>
+          <h1 className="sloganText One">CALCULÁ</h1>
           <h1 className="sloganText Two">EL COSTO</h1>
           <h1 className="sloganText Three">DE TU IDEA.</h1>
         </div>

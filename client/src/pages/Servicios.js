@@ -37,7 +37,7 @@ const Servicios = () =>{
         <div>
             <div className='section intro'>
                 <div className='sloganContainer'>
-                    <h1 className='sloganText One'>QUE</h1>
+                    <h1 className='sloganText One'>QUÉ</h1>
                     <h1 className='sloganText Two'>PODEMOS</h1>
                     <h1 className='sloganText Three'>OFRECERTE.</h1>
                 </div>
