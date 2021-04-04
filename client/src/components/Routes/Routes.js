@@ -80,33 +80,10 @@ const Routes = () => {
                         }
                     </div>
 
-                    {
-                        window.outerWidth < 1110 ? 
-                        <div className='links' onClick={showMenu} >
-                            <IoMenu style={{fontSize: '30px', color:'rgb(63, 114, 190)'}}/> 
-                            <div id='linksMenu' style={{top: menu}}>
-                                <NavLink className='link' activeClassName="selected" to="/servicios">Servicios</NavLink>
-                                <NavLink className='link' activeClassName="selected" to="/tecnologias">Tecnologías</NavLink>
-                                <NavLink className='link' activeClassName="selected" to="/portfolio">Portfolio</NavLink>
-                                <NavLink className='link' activeClassName="selected" to="/quienes">Conocenos</NavLink>
-                                <NavLink className='link' activeClassName="selected" to="/presupuesto">Presupuesta</NavLink>
-                                <NavLink className='link' activeClassName="selected" exact to="/"
-                                    isActive={(match) => {
-                                        if (!match) {
-                                            setIsInHome(false)
-                                            return;
-                                        }
-                                        setIsInHome(true)
-                                        return 
-                                    }}>
-                                        <IoHome/>
-                                </NavLink>
-                            </div>
-                        </div>
-                        :
-                        <div className='links'>
-                            
-                            
+                    
+                    <div className='links smallNav' onClick={showMenu} >
+                        <IoMenu style={{fontSize: '30px', color:'rgb(63, 114, 190)'}}/> 
+                        <div id='linksMenu' style={{top: menu}}>
                             <NavLink className='link' activeClassName="selected" to="/servicios">Servicios</NavLink>
                             <NavLink className='link' activeClassName="selected" to="/tecnologias">Tecnologías</NavLink>
                             <NavLink className='link' activeClassName="selected" to="/portfolio">Portfolio</NavLink>
@@ -124,7 +101,27 @@ const Routes = () => {
                                     <IoHome/>
                             </NavLink>
                         </div>
-                    }
+                    </div>
+                    
+                    <div className='links largeNav'>
+                        <NavLink className='link' activeClassName="selected" to="/servicios">Servicios</NavLink>
+                        <NavLink className='link' activeClassName="selected" to="/tecnologias">Tecnologías</NavLink>
+                        <NavLink className='link' activeClassName="selected" to="/portfolio">Portfolio</NavLink>
+                        <NavLink className='link' activeClassName="selected" to="/quienes">Conocenos</NavLink>
+                        <NavLink className='link' activeClassName="selected" to="/presupuesto">Presupuesta</NavLink>
+                        <NavLink className='link' activeClassName="selected" exact to="/"
+                            isActive={(match) => {
+                                if (!match) {
+                                    setIsInHome(false)
+                                    return;
+                                }
+                                setIsInHome(true)
+                                return 
+                            }}>
+                                <IoHome/>
+                        </NavLink>
+                    </div>
+                    
                 </nav>
             </header>
             

@@ -7,6 +7,67 @@
     justify-content: center;
     background: linear-gradient(to left, rgb(63, 160, 190), rgb(63, 122, 190));
 }
+.whatelse {
+    background: #f3f3f3;
+}
+.processContainer {
+    width: 100%;
+    height: max-content;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+    display: table;
+}
+.process {
+    display: inline-flex;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background: -webkit-gradient(linear, right top, left top, from(rgb(63, 160, 190)), to(rgb(63, 122, 190)));
+    margin: 35px;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    transition: 200ms all ease-in-out;
+}
+.process:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 32px -10px rgba(34, 34, 34, 0.5);
+}
+.process small {
+    width: 10rem;
+    height: 5rem;
+    padding: 0px 7px;
+    color: white;
+    font-weight: lighter;
+    border-bottom-left-radius: 110px;
+    border-bottom-right-radius: 110px;    
+    border: 5px solid #fafafa;
+}
+.process svg {
+    font-size: 70px;
+    color: white;
+    height: 60%;
+}
+.arrow{
+    font-size: 50px;
+    color: #555;
+    vertical-align: middle;
+}
+.arrow svg {
+    transform: rotate(270deg);
+}
+.faqHeader {
+    font-weight: bold;
+}
+.FAQ {
+    margin: 4rem 0;
+}
+.ask {
+    margin-top: 2rem;
+}
+.answer {
+    font-weight: lighter;
+}
 
 @media only screen and (max-width: 1440px) {
     .services {
@@ -33,6 +94,32 @@
     }
     .cardData {
         font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .processContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .process {
+        margin: 0;
+    }
+    .small {
+        font-size: 13px;
+    }
+    .arrow svg {
+        transform: rotate(0deg);
+    }
+    .FAQ {
+        margin: 4rem 2rem;
+    }
+    .ask {
+        font-size: 20px;
+    }
+    .answer {
+        font-size: 14px;
     }
 }
 

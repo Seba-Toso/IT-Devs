@@ -2,6 +2,9 @@
     font-family: LogoFont;
     src: url('../../assets/Urban.ttf')
 }
+.smallNav {
+    display: none !important;
+}
 .navBar {
     position: fixed;
     display: flex;
@@ -74,6 +77,12 @@
 
     .App-header {
         margin-bottom: 6rem;
+    }
+    .smallNav {
+        display: flex !important;
+    }
+    .largeNav {
+        display: none !important;
     }
     #linksMenu {
         background-color: white;

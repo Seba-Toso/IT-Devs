@@ -6,17 +6,11 @@ import './Foot.css';
 
 const Footer = () => {
 
-    const [isSmallScreen, setIsSmallScreen] = useState(false); 
 
     const scrollTopHandle = () => {
         window.scrollTo(0, 0);
     }
 
-    useEffect(()=>{
-        if(window.outerWidth <= 425){
-            setIsSmallScreen(true)
-        }
-    },[setIsSmallScreen])
 
 
     return (
@@ -33,16 +27,16 @@ const Footer = () => {
                 
 
                 <a className='SocialMediaName SocialMediaButton GitHub' href="https://cristian1534.github.io/Blog-IT-Devs.github.io" target='_blank' rel="noopener noreferrer">
-                    <ReactIcon.IoLogoGithub className='SocialIcon' /> {isSmallScreen? null : 'GitHub'}
+                    <ReactIcon.IoLogoGithub className='SocialIcon' /><small> GitHub</small>  
                 </a>
                 <a className='SocialMediaName SocialMediaButton LinkedIn' href="https://cristian1534.github.io/Blog-IT-Devs.github.io" target='_blank' rel="noopener noreferrer">
-                    <ReactIcon.IoLogoLinkedin className='SocialIcon' />  {isSmallScreen? null : 'LinkedIn'}
+                    <ReactIcon.IoLogoLinkedin className='SocialIcon' /><small> LinkedIn</small>  
                 </a>
                 <a className='SocialMediaName SocialMediaButton Mail' href="https://cristian1534.github.io/Blog-IT-Devs.github.io" target='_blank' rel="noopener noreferrer">
-                    <ReactIcon.IoMailSharp className='SocialIcon' />  {isSmallScreen? null : 'Mail'}
+                    <ReactIcon.IoMailSharp className='SocialIcon' /><small> Mail</small>  
                 </a>
                 <a className='SocialMediaName SocialMediaButton Blog' href="https://cristian1534.github.io/Blog-IT-Devs.github.io" target='_blank' rel="noopener noreferrer">
-                    <ReactIcon.IoNewspaperSharp className='SocialIcon' />  {isSmallScreen? null : 'Blog'}
+                    <ReactIcon.IoNewspaperSharp className='SocialIcon' /><small> Blog</small>  
                 </a>
                 
 
