@@ -5,21 +5,21 @@ import React, { useState } from 'react';
     const initialState = [
       {
         id: '1',
-        image: 'http://imgfz.com/i/oVrt6KT.jpeg',
+        image: 'http://imgfz.com/i/N1dIDAg.jpeg',
         title: 'Blog Python',
         description: '#portfolio-item-1',
         body: 'Sitio diseñado con Python y Flask en base de SQL.',     
       },
       {
         id: '2',
-        image: 'http://imgfz.com/i/o5IHu0b.jpeg',
+        image: 'http://imgfz.com/i/LHG0fn3.jpeg',
         title: 'E-commerce',
         description: '#portfolio-item-2',
         body: 'Web diseñada en Front con Angular y Backend en Node - Express.'
       },
       {
         id: '3',
-        image: 'http://imgfz.com/i/ojQLO6e.jpeg',
+        image: 'http://imgfz.com/i/eFBAsvz.jpeg',
         title: 'E-commerce',
         description: '#portfolio-item-3',
         body: 'Web diseñada en Front con React y Backend en Node - Express.'
@@ -55,28 +55,28 @@ import React, { useState } from 'react';
       },
       {
         id: '8',
-        image: ' http://imgfz.com/i/XV6jOyf.png',
+        image: 'http://imgfz.com/i/LuN7EgM.jpeg',
         title: 'E-commerce',
         description: '#portfolio-item-8',
         body: 'React, JsonServer, Firebase.'
       },
       {
         id: '9',
-        image: 'http://imgfz.com/i/PGAYEIt.png',
+        image: 'http://imgfz.com/i/76C0aZS.jpeg',
         title: 'Finance app',
         description: '#portfolio-item-9',
         body: 'React, Node, Express, MongoDB.'
       },
       {
         id: '10',
-        image: ' http://imgfz.com/i/Hmf5QWy.png',
+        image: ' http://imgfz.com/i/glqOIky.jpeg',
         title: 'API Rick & Morgan',
         description: '#portfolio-item-10',
         body: 'React, Hooks.'
       },
       {
         id: '11',
-        image: 'http://imgfz.com/i/tOAzEjM.png',
+        image: 'http://imgfz.com/i/NIXKlnQ.jpeg',
         title: 'Full Posts Calling',
         description: '#portfolio-item-11',
         body: 'React, Axios, PlaceHolder API.'

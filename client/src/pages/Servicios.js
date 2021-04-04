@@ -14,6 +14,7 @@ const Servicios = () =>{
         {image: <ReactIcons.MdSettings className='imageIcon'/> , title: 'Mantenimiento', data: 'Confiá tu web a nuestras manos para revisarlo, actualizarlo y mantenerlo activo.'},
         {image: <ReactIcons.MdSettings className='imageIcon'/> , title: 'Nuevo Servicio', data: 'Tarjeta de prueba a completar con otros servicios ofrecidos'},
         {image: <ReactIcons.MdSettings className='imageIcon'/> , title: 'Otro Servicio', data: 'Tarjeta de prueba a completar con otros servicios ofrecidos'},
+        {image: <ReactIcons.MdSettings className='imageIcon'/> , title: 'y un Servicio mas', data: 'Tarjeta de prueba a completar con otros servicios ofrecidos'}
     ]
      
     const servicesList = useMemo(() => {
