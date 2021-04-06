@@ -21,7 +21,7 @@ const ClientsList = () => {
     }, []);
 
     console.log(data);
-
+    // eslint-disable-next-line
     const firebase = useFirebaseApp();
     const history = useHistory();
 

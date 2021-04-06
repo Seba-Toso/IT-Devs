@@ -54,6 +54,7 @@ const Contact = () => {
             <div className='ContactContainer' >
             <form onSubmit={ handleSubmit } 
                         className='Form'
+                        id='form'
                          >
                 <label className='Label'>
                     Nombre completo
@@ -102,6 +103,7 @@ const Contact = () => {
                         />
                 <button  
                     className="Submit" 
+                    id="submitBtn"
                     type="submit"
                 >Enviar</button>
             </form>
