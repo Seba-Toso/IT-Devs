@@ -16,3 +16,5 @@ describe('<Loader /> Snapshot', () => {
     expect(loader.toJSON()).toMatchSnapshot();
   })
 })
+
+// Closed...

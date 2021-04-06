@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useMemo, memo } from 'react';
 import { Context } from '../../../context/initialState';
 import Slide from "react-slick";
 import "slick-carousel/slick/slick.css"; 
@@ -21,30 +21,33 @@ const Slider = () =>{
         pauseOnHover: true,
     }
     
+    const sliderRender = useMemo(() => {
+        if(!state.length) return <h1>No hay data para mostrar...</h1>
+        return (
+                <Slide {...settings} className='slider'>
+                {
+                        state.map( project => { 
+                            return (
+                                <div key={project.id} className='slideImageContainer'>
+                                    <img 
+                                        src={project.image} 
+                                        alt='project' 
+                                        className='slideImage'
+                                        />
+                                </div>
+                            )
+                        })
+                    }
+                </Slide>
+        )
+
+    }, [ state ])
     return(
-
-        <Slide {...settings} className='slider'>
-           {
-                state.map( project => { 
-                    return (
-                        <div key={project.id} className='slideImageContainer'>
-                            <img 
-                                src={project.image} 
-                                alt='project' 
-                                className='slideImage'
-                                />
-                        </div>
-                    )
-                })
-            }
-        </Slide>
-
-        
-
+        <div>{ sliderRender }</div>
     )
 };
 
-export default Slider;
+export default memo(Slider);
 
 
 

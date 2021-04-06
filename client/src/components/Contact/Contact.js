@@ -78,6 +78,7 @@ const Contact = () => {
                         className='Input' 
                         value= { email }
                         required
+                        id='email'
                         />
                 <label className='Label'>
                     Teléfono de contacto
@@ -89,6 +90,7 @@ const Contact = () => {
                         className='Input' 
                         value= { phone }
                         required
+                        id='phone'
                         />
                 <label className='Label'>
                     Escribinos en qué podemos ayudar
@@ -100,6 +102,7 @@ const Contact = () => {
                         className='Input Message'
                         value= { message }
                         required
+                        id='message'
                         />
                 <button  
                     className="Submit" 

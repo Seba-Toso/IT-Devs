@@ -8,7 +8,8 @@
     "start": "node server.js",
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run client\" \"npm run server\""
+    "dev": "concurrently \"npm run client\" \"npm run server\"",
+    "test": "mocha test/*.js --timeout 15000 --recursive"  
   },
   "author": "Cristian Machuca",
   "license": "MIT",
@@ -28,6 +29,9 @@
     "morgan": "^1.10.0",
     "react-icons": "^4.1.0",
     "react-scripts": "^4.0.1",
-    "sweetalert": "^2.1.2"
+    "sweetalert": "^2.1.2",
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "mocha": "^2.4.5"
   }
 }

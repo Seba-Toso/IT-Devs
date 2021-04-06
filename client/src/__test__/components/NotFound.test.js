@@ -12,3 +12,5 @@ describe('<NotFound />', () => {
     expect(lost.find('img')).not.toBe(null);
   });
 });
+
+//Closed...

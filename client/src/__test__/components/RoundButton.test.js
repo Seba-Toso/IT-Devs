@@ -9,3 +9,5 @@ describe('<RoundButton />', () => {
     expect(wrapper.find('onClick')).toEqual({});
   });
 });
+
+// Closed...

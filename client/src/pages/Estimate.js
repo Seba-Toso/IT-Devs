@@ -228,6 +228,7 @@ const Estimate = () => {
                 className="estimatorInput"
                 value={email}
                 required
+                id="email"
               />
               <input
                 type="numeric"
@@ -236,6 +237,7 @@ const Estimate = () => {
                 className="estimatorInput"
                 value={phone}
                 required    
+                id="phone"
               />
                <button className="Submit" type="submit" id="estimateBtn">
                 Enviar

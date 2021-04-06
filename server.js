@@ -16,6 +16,22 @@ app.use(express.json())
 app.use(cors());
 app.use(bodyParser.json());
 
+let contacts = [
+      {
+      name:"Pedro", 
+      email: "Pedro@gmail.com", 
+      phone: "55556666", 
+      message: "Soy Pedro." 
+      },
+      {
+      name:"Juancho", 
+      email: "Juancho@gmail.com", 
+      phone: "55556666", 
+      message: "Soy Juancho."
+      }
+];
+
+
 // routes...
 app.use('/api', contactRoute.routes);
 
@@ -29,5 +45,5 @@ app.listen(config.port, () =>
       )
 );
 
-
+module.exports = app;
 

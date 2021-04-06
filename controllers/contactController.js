@@ -21,7 +21,7 @@ const getContacts = async ( req, res ) => {
         const data = await clientsMessages.get();
         const contactList = []
         if(data.empty) {
-            res.statu(400).send('No hay mensajes...')
+            res.status(400).send('No hay mensajes...')
         }else {
             data.forEach( doc => {
                 const contact = new Contact (
@@ -40,7 +40,7 @@ const getContacts = async ( req, res ) => {
             });
         }
     }catch( err ) {
-        res.status(400).send( error.message )
+        res.status(400).send( err.message )
     }
 }
 
