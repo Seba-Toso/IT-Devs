@@ -7,8 +7,6 @@ const QuienesSomos = () =>{
 
     const [selectedProfile, setSelectedProfile] = useState(null)
 
-    
-
     return(
         <div> 
             <div className='section presentation'>
@@ -133,9 +131,6 @@ const QuienesSomos = () =>{
                         </React.Fragment>
                     }
                 </div>
-
-            
-               
             </div> 
      </div>
     

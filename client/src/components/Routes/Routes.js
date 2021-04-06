@@ -34,8 +34,6 @@ const Routes = () => {
     //Nav Logo Effect
     useEffect(() => {
 
-        
-        
         window.addEventListener('scroll', handleScroll, { passive: true });
         if(scrollPosition >= 700){
             setIsVisible(true)

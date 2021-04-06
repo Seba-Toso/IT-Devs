@@ -3,7 +3,7 @@ import Tab from './Tab'
 import './CharsTabs.css'
 
 
-const CharsTab = props => {
+const CharsTab = () => {
 
     const Characteristics = [ 
         {
@@ -26,7 +26,6 @@ const CharsTab = props => {
     const imgElement = document.getElementById('CharImage')
 
     const hoverHandle = Characteristic => {
-        console.log('clicked');
         imgElement.setAttribute('src', Characteristic.image)
         document.getElementById('charDescription').innerText = Characteristic.description
     }

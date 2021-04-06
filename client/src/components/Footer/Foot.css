@@ -85,7 +85,10 @@
     position: relative;
     right: 1rem;
 }
-
+.ButtonContainer {
+    width: 64px;
+    height: 64px;
+}
 
 @media only screen and (max-width: 1024px) {
     .text {
@@ -138,14 +141,22 @@
         border-radius: 60px !important;
     }
     .ButtonContainer {
-        right: 1rem !important;
+        width: 60px;
+        height: 60px;
+        right: 0.5rem !important;
         bottom: 3.5rem !important;
-        width: 2rem !important;
-        height: 2rem !important;
-        font-size: 26px !important;
     }
     .iconContainer {
         padding: 0rem !important;
+    }
+    .iconContainer svg {
+        width: 50px;
+        height: 60px;
+    }
+    .ScrollTopButton {
+        right: 0rem !important;
+        top: unset !important;
+        bottom: 3rem !important;
     }
 }
 
@@ -157,9 +168,6 @@
     }
     .FooterInfo {
         margin: 0.5rem;
-    }
-    .ScrollTopButton {
-        width: 10% !important;
     }
     .text {
         font-size: 9px !important;
@@ -176,15 +184,16 @@
         border-radius: 60px !important;
     }
     .ButtonContainer {
-        right: 1rem !important;
-        bottom: 3.5rem !important;
-        width: 2rem !important;
-        height: 2rem !important;
-        font-size: 26px !important;
+        width: 50px;
+        height: 50px;
+        right: 0.9rem !important;
+        bottom: 2.8rem !important;
     }
-    .iconContainer {
-        padding: 0rem !important;
+    .iconContainer svg {
+        width: 40px;
+        height: 50px;
     }
+
 }
 
 

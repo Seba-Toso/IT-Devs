@@ -5,7 +5,6 @@ import './Tab.css'
 
 const Tab = props => {
 
-
     return (
         <div className='tab' onMouseOver={props.hoverHandle}>
             <h4 className='tabName'>

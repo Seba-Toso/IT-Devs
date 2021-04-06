@@ -76,7 +76,7 @@ const Admin = () => {
                                     Login</button>
                                 </form>
                         </div>
-                                <small className="botto-text"> IT-Devs Web Sites Design.</small>
+                                <small className="botto-text">&copy; IT-Devs Web Sites Design.</small>
                         </div>
                     </div>
                 </div>    

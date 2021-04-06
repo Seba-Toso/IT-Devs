@@ -99,21 +99,20 @@ const Estimate = () => {
   
   const changePriceHandler = useCallback(
     ({ identifier, price, addTo, item }) => {
-      if (identifier === 'off') {
+      identifier === 'off' ?
         dispatchEstimatorPriceState({
           type: 'REST_PRODUCT',
           price: 0 - price,
           addTo,
           item
-        });
-      } else {
+        })
+      :
         dispatchEstimatorPriceState({
           type: 'ADD_PRODUCT',
           price,
           addTo,
           item
         });
-      }
     },
     [dispatchEstimatorPriceState]
   );

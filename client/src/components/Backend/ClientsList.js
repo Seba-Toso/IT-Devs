@@ -9,19 +9,20 @@ import './Back.css';
 
 const ClientsList = () => {
     const [data, setData] = useState([]);
+    const [isFetching, setIsfetching] = useState(false)
     
 
     useEffect(() => { 
+        setIsfetching(true)
         const clientsMessages = db.collection('Contacts').onSnapshot(snap => {
             const data = snap.docs.map(doc => ({...doc.data(), 'id': doc.id}))
             setData(data)
+            setIsfetching(false)
         });
         return () => clientsMessages()
 
     }, []);
 
-    console.log(data);
-    // eslint-disable-next-line
     const firebase = useFirebaseApp();
     const history = useHistory();
 
@@ -43,21 +44,15 @@ const ClientsList = () => {
 
 
     const messageList = useMemo(() => {
-        if(!data.length) return (
+        return !data.length ? (
             <div className="container">
-            <h2 style={{color:'white', alignSelf: 'center'}}>NO HAY MENSAJES PARA MOSTRAR</h2>
-                <button type="submit" className="btn btn-secondary logout mt-5" onClick={ handleLogout }>
-                    Logout
-                </button>
+            <h2 style={{color:'white', alignSelf: 'center'}}>{!isFetching? 'CARGANDO MENSAJES...' : 'NO HAY MENSAJES'}</h2>
             </div>
         )
-        
-        return(
-                <div className="container">
+        :
+        (
+            <div className="container">
                 <h2 style={{color:'white'}}>MENSAJES DE CLIENTES DESDE BASE DE DATOS</h2>  
-                <button type="submit" className="btn btn-secondary logout mt-5" onClick={ handleLogout }>
-                    Logout
-                </button>
                 {
                     data.map( doc => {
                         return (
@@ -94,9 +89,6 @@ const ClientsList = () => {
                 }     
             </div>
         )
-
-
-
     }, [ data ])
 
 
@@ -112,6 +104,9 @@ const ClientsList = () => {
             <div className="Container projectSlider section">
                 { messageList }
             </div>
+            <button type="submit" className="btn btn-secondary logout mt-5" onClick={ handleLogout }>
+                Logout
+            </button>
         </div>
     );
 }

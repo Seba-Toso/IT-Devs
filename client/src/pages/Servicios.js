@@ -8,25 +8,23 @@ const Servicios = () =>{
 
     const services = [
         {image: <ReactIcons.MdLineStyle className='imageIcon'/> , title: 'Landing Pages', data: 'Webs de una sola página, ideales para promociones, campañas de márketing o información concreta.'},
-        {image: <ReactIcons.MdLocalMall className='imageIcon'/> , title: 'Tienda Online', data: 'Tiendas personalizadas y amoldadas a tu marca, tus productos y tu estilo.'},
-        {image: <ReactIcons.MdWeb className='imageIcon'/> , title: 'Blogs', data: 'Páginas simples para mostrar contenido propio, compartir tus ideas personales, darte a conocer.'},
+        {image: <ReactIcons.MdLocalMall className='imageIcon'/> , title: 'Tienda Online', data: 'Desarrollamos una tienda hecha a tu medida.'},
+        {image: <ReactIcons.MdWeb className='imageIcon'/> , title: 'Blogs', data: 'Creamos páginas simples y llamativas para que muestres tu propio contenido, compartas tus ideas y te des a conocer.'},
         {image: <ReactIcons.MdPieChart className='imageIcon'/> , title: 'Sistemas de Gestión', data: 'Tené el control de tu emprendimiento con una vistosa y moderna web de gestión.'},
-        {image: <ReactIcons.MdSettings className='imageIcon'/> , title: 'Mantenimiento', data: 'Confiá tu web a nuestras manos para revisarlo, actualizarlo y mantenerlo activo.'},
-        {image: <ReactIcons.MdSettings className='imageIcon'/> , title: 'Nuevo Servicio', data: 'Tarjeta de prueba a completar con otros servicios ofrecidos'},
-        {image: <ReactIcons.MdSettings className='imageIcon'/> , title: 'Otro Servicio', data: 'Tarjeta de prueba a completar con otros servicios ofrecidos'},
-        {image: <ReactIcons.MdSettings className='imageIcon'/> , title: 'y un Servicio mas', data: 'Tarjeta de prueba a completar con otros servicios ofrecidos'}
+        {image: <ReactIcons.MdSchool className='imageIcon'/> , title: 'Educactivo', data: 'Llevamos la educación al siguiente nivel. Publica contenidos de diversa índole con los que las personas puedan aprender. '},
+        {image: <ReactIcons.MdNewReleases className='imageIcon'/> , title: 'Portales', data: 'Crea una web que agrupe información de diversa índole como noticias, política, tecnología o dedicados a un tema particular.'},
+        {image: <ReactIcons.MdSettings className='imageIcon'/> , title: 'Mantenimiento', data: 'Revisamos el código de tu web en búsqueda de errores, bugs o elementos obsoletos.'},
+        {image: <ReactIcons.MdSystemUpdateAlt className='imageIcon'/> , title: 'Actualización', data: 'Tomamos tu web, actualizamos y modernizamos su código.'}
     ]
      
     const servicesList = useMemo(() => {
-        if( !services.length ) return null
-
-        return (
-
+        return !services.length ?  null
+        :
+        (
             <div className='section services'>
                 {
-                    services.map(service => { return <Card key={service.title} service={service} /> })
+                    services.map(service => <Card key={service.title} service={service} /> )
                 }
-               
             </div>
         )
     }, [ services ])
@@ -58,14 +56,35 @@ const Servicios = () =>{
                 </div> 
                 <h2 className='subtitle faqHeader'>F.A.Q</h2>
                 <div className='FAQ'>
-                    <h4 className='ask'>¿Ésto es una pregunta?</h4>
-                    <p className='answer'>Ésto es una respuesta a la pregunta de arriba</p>
-                    <h4 className='ask'>¿Ésto es una pregunta?</h4>
-                    <p className='answer'>Ésto es una respuesta a la pregunta de arriba</p>
-                    <h4 className='ask'>¿Ésto es una pregunta?</h4>
-                    <p className='answer'>Ésto es una respuesta a la pregunta de arriba</p>
-                    <h4 className='ask'>¿Ésto es una pregunta?</h4>
-                    <p className='answer'>Ésto es una respuesta a la pregunta de arriba</p>
+                    <h4 className='ask'>¿Enviar un presupuesto me compromete a la realización de la web?</h4>
+                    <p className='answer'>No, el presupuesto nos llegará y luego nos pondremos en contacto, en caso desistir, con solo notificarnos basta para no proceder con la realización de la misma.</p>
+                    
+                    <h4 className='ask'>¿Cuáles son los pasos luego de encargar un trabajo?</h4>
+                    <p className='answer'>Coordinaremos un encuentro en donde nos harás saber tus necesidades y nos brindarás toda la información necesaria para que podamos diseñar un primer boceto de la web
+                     y su código básico (Colores, logos, imágenes, textos o palabras clave, etc). Luego pediremos conformidad para comenzar a trabajar en la creación de la web.
+                    </p>
+                    
+                     <h4 className='ask'>¿Puedo conocer el avance de mi web antes del resultado final?</h4>
+                    <p className='answer'>Si, podemos coordinar distintos encuentros para ir corroborando el avance e ir generando feedback sobre la creación del mismo.</p>
+                    
+                    <h4 className='ask'>¿En cuánto tiempo voy a tener mi web disponible?</h4>
+                    <p className='answer'>El tiempo de trabajo será determinado por los requerimientos que deba tener la web. Solamente podremos estimar un tiempo una vez
+                    que sepamos estas necesidades.
+                    </p>
+                    
+                    <h4 className='ask'>¿En cuánto tiempo voy a tener mi web disponible?</h4>
+                    <p className='answer'>El tiempo de trabajo será determinado por los requerimientos que deba tener la web. Solamente podremos estimar un tiempo una vez
+                    que sepamos estas necesidades.
+                    </p>
+                    
+                    <h4 className='ask'>¿En qué HOST va a estar alojada mi web?</h4>
+                    <p className='answer'>Trabajamos con SACACHISPAS host que ofrece una amplia variedad de servicios entre los que se destacan: 
+                    irse al descenso, salir con máscaras a los partidos y hacer chistes por instagram.<br/> 
+                    También podemos alojar la web en el HOST que nos propongas.
+                    </p>
+                    
+                    <h4 className='ask'>¿Ofrecen algún tipo de garantía por mal funcionamiento?</h4>
+                    <p className='answer'>No lo sé todavía porque no lo charlamos, pero si Cristian ve esto quizás pueda completar una respuesta decente</p>
                 </div>
             </div>
         </div>
