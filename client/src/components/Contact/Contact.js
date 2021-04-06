@@ -103,7 +103,8 @@ const Contact = () => {
                 <button  
                     className="Submit" 
                     type="submit"
-                >Enviar</button>
+                >Enviar
+                </button>
             </form>
             
             <div className='ContactImage'>

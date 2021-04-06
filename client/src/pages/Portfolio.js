@@ -15,43 +15,41 @@ const Portfolio = () => {
 
   const jobsList = useMemo(() => {
 
-      if( !state.length ) return null
-
-      return(
-              
-                <div className='ProjectsContainer'>
-                    {
-                      state.map( project => { 
-                        return (
-                          
-                            <div className='portfolio__item' key={ project.id }> 
-                                <img 
-                                    src={ project.image } 
-                                    alt="portfolio" 
-                                    className="portfolio__image"
-                                    />
-                                <div className="portfolio__desc">
-                                    <h3 className="portfolio__title"> { project.title } </h3>
-                                    <button 
-                                        onClick={()=>handleClick(project.id)}
-                                        type="button" 
-                                        className="btn btn-info btn-sm detailsBtn" 
-                                        >Detalles
-                                    </button>                        
-                                </div>
-                            </div>  
-                        )
-                      })                 
-                    }
-                  </div> 
-              )
+      return !state.length ?  null
+      :
+      (  
+        <div className='ProjectsContainer'>
+            {
+              state.map( project => { 
+                return (
+                    <div className='portfolio__item' key={ project.id }> 
+                        <img 
+                            src={ project.image } 
+                            alt="portfolio" 
+                            className="portfolio__image"
+                            />
+                        <div className="portfolio__desc">
+                            <h3 className="portfolio__title"> { project.title } </h3>
+                            <button 
+                                onClick={()=>handleClick(project.id)}
+                                type="button" 
+                                className="btn btn-info btn-sm detailsBtn" 
+                                >Detalles
+                            </button>                        
+                        </div>
+                    </div>  
+                )
+              })                 
+            }
+          </div> 
+      )
   },[ state ])
 
 
   const displayedProject = useMemo(() => {
-    if( projectShown === null ) return null
-    
-    return (
+    return projectShown === null ?  null
+    : 
+    (
         <React.Fragment>
           <div className='ImageDisplay'>
             <img src={projectShown.image} alt='Project screenshot' className='ProjectImage'/>
@@ -87,8 +85,6 @@ const Portfolio = () => {
                 { displayedProject }
                 </div>
               </div>
-                
-              
           </div>  
   )
     

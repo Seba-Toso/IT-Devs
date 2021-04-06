@@ -257,6 +257,20 @@
     font-size: 20px;
   }
 
+  .btn-whatsapp {
+    bottom: 8rem !important;
+    right: 3.4rem !important;
+    z-index: 1;
+  }
+  .btn-whatsapp a img {
+    z-index: 1;
+  }
+
+  .darkmode-toggle, .darkmode-layer--button {
+    right: 1rem !important;
+    bottom: 1rem !important;
+  }
+
 }
 
 
@@ -273,23 +287,6 @@
     z-index: 1;
   }
 
-  .btn-whatsapp {
-    right: 2.3rem !important;
-    z-index: 1;
-  }
-  .btn-whatsapp a img {
-    width: 40px !important;
-    opacity: 0.4;
-    z-index: 1;
-  }
 
-  .darkmode-toggle, .darkmode-layer--button {
-    width: 36px !important;
-    height: 36px !important;
-    right: 1rem !important;
-    bottom: 65% !important;
-    opacity: 0.2 !important;
-    z-index: 1;
-  }
 
 }

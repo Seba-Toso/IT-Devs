@@ -60,10 +60,12 @@
     font-weight: bold;
 }
 .FAQ {
-    margin: 4rem 0;
+    margin: 6rem 16rem;
 }
+
 .ask {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
 }
 .answer {
     font-weight: lighter;
@@ -73,12 +75,18 @@
     .services {
         grid-template-columns: auto auto auto;
     }
+    .FAQ {
+        margin: 6rem;
+    }
 }
 
 
 @media only screen and (max-width: 1024px) {
     .services {
         grid-template-columns: auto auto;
+    }
+    .FAQ {
+        margin: 4rem;
     }
 }
 
