@@ -48,6 +48,7 @@
     ],
     "moduleNameMapper": {
       "\\.(styl|css)$": "<rootDir>/src/__mocks__/styleMock.js"
-    }
+    },
+    "setupFiles": ["<rootDir>/src/__test__/setupTest.js"]
   }
 }

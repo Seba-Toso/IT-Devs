@@ -78,9 +78,7 @@ const Servicios = () =>{
                     </p>
                     
                     <h4 className='ask'>¿En qué HOST va a estar alojada mi web?</h4>
-                    <p className='answer'>Trabajamos con SACACHISPAS host que ofrece una amplia variedad de servicios entre los que se destacan: 
-                    irse al descenso, salir con máscaras a los partidos y hacer chistes por instagram.<br/> 
-                    También podemos alojar la web en el HOST que nos propongas.
+                    <p className='answer'>Trabajamos con distintos HOST nacionales e internacionales según las necesidades.
                     </p>
                     
                     <h4 className='ask'>¿Ofrecen algún tipo de garantía por mal funcionamiento?</h4>
