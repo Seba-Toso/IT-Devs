@@ -1,13 +1,11 @@
 {
-  "homepage": "http://cristian1534.github.io/IT-Devs",
   "name": "client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "babel-jest": "^26.6.3",
     "darkmode-js": "^1.5.7",
     "firebase": "^8.2.5",
-    "jest": "^26.6.3",
+    "jest": "^23.6.0",
     "jsx": "^0.9.89",
     "react": "^16.2.0",
     "react-collapsible": "^2.8.3",
@@ -19,7 +17,7 @@
     "react-modal": "^3.12.1",
     "react-redux": "^7.2.3",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "1.0.17",
+    "react-scripts": "2.1.8",
     "react-slick": "^0.28.0",
     "react-spring": "^8.0.27",
     "react-test-renderer": "^17.0.2",
@@ -33,17 +31,14 @@
     "build": "react-scripts build",
     "test": "jest",
     "test-watch": "jest --watch",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "proxy": "http://localhost:5000",
   "devDependencies": {
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
     "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.6",
-    "gh-pages": "^3.1.0"
+    "enzyme-adapter-react-16": "^1.15.6"
   },
   "jest": {
     "verbose": true,
@@ -53,6 +48,8 @@
     "moduleNameMapper": {
       "\\.(styl|css)$": "<rootDir>/src/__mocks__/styleMock.js"
     },
-    "setupFiles": ["<rootDir>/src/__test__/setupTest.js"]
+    "setupFiles": [
+      "<rootDir>/src/__test__/setupTest.js"
+    ]
   }
 }
