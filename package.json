@@ -9,7 +9,7 @@
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run client\" \"npm run server\"",
-    "test": "mocha test/*.js --timeout 15000 --recursive"  
+    "test": "mocha test/*.js --timeout 15000 --recursive"
   },
   "author": "Cristian Machuca",
   "license": "MIT",
@@ -17,7 +17,10 @@
     "nodemon": "^1.19.4"
   },
   "dependencies": {
+    "babel-eslint": "^9.0.0",
     "body-parser": "^1.19.0",
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
     "colors": "^1.4.0",
     "concurrently": "^3.5.1",
     "cors": "^2.8.5",
@@ -26,12 +29,10 @@
     "express": "^4.16.2",
     "express-handlebars": "^5.3.0",
     "firebase": "^8.2.5",
+    "mocha": "^2.4.5",
     "morgan": "^1.10.0",
     "react-icons": "^4.1.0",
     "react-scripts": "^4.0.1",
-    "sweetalert": "^2.1.2",
-    "chai": "^3.5.0",
-    "chai-http": "^2.0.1",
-    "mocha": "^2.4.5"
+    "sweetalert": "^2.1.2"
   }
 }
