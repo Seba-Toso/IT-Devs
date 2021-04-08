@@ -6,7 +6,7 @@ import Foot from '../../components/Footer/Foot';
 
 
 describe("<Foot />", ()=>{
-    test('Testeando el Componente Foot', ()=>{
+    test('Footer: Must have data to render.', ()=>{
         const footer = mount(<Foot/>);
         expect(footer.length).toEqual(1);
     })
