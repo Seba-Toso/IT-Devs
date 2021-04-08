@@ -8,10 +8,10 @@ import './Slider.css';
 
 const Slider = () =>{
 
-    const [ state ] = useContext(Context);
-
+    const [ state ] = useContext( Context );
+    
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
@@ -19,31 +19,32 @@ const Slider = () =>{
         autoplay: true,
         autoplaySpeed: 4000,
         pauseOnHover: true,
+        lazyLoad: true,
+        fade: true,
     }
     
     const sliderRender = useMemo(() => {
-        if(!state.length) return <h1>No hay data para mostrar...</h1>
-        return (
-                <Slide {...settings} className='slider'>
-                {
-                        state.map( project => { 
-                            return (
-                                <div key={project.id} className='slideImageContainer'>
-                                    <img 
-                                        src={project.image} 
-                                        alt='project' 
-                                        className='slideImage'
-                                        />
-                                </div>
-                            )
-                        })
-                    }
-                </Slide>
-        )
-
+        
+        return  !state.length ? <h1>No hay proyectos disponibles para mostrar...</h1>
+                :
+                state.map( project => (
+                        <div key={project.id} className='slideImageContainer'>
+                            <img 
+                                src={project.image} 
+                                alt='Project Illustration' 
+                                className='slideImage'
+                            />
+                        </div>
+                    )
+                )
+                
     }, [ state ])
+
+
+
+
     return(
-        <div>{ sliderRender }</div>
+        <Slide {...settings} className='slider'>{ sliderRender }</Slide>
     )
 };
 
