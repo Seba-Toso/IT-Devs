@@ -85,7 +85,7 @@ const Routes = () => {
                                     <NavLink className='link' activeClassName="selected" to="/portfolio">Portfolio</NavLink>
                                     <NavLink className='link' activeClassName="selected" to="/quienes">Conocenos</NavLink>
                                     <NavLink className='link' activeClassName="selected" to="/presupuesto">Presupuesta</NavLink>
-                                    <NavLink className='link' activeClassName="selected" exact to="/"><IoHome/></NavLink>
+                                    <NavLink className='link' activeClassName="selected" exact to="/"><IoHome className='homeSvg'/></NavLink>
                                 </div>
                             </div>
                             

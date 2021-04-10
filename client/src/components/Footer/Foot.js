@@ -26,11 +26,11 @@ const Footer = () => {
             <div className='SocialMediaContainer'>
                 
 
-                <a className='SocialMediaName SocialMediaButton GitHub' href="https://cristian1534.github.io/Blog-IT-Devs.github.io" target='_blank' rel="noopener noreferrer">
-                    <ReactIcon.IoLogoGithub className='SocialIcon' /><small> GitHub</small>  
-                </a>
-                <a className='SocialMediaName SocialMediaButton LinkedIn' href="https://cristian1534.github.io/Blog-IT-Devs.github.io" target='_blank' rel="noopener noreferrer">
-                    <ReactIcon.IoLogoLinkedin className='SocialIcon' /><small> LinkedIn</small>  
+                <button disabled className='SocialMediaName SocialMediaButton Net' href="#" target='_blank' rel="noopener noreferrer">
+                    <ReactIcon.IoLogoInstagram className='SocialIcon' /><small> Soon</small>  
+                </button>
+                <a className='SocialMediaName SocialMediaButton FAQs' href="/servicios" rel="noopener noreferrer">
+                    <ReactIcon.IoHelpCircle className='SocialIcon' /><small> FAQs</small>  
                 </a>
                 <a className='SocialMediaName SocialMediaButton Mail' href="https://cristian1534.github.io/Blog-IT-Devs.github.io" target='_blank' rel="noopener noreferrer">
                     <ReactIcon.IoMailSharp className='SocialIcon' /><small> Mail</small>  

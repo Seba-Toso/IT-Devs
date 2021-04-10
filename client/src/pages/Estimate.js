@@ -187,11 +187,16 @@ const Estimate = () => {
             </h3>
             <p className="detailText">
               Te facilitamos esta manera de hacerte una primera idea de cuánto
-              puede llegar a costarte realizar ese proyecto que soñas. Tené en
-              cuenta que para cerrar un costo final será necesaria una reunión,
+              puede llegar a costarte realizar ese proyecto que soñas. <br/>
+              Tené en cuenta que para cerrar un costo final será necesaria una reunión,
               por lo que si estás interesado/a podés solicitar un encuentro al
-              final de esta sección.
+              final de esta sección. <br/>
+              Por último, todo trabajo tiene un precio base que es el que figura inicialmente
+              en el presupuesto total estimado.
             </p>
+            <small className='helpText'> Usá los botones de abajo para seleccionar las características que 
+            quisieras para tu proyecto y sumarlas al presupuesto
+            </small>
           </div>
           <PriceButtons changePriceHandler={changePriceHandler} />
         </div>
@@ -200,9 +205,9 @@ const Estimate = () => {
             <h6 className="totalTitle">Total Estimado</h6>
             <h3 id="totalPrice">${estimatorPriceState.totalPrice }</h3>
             <div className="totalDetails">
-              <p className="detailName">BackEnd</p>
+              <p className="detailName">Desarrollo de funcionalidad</p>
               <p className="detailPrice">${estimatorPriceState.backendPrice}</p>
-              <p className="detailName">FrontEnd</p>
+              <p className="detailName">Desarrollo de interfaz</p>
               <p className="detailPrice">
                 ${estimatorPriceState.frontendPrice}
               </p>

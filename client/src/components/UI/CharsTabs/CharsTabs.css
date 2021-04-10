@@ -56,6 +56,17 @@
 }
 
 
+@media only screen and (max-width: 1024px){
+    .tabImage {
+        position: absolute;
+        display: inline;
+        height: 500px;
+        margin-top: -300px;
+        margin-left: 0rem;
+    }
+    
+}
+
 
 @media only screen and (max-width: 420px) {
 

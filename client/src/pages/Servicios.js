@@ -44,27 +44,31 @@ const Servicios = () =>{
             <div className='section whatelse'>
                 <h2 className='title'>¿CÓMO LO LLEVAMOS ADELANTE?</h2>
                 <div className='processContainer'>
-                    <span className='process'><ReactIcons.MdPhoneInTalk /><small>Nos ponemos en contacto</small></span>
+                    <span className='process'><ReactIcons.MdPhoneInTalk /><small>Recibido un mensaje nos pondremos en contacto</small></span>
                     <span className='arrow'><GiPlainArrow /></span>
-                    <span className='process'><ReactIcons.MdEventAvailable /><small>Agendamos una reunión</small></span>
+                    <span className='process'><ReactIcons.MdEventAvailable /><small>Agendaremos una reunión para conocer los requerimientos</small></span>
                     <span className='arrow'><GiPlainArrow /></span>
-                    <span className='process'><ReactIcons.MdCode /><small>El equipo comienza a trabajar</small></span>
+                    <span className='process'><ReactIcons.MdMonetizationOn /><small>Realizaremos un presupuesto y un boceto inicial del proyecto</small></span>
+                    <span className='arrow'><GiPlainArrow /></span>
+                    <span className='process'><ReactIcons.MdCode /><small>Aceptado el presupuesto, el equipo comienza a trabajar</small></span>
                     <span className='arrow'><GiPlainArrow /></span>
                     <span className='process'><ReactIcons.MdFavorite /><small>Te enviamos los avances para conformidad</small></span>
                     <span className='arrow'><GiPlainArrow /></span>
                     <span className='process'><ReactIcons.MdPublic /><small>Subimos la página a un <strong>HOST</strong></small></span>
                 </div> 
-                <h2 className='subtitle faqHeader'>F.A.Q</h2>
+                <h2 className='faqHeader'>Preguntas Frecuentes</h2>
                 <div className='FAQ'>
-                    <h4 className='ask'>¿Enviar un presupuesto me compromete a la realización de la web?</h4>
-                    <p className='answer'>No, el presupuesto nos llegará y luego nos pondremos en contacto, en caso desistir, con solo notificarnos basta para no proceder con la realización de la misma.</p>
+                    <h4 className='ask'>¿Solicitar o enviar un presupuesto me compromete a la realización de la web?</h4>
+                    <p className='answer'>Si envias el presupuesto desde el estimador de costos, nos llegará automáticamente y luego nos pondremos en contacto, 
+                    en caso desistir, con solo notificarnos basta para no proceder con la realización de la misma. <br/>
+                    En caso de solicitarnos un presupuesto esperaremos confirmación del mismo para avanzar en el proceso de creación de la web.</p>
                     
                     <h4 className='ask'>¿Cuáles son los pasos luego de encargar un trabajo?</h4>
                     <p className='answer'>Coordinaremos un encuentro en donde nos harás saber tus necesidades y nos brindarás toda la información necesaria para que podamos diseñar un primer boceto de la web
                      y su código básico (Colores, logos, imágenes, textos o palabras clave, etc). Luego pediremos conformidad para comenzar a trabajar en la creación de la web.
                     </p>
                     
-                     <h4 className='ask'>¿Puedo conocer el avance de mi web antes del resultado final?</h4>
+                    <h4 className='ask'>¿Puedo conocer el avance de mi web antes del resultado final?</h4>
                     <p className='answer'>Si, podemos coordinar distintos encuentros para ir corroborando el avance e ir generando feedback sobre la creación del mismo.</p>
                     
                     <h4 className='ask'>¿En cuánto tiempo voy a tener mi web disponible?</h4>
@@ -82,7 +86,13 @@ const Servicios = () =>{
                     </p>
                     
                     <h4 className='ask'>¿Ofrecen algún tipo de garantía por mal funcionamiento?</h4>
-                    <p className='answer'>No lo sé todavía porque no lo charlamos, pero si Cristian ve esto quizás pueda completar una respuesta decente</p>
+                    <p className='answer'>Nuestros productos llegar a Hosting testeados asegurando que estan sin defectos operativos,  
+                    cada avance te iremos compartiendo asegurando tu conformidad al llegar al final del proyecto y seguros que todo esta
+                    correctamente como tu necesidad lo requiere.</p>
+
+                    <h4 className='ask'>¿Cómo puedo realizar el pago?</h4>
+                    <p className='answer'>Ofrecemos distintos métodos de pago digitales. Para un mayor compromiso y responsabilidad con el cliente, los
+                    presupuestos y los pagos son definidos en reuniones con los mismos.</p>
                 </div>
             </div>
         </div>

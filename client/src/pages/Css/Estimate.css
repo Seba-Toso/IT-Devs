@@ -43,6 +43,12 @@
     font-size: 16px;
     padding: 10px;
 }
+.helpText {
+    width: 90%;
+    padding: 10px;
+    font-style: italic;
+    color: #666;
+}
 
 .totalContainer {
     width: 30%;
@@ -141,7 +147,6 @@
     }
     .totalSection {
         width: 95%;
-        height: 38rem;
     }
   }
 

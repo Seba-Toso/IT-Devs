@@ -62,17 +62,18 @@
     margin-bottom: 2px;
     vertical-align: middle;
 }
-.GitHub:hover {
-    background-color: rgb(93, 46, 138)
+.Net:hover {
+    background-color: rgb(204, 49, 114);
+    cursor: not-allowed;
 }
-.LinkedIn:hover {
-    background-color: rgb(46, 70, 138)
+.FAQs:hover {
+    background-color: rgb(75, 138, 46)
 }
 .Mail:hover {
-    background-color: rgb(138, 46, 66)
+    background-color: rgb(179, 62, 62)
 }
 .Blog:hover {
-    background-color: rgb(46, 138, 84)
+    background-color: rgb(63, 160, 190)
 }
 
 .heart {
@@ -144,7 +145,7 @@
         width: 60px;
         height: 60px;
         right: 0.5rem !important;
-        bottom: 3.5rem !important;
+        bottom: 6.5rem !important;
     }
     .iconContainer {
         padding: 0rem !important;
@@ -193,13 +194,17 @@
         width: 40px;
         height: 50px;
     }
-
+    .ScrollTopButton {
+        bottom: 5rem !important;
+    }
 }
 
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 320px) {
     .text {
         font-size: 8px !important;
     }
-    
+    .ScrollTopButton {
+        bottom: 9rem !important;
+    }
 }

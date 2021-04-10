@@ -19,6 +19,7 @@ const Portfolio = () => {
       :
       (  
         <div className='ProjectsContainer'>
+            <small className='helpText projectMessage'> Deslizá para ver más proyectos</small>
             {
               state.map( project => { 
                 return (

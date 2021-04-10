@@ -17,9 +17,14 @@
     margin-left: 2rem;
 }
 
-
-
 .tabName {
     line-height: 4rem;
     font-size: 22px;
+}
+
+@media only screen and (max-width: 1024px){
+    .tab {
+        width: 22rem;
+    }
+    
 }

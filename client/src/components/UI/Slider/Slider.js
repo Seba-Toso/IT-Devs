@@ -21,6 +21,7 @@ const Slider = () =>{
         pauseOnHover: true,
         lazyLoad: true,
         fade: true,
+        swipeToSlide: true,
     }
     
     const sliderRender = useMemo(() => {

@@ -21,6 +21,7 @@
     "body-parser": "^1.19.0",
     "chai": "^3.5.0",
     "chai-http": "^2.0.1",
+    "client": "file:client",
     "colors": "^1.4.0",
     "concurrently": "^3.5.1",
     "cors": "^2.8.5",
