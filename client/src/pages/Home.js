@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Contact from '../components/Contact/Contact'
 import RoundButton from '../components/UI/RoundButton/RoundButton'
 import * as ReactIcon from 'react-icons/io5'
@@ -8,11 +8,26 @@ import CharsTabs from '../components/UI/CharsTabs/CharsTabs'
 
 // import Cookies from 'universal-cookie';
 function test() {
+    const [ isDark, setIsDark ] = useState('assets/fullLogo.png')
+    const darkmode = localStorage.getItem('darkmode')
+    
+    useEffect(()=>{
+       
+        if( darkmode ){
+            console.log('it is true');
+            setIsDark('assets/fullLogoNeg.png')
+        }
+        else {
+            setIsDark('assets/fullLogo.png')
+        }
+    },[setIsDark, darkmode])
+
+    
     return (
         <div>
             <div className='section intro'>
             <div className='logoContainer'>
-                <img src='assets/fullLogo.png' height={'400px'} alt='Logo'/>
+                <img src={isDark} height={'400px'} alt='Logo'/>
             </div>
             <div className='sloganContainer'>
                 <h1 className='sloganText One'>DESARROLLAR</h1>
