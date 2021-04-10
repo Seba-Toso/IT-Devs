@@ -107,7 +107,7 @@ const Contact = () => {
                 <button  
                     className="Submit" 
                     id="submitBtn"
-                    type="submit"
+                    type="button"
                 >Enviar
                 </button>
             </form>

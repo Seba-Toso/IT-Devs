@@ -59,10 +59,10 @@
 }
 .Submit {
     padding: 5px;
-    height: 3.5rem;
+    height: 3rem;
     width: 6rem;
-    border-radius: 5px;
-    border: 2px solid white;
+    border-radius: 30px;
+    border: 2px solid rgb(63, 122, 190);
     background: linear-gradient(to left, rgb(63, 160, 190), rgb(63, 122, 190));
     font-size: 16px;
     color: white;
@@ -72,7 +72,7 @@
 .Submit:hover {
     cursor: pointer;
     opacity: 100%;
-    border: 2px solid  rgb(63, 122, 190);
+    border: 2px solid white;
 }
 
 .notValid {

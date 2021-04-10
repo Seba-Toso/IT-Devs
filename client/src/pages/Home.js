@@ -9,21 +9,19 @@ import CharsTabs from '../components/UI/CharsTabs/CharsTabs'
 // import Cookies from 'universal-cookie';
 function test() {
     const [ isDark, setIsDark ] = useState(localStorage.getItem('darkmode'))
-    const src = isDark? 'assets/fullLogo.png' : 'assets/fullLogo2.png'
+    const src = !isDark? "assets/fullLogo.png" : 'assets/fullLogoNeg.png'
     
-    useEffect(()=>{
+
+    useEffect(()=>{        
 
         const darkmode = localStorage.getItem('darkmode')
-        console.log('local', darkmode);
-
         if( darkmode === 'true' ){
-            console.log('it is true')
             setIsDark(true)
         }
         else {
-            console.log('it is false')
             setIsDark(false)
         }
+
     },[setIsDark])
 
     

@@ -86,9 +86,9 @@ const Servicios = () =>{
                     </p>
                     
                     <h4 className='ask'>¿Ofrecen algún tipo de garantía por mal funcionamiento?</h4>
-                    <p className='answer'>Nuestros productos llegar a Hosting testeados asegurando que estan sin defectos operativos,  
-                    cada avance te iremos compartiendo asegurando tu conformidad al llegar al final del proyecto y seguros que todo esta
-                    correctamente como tu necesidad lo requiere.</p>
+                    <p className='answer'>Nuestros productos, previo a ser alojados en el HOST, son testeados asegurando que estan sin defectos operativos.
+                    Para esto es impresindible obtener un feedback de los encuentros en los que compartimos los avances del desarrollo, mateniendo la conformidad
+                    en la elaboración del producto.</p>
 
                     <h4 className='ask'>¿Cómo puedo realizar el pago?</h4>
                     <p className='answer'>Ofrecemos distintos métodos de pago digitales. Para un mayor compromiso y responsabilidad con el cliente, los
