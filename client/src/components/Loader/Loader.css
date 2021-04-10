@@ -14,7 +14,7 @@
   box-sizing: border-box;
   border: 32px solid #fff;
   border-color: #fff transparent #fff transparent;
-  animation: lds-hourglass 1.2s infinite;
+  animation: lds-hourglass 2.2s infinite;
 }
 @keyframes lds-hourglass {
   0% {
@@ -42,7 +42,7 @@
   left: 0;
   z-index: 10000;
   clip-path: circle(150% at 100% 0);
-  transition: clip-path 1.00s ease-in-out ;
+  transition: clip-path 1.5s ease-in-out ;
 }
 .loader2 {
   clip-path: circle(0.0% at 100% 100%);
