@@ -32,7 +32,7 @@ const Footer = () => {
                 <a className='SocialMediaName SocialMediaButton FAQs' href="/servicios" rel="noopener noreferrer">
                     <ReactIcon.IoHelpCircle className='SocialIcon' /><small> FAQs</small>  
                 </a>
-                <a className='SocialMediaName SocialMediaButton Mail' href="https://cristian1534.github.io/Blog-IT-Devs.github.io" target='_blank' rel="noopener noreferrer">
+                <a className='SocialMediaName SocialMediaButton Mail' href="/"  rel="noopener noreferrer">
                     <ReactIcon.IoMailSharp className='SocialIcon' /><small> Mail</small>  
                 </a>
                 <a className='SocialMediaName SocialMediaButton Blog' href="https://cristian1534.github.io/Blog-IT-Devs.github.io" target='_blank' rel="noopener noreferrer">
