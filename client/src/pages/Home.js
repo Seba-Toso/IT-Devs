@@ -1,30 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Contact from '../components/Contact/Contact'
 import RoundButton from '../components/UI/RoundButton/RoundButton'
 import * as ReactIcon from 'react-icons/io5'
-import './Css/Home.css'
 import Slider from '../components/UI/Slider/Slider';
 import CharsTabs from '../components/UI/CharsTabs/CharsTabs'
+import './Css/Home.css'
 
 // import Cookies from 'universal-cookie';
-function test() {
-    const [ isDark, setIsDark ] = useState(localStorage.getItem('darkmode'))
+function test(isDark) {
     const src = !isDark? "assets/fullLogo.png" : 'assets/fullLogoNeg.png'
-    
 
-    useEffect(()=>{        
-
-        const darkmode = localStorage.getItem('darkmode')
-        if( darkmode === 'true' ){
-            setIsDark(true)
-        }
-        else {
-            setIsDark(false)
-        }
-
-    },[setIsDark])
-
-    
     return (
         <div>
             <div className='section intro'>
@@ -79,7 +64,7 @@ function test() {
 }
 
  
-const Home = () =>{
+const Home = ({isDark}) =>{
     
     const scrollBottomHandle = () => {
         window.scrollTo(0,document.body.scrollHeight);
@@ -91,7 +76,7 @@ const Home = () =>{
                 <RoundButton selectedIcon={<ReactIcon.IoMailUnreadSharp/>} onScrollTop={scrollBottomHandle}/>
             </div>
 
-             <div>{ test() }</div>
+             <div>{ test(isDark) }</div>
             
             <div className='section characteristic'>
                 <h1 className='title'>CARACTERÍSTICAS DE NUESTROS PROYECTOS</h1>

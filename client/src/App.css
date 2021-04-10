@@ -187,20 +187,7 @@
     display: none !important;
   }
 
-  .projectSlider {
-    min-height: 26vh !important;
-    height: fit-content !important;
-  }
-  .slick-slider {
-    width: 100% !important;
-    margin:  0 auto;
-  }
-  .slick-prev, .slick-next {
-    display: none !important;
-  }
-  .slick-list, .slideImageContainer, .slideImage  {
-    height: 19vh !important; 
-  }
+
 
   .Form {
     width: 100% !important;

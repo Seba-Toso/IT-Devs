@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
 import { IoHome, IoMenu } from "react-icons/io5";
 
+
 import './Routes.css';
 
 import Home from '../../pages/Home';
@@ -16,8 +17,7 @@ import Admin from '../../pages/Admin';
 import ProtectedRoute from '../Backend/ProtectedRoute';
 
 
-const Routes = () => {
-    
+const Routes = ({isDark}) => {
     //Nav Logo hanlding
 
     const [isVisible, setIsVisible] = useState(false)
@@ -29,7 +29,7 @@ const Routes = () => {
 
     const [menuLinks, setMenuLinks] = useState(false)
     const [menu, setMenu] = useState('-25rem')
-
+    
 
     //Nav Logo Effect
     useEffect(() => {
@@ -62,7 +62,7 @@ const Routes = () => {
     function renderNavBar() {
         return(
             <div>
-                <Router>
+                <Router isDark={isDark}>
                     <header className="App-header">  
                         <nav className='navBar'>
                             <div className='logo'>
@@ -101,12 +101,16 @@ const Routes = () => {
                         </nav>
                     </header>
                     
-                    <Switch>
-                        <Route path="/" exact component={ Home } />
+                    <Switch >
+                        <Route exact path="/">
+                            <Home isDark={isDark}/>
+                        </Route>
                         <Route path="/presupuesto" component={ Estimate } />
                         <Route path="/portfolio" component={ Portfolio } />
                         <Route path="/tecnologias" component={ Tecnologias } />
-                        <Route path="/quienes" component={ Quienes } />
+                        <Route path="/quienes">
+                            <Quienes isDark={isDark}/>
+                        </Route>
                         <Route path="/servicios" component={ Servicios } />
                         <Route path="/admin" component={ Admin } />
                         <ProtectedRoute path="/backoffice" component={ ClientsList } />

@@ -3,15 +3,16 @@ import * as IconName from "react-icons/fa";
 import './Css/Quienes.css';
 
 
-const QuienesSomos = () =>{
+const QuienesSomos = ({isDark}) =>{
 
     const [selectedProfile, setSelectedProfile] = useState(null)
-
+    const src = !isDark? "assets/fullLogo.png" : 'assets/fullLogoNeg.png'
+    
     return(
         <div> 
             <div className='section presentation'>
                 <div className='logoContainer'>
-                    <img src='assets/fullLogo.png' height={'400px'} alt='Logo'/>
+                    <img src={src} height={'400px'} alt='Logo'/>
                     <p>
                         IT-Devs es un emprendimiento creado, diseñado y dirigido por dos
                         desarrolladores en entorno de Stack MERN (MongoDb, Express, React y NodeJS). Nuestro objetivo principal 
