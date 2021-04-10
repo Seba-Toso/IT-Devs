@@ -244,7 +244,7 @@ const Estimate = () => {
                 required    
                 id="phone"
               />
-               <button className="Submit" type="button" id="estimateBtn">
+               <button className="Submit estimateSubmit" type="button" id="estimateBtn">
                 Enviar
                </button>
             </form>      

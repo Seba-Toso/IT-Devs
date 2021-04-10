@@ -86,7 +86,6 @@
 
 
 @media only screen and (max-width: 768px) {
-
   .logo {
     height: 90% !important;
     margin-top: 1rem;
@@ -187,7 +186,11 @@
     display: none !important;
   }
 
-
+  .projectSlider {
+    min-height: 30vh !important;
+    height: fit-content !important;
+    padding: 2rem !important;
+  }
 
   .Form {
     width: 100% !important;
@@ -232,6 +235,14 @@
   }  
   .tab {
     display: block;
+  }
+  .projectSlider {
+    min-height: 26vh !important;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .projectSlider {
+    min-height: 20vh !important;
   }
 }
 
