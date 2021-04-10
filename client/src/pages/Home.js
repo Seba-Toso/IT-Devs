@@ -8,26 +8,30 @@ import CharsTabs from '../components/UI/CharsTabs/CharsTabs'
 
 // import Cookies from 'universal-cookie';
 function test() {
-    const [ isDark, setIsDark ] = useState('assets/fullLogo.png')
-    const darkmode = localStorage.getItem('darkmode')
+    const [ isDark, setIsDark ] = useState(localStorage.getItem('darkmode'))
+    const src = isDark? 'assets/fullLogo.png' : 'assets/fullLogo2.png'
     
     useEffect(()=>{
-       
-        if( darkmode ){
-            console.log('it is true');
-            setIsDark('assets/fullLogoNeg.png')
+
+        const darkmode = localStorage.getItem('darkmode')
+        console.log('local', darkmode);
+
+        if( darkmode === 'true' ){
+            console.log('it is true')
+            setIsDark(true)
         }
         else {
-            setIsDark('assets/fullLogo.png')
+            console.log('it is false')
+            setIsDark(false)
         }
-    },[setIsDark, darkmode])
+    },[setIsDark])
 
     
     return (
         <div>
             <div className='section intro'>
             <div className='logoContainer'>
-                <img src={isDark} height={'400px'} alt='Logo'/>
+                <img src={src} height={'400px'} alt='Logo'/>
             </div>
             <div className='sloganContainer'>
                 <h1 className='sloganText One'>DESARROLLAR</h1>
