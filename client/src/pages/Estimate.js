@@ -248,7 +248,7 @@ const Estimate = () => {
                 Enviar
                </button>
             </form>      
-          </div>
+          </div>  
         </div>
       </div>
     </div>

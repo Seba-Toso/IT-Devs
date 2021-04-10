@@ -84,7 +84,7 @@ const Routes = ({isDark}) => {
                                     <NavLink className='link' activeClassName="selected" to="/tecnologias">Tecnologías</NavLink>
                                     <NavLink className='link' activeClassName="selected" to="/portfolio">Portfolio</NavLink>
                                     <NavLink className='link' activeClassName="selected" to="/quienes">Conocenos</NavLink>
-                                    <NavLink className='link' activeClassName="selected" to="/presupuesto">Presupuesta</NavLink>
+                                    <NavLink className='link' activeClassName="selected" to="/presupuesto">Presupuesto</NavLink>
                                     <NavLink className='link' activeClassName="selected" exact to="/"><IoHome className='homeSvg'/></NavLink>
                                 </div>
                             </div>
@@ -94,7 +94,7 @@ const Routes = ({isDark}) => {
                                 <NavLink className='link' activeClassName="selected" to="/tecnologias">Tecnologías</NavLink>
                                 <NavLink className='link' activeClassName="selected" to="/portfolio">Portfolio</NavLink>
                                 <NavLink className='link' activeClassName="selected" to="/quienes">Conocenos</NavLink>
-                                <NavLink className='link' activeClassName="selected" to="/presupuesto">Presupuesta</NavLink>
+                                <NavLink className='link' activeClassName="selected" to="/presupuesto">Presupuesto</NavLink>
                                 <NavLink className='link' activeClassName="selected" exact to="/"><IoHome/></NavLink>
                             </div>
                             
