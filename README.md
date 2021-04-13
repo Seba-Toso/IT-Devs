@@ -4,7 +4,7 @@
 <h5>Hi Partner, I’m Sebastian!</h5>
 <h2>Welcome to this Repository! 👉 IT-Devs 👈</h2>
 <p>
-  IT-Devs is a project co-created whith <a href="https://github.com/cristian1534" title="https://github.com/cristian1534">Cristian MAchuca</a> to provide facilities
+  IT-Devs is a project co-created with <a href="https://github.com/cristian1534" title="https://github.com/cristian1534">Cristian Machuca</a> to provide facilities
   to people that needs to push his projects into the web.
   It was born under the idea that there is a lot of developers who are looking for their first steps into the world of web development but sometimes it's too
   complicated, so, a project that brings together some of them and  and develops people's personal projects, just looks good 👍.
@@ -37,8 +37,7 @@
 
 ---
 <h2>Please, don't forget to check the web site</h2>
----
----
+
 <br>
 <strong>Screenshots</strong><br>
 <img src="http://imgfz.com/i/fQj57FW.jpeg" alt="screenshots" />
