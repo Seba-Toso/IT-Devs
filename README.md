@@ -22,7 +22,13 @@
     <p><strong>React, React-Routes, React-Icons</strong></p>
   </li>
   <li>
-    <p><strong>NodeJS</strong></p>
+    <p><strong>NodeJS, Testing Jest, Firebase</strong></p>
+  </li>
+  <li>
+    <p><strong>Boostrap</strong></p>
+  </li>
+  <li>
+    <p><strong>Test with Jest</strong></p>
   </li>
 </ol>
 <p>That's it, have fun!</p>
