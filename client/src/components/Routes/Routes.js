@@ -69,7 +69,7 @@ const Routes = ({isDark}) => {
                                 {
                                     isVisible && <React.Fragment> 
             
-                                        <img src='assets/logoCircle.png' height={'80%'} className='logoCircle' alt="logo"/>
+                                        
                                         <h2 className='logoText'>IT-Devs</h2>
             
                                     </React.Fragment>

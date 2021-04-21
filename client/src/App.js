@@ -30,12 +30,9 @@ const App = () => {
     
     useEffect(()=>{
       darkmode.button.addEventListener('click', () => {
-        console.log('clicked');
         let darkmodeActive = darkmode.isActivated()
-        console.log('darkmodeActive', darkmodeActive);
         setIsDark(darkmodeActive)
       })
-      console.log('isDark App', isDark);
     },[setIsDark])
 
     return (

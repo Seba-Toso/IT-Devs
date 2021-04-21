@@ -18,10 +18,15 @@
     background: linear-gradient(to left, rgb(63, 160, 190), rgb(63, 122, 190));
     opacity: 0.5;
     transition: all 300ms ease-in-out;
-    color: white
+    color: white;
+
 } 
 
-.btn:hover, .on {
+.off {
+    animation: flashButton 8s ease-in-out infinite normal;
+}
+
+.on {
     opacity: 1;
 }
 
@@ -138,6 +143,25 @@
         -o-transform: rotate(360deg);
         transform: rotate(360deg);
       }
+}
+
+@keyframes flashButton { 
+    0% {
+        opacity: 0.5;
+    }
+    46% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    54% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0.5;
+    }
+
 }
 
 

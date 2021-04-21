@@ -19,7 +19,7 @@ const calculatePriceReducer = (state, action) => {
     if (action.addTo === 'both') {
       const updatedBackendPrice = backendPrice + action.price;
       const updatedFrontendPrice = frontendPrice + action.price;
-      const updatedPrice = totalPrice + action.price + action.price + userInterfacePrice;
+      const updatedPrice = totalPrice + action.price + action.price ;
       const updatedItemList = elementSelected.concat(action.item)
       return {
         ...state,
@@ -52,7 +52,7 @@ const calculatePriceReducer = (state, action) => {
     if (action.addTo === 'both') {
       const updatedBackendPrice = backendPrice + action.price;
       const updatedFrontendPrice = frontendPrice + action.price;
-      const updatedPrice = totalPrice + action.price + action.price + userInterfacePrice;
+      const updatedPrice = totalPrice + action.price + action.price;
       const updatedItemList = elementSelected.filter(item => item !== action.item)
       
       return {
@@ -99,6 +99,7 @@ const Estimate = () => {
   
   const changePriceHandler = useCallback(
     ({ identifier, price, addTo, item }) => {
+      console.log(identifier, price, addTo, item);
       identifier === 'off' ?
         dispatchEstimatorPriceState({
           type: 'REST_PRODUCT',
@@ -244,7 +245,7 @@ const Estimate = () => {
                 required    
                 id="phone"
               />
-               <button className="Submit estimateSubmit" type="button" id="estimateBtn">
+               <button className="myButton estimateSubmit" type="button" id="estimateBtn">
                 Enviar
                </button>
             </form>      
