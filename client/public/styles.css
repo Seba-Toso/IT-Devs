@@ -73,3 +73,28 @@ body {
     button:last-child{
       margin-top:5px;
   }
+
+  
+#google_translate_element {
+  position: absolute;
+  top: 5rem;
+  left: 1rem;
+}
+
+
+.goog-te-gadget-simple {
+  border: 2px solid #3f72be !important;
+  border-radius: 10px;
+  padding: 5px !important;
+}
+
+.goog-te-gadget-simple img {
+  background-image: url('./assets/translate.png') !important;
+  background-size: cover !important;
+  background-position: initial !important;
+}
+
+.goog-te-gadget-simple span {
+  display: none;
+}
+

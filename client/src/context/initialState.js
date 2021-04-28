@@ -81,6 +81,23 @@ import React, { useState } from 'react';
         description: '#portfolio-item-11',
         body: 'React, Axios, PlaceHolder API.'
       },
+      {
+        id: '12',
+        image: 'http://imgfz.com/i/sGElxV0.jpeg',
+        title: 'Game Page Minesweeper.',
+        description: '#portfolio-item-12',
+        body: 'Minesweeper app, MERN stack.'
+      },
+      {
+        id: '13',
+        image: 'http://imgfz.com/i/vy7rhUj.jpeg',
+        title: 'Video-club',
+        description: '#portfolio-item-13',
+        body: 'Video with React and Redux'
+      },
+
+
+      
 
      
     ];
