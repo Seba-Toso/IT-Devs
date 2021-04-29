@@ -2,12 +2,12 @@ import firebase from 'firebase';
 
 const  firebaseApp = firebase.initializeApp({
  
-    apiKey: "AIzaSyA2aVp__bqyumeH2Cv1m3Mhi4bEynbAHS4",
-    authDomain: "it-devs-web-site.firebaseapp.com",
-    projectId: "it-devs-web-site",
-    storageBucket: "it-devs-web-site.appspot.com",
-    messagingSenderId: "56277694014",
-    appId: "1:56277694014:web:49ed73d4c6f93bb62d436f"
+    apiKey: "AIzaSyCHzkIHv7JGq27ER_uDeKR4BvZ0sLtM5Ew",
+    authDomain: "it-devs-web-site-f4b34.firebaseapp.com",
+    projectId: "it-devs-web-site-f4b34",
+    storageBucket: "it-devs-web-site-f4b34.appspot.com",
+    messagingSenderId: "589797242023",
+    appId: "1:589797242023:web:5457876b04899c00b05782"
  
 })
 
